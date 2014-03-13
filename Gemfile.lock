@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/spree/spree.git
-  revision: a147360cb6152cc9dcde9a0c3f2036706e0a985f
+  revision: 38f05401766beee8b61dfa2a60c6eb664ca228ef
   branch: 2-2-stable
   specs:
     spree (2.2.1.beta)
@@ -11,7 +11,6 @@ GIT
       spree_frontend (= 2.2.1.beta)
       spree_sample (= 2.2.1.beta)
     spree_api (2.2.1.beta)
-      oj (= 2.5.5)
       rabl (= 0.9.3)
       spree_core (= 2.2.1.beta)
       versioncake (~> 1.2.0)
@@ -67,11 +66,10 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_gateway.git
-  revision: 3b4a48bf444b484b5271e149d59397841dc1696c
+  revision: 2f0db75d111b9a053620cda92530cdfa5468a77c
   branch: 2-2-stable
   specs:
     spree_gateway (2.2.1)
-      savon (~> 1.2)
       spree_core (~> 2.2.0)
 
 GEM
@@ -114,9 +112,6 @@ GEM
       tzinfo (~> 0.3.37)
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
-    akami (1.2.1)
-      gyoku (>= 0.4.0)
-      nokogiri
     arel (4.0.2)
     asset_sync (1.0.0)
       activemodel
@@ -133,7 +128,7 @@ GEM
       bcrypt (>= 3.1.3)
     builder (3.1.4)
     cancan (1.6.10)
-    canonical-rails (0.0.5)
+    canonical-rails (0.0.7)
       rails (>= 3.1, < 5.0)
     capistrano (3.1.0)
       i18n
@@ -188,15 +183,11 @@ GEM
     formatador (0.2.4)
     friendly_id (5.0.3)
       activerecord (>= 4.0.0)
-    gyoku (0.4.6)
-      builder (>= 2.1.2)
     highline (1.6.21)
     hike (1.2.3)
     httparty (0.13.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpi (1.1.1)
-      rack
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -228,8 +219,6 @@ GEM
     net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    nori (1.1.5)
-    oj (2.5.5)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
@@ -272,21 +261,13 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    savon (1.2.0)
-      akami (~> 1.2.0)
-      builder (>= 2.1.2)
-      gyoku (~> 0.4.5)
-      httpi (~> 1.1.0)
-      nokogiri (>= 1.4.0)
-      nori (~> 1.1.0)
-      wasabi (~> 2.5.0)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
-    sprockets (2.12.0)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -326,9 +307,6 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
-    wasabi (2.5.1)
-      httpi (~> 1.0)
-      nokogiri (>= 1.4.0)
 
 PLATFORMS
   ruby
@@ -349,5 +327,6 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_gateway!
+  sprockets (= 2.11.0)
   turbolinks
   uglifier (>= 1.3.0)

@@ -1,6 +1,6 @@
 if defined?(AssetSync)
   AssetSync.configure do |config|
-    asset_sync = YAML.load(File.read(File.expand_path('../../asset_sync.yml', __FILE__)))
+    asset_sync = YAML.load(File.read(File.expand_path("#{Rails.root}/config/asset_sync.yml", __FILE__)))
     asset_sync.merge! asset_sync.fetch(Rails.env, {})
     asset_sync.symbolize_keys!
     config.fog_provider = 'AWS'
@@ -9,6 +9,7 @@ if defined?(AssetSync)
     # To use AWS reduced redundancy storage.
     # config.aws_reduced_redundancy = true
     config.fog_directory =asset_sync[:fog_directory]
+    config.enabled = asset_sync[:enabled]
 
     # Invalidate a file on a cdn after uploading files
     # config.cdn_distribution_id = "12345"

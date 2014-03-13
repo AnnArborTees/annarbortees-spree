@@ -54,3 +54,4 @@ group :development do
 end
 
 gem 'asset_sync'
+gem 'sprockets', '=2.11.0'
