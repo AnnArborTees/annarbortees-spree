@@ -286,7 +286,7 @@ GEM
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
-    sprockets (2.11.1)
+    sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
