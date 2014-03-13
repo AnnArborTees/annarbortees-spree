@@ -32,6 +32,10 @@ ShopAnnarborteesCom::Application.configure do
   # Generate digests for assets URLs.
   config.assets.digest = true
 
+  # serve assets on s3
+  config.assets.enabled = true
+  config.assets.initialize_on_precompile = true
+
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
@@ -56,6 +60,7 @@ ShopAnnarborteesCom::Application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"
+  #config.action_controller.asset_host = 'http://shop-annarbortees.s3.amazonaws.com'
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
