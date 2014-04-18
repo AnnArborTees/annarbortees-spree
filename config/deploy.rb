@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'annarbortees-spree'
-set :repo_url, 'git@github.com:slikstir/annarbortees-spree.git'
+set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
 set :rvm_ruby_version, '2.1.1'
 ""
 
