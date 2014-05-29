@@ -1,0 +1,221 @@
+
+
+
+/*
+/*  Product Images
+/****************************/
+
+
+
+#product_images_and_options{
+  background: image_url('michigan-golf-course.png') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+
+#carousel-product {
+  height: 400px;
+}
+
+#carousel-product img {
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+#carousel-product .item{
+  text-align: center;
+}
+
+#carousel-product .carousel-indicators li {
+  border-radius: 0;
+  border-width: 2px;
+}
+
+#carousel-product .carousel-control.left {
+  background-image: none;
+  background-image: none;
+  background-repeat: none;
+  filter: none;
+}
+#carousel-product .carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: none;
+  background-image: none;
+  background-repeat: none;
+  filter: none;
+}
+
+
+/*
+/*  Product Tabs
+/****************************/
+
+#variantTabs .tab-content a {
+  color: rgb(255,165,9);
+}
+
+#variantTabs .tab-content {
+  background: rgba(18,94,29,0.7);
+}
+
+.annarbortees .nav-tabs {
+  border-bottom: none;
+  text-transform: uppercase;
+}
+.annarbortees .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.annarbortees .nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: none;
+  border-radius: 0;
+  color: #000000;
+  background: rgba(255,165,9,0.7);
+}
+.annarbortees .nav-tabs > li > a:hover {
+  border: none;
+}
+.annarbortees .nav-tabs > li.active > a,
+.annarbortees .nav-tabs > li.active > a:hover,
+.annarbortees .nav-tabs > li.active > a:focus {
+  color: #FFFFFF;
+  background: rgba(18,94,29,0.7);
+  border-bottom: none;
+  cursor: default;
+}
+.annarbortees .nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: none;
+}
+.annarbortees .nav-tabs.nav-justified > li {
+  float: none;
+}
+.annarbortees .nav-tabs.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.annarbortees .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .annarbortees .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .annarbortees .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.annarbortees .nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 0;
+}
+.annarbortees .nav-tabs.nav-justified > .active > a,
+.annarbortees .nav-tabs.nav-justified > .active > a:hover,
+.annarbortees .nav-tabs.nav-justified > .active > a:focus {
+  border: none;
+}
+@media (min-width: 768px) {
+  .annarbortees .nav-tabs.nav-justified > li > a {
+    border-bottom: none;
+    border-radius: 0;
+  }
+  .annarbortees .nav-tabs.nav-justified > .active > a,
+  .annarbortees .nav-tabs.nav-justified > .active > a:hover,
+  .annarbortees .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom: none;
+  }
+}
+
+/*
+/*  Variant buttons
+/****************************/
+
+ul.variants {
+
+}
+
+
+ul.variants li {
+  list-style: none;
+  float: left;
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+ul.variants .btn {
+  width: 90%;
+  color: #fff;
+  padding: 0.3em inherit;
+  font-size: 1.7em;
+  border-radius: 0;
+  border: solid 3px rgba(255,165,9,1);
+  background: none;
+  box-shadow: none;
+}
+
+ul.variants .active {
+  color: #fff;
+  background-color: rgba(255,165,9,1);
+}
+
+#variantTabs .btn-group {
+  margin: 1em auto;
+}
+
+/*
+/*  Product Page
+/****************************/
+
+#product_description .product-title {
+  text-transform: uppercase;
+  color: #125e1d;
+  font-weight: bold;
+}
+
+
+/*
+/*  Social Media
+/****************************/
+#product_share_with_friends,
+#product_customer_photos{
+  margin: 1em auto;
+  background-color: #ededed;
+  padding: 1em;
+}
+
+
+#product_also_like h2 {
+  text-transform: uppercase;
+}
+
+#product_share_with_friends h2,
+#product_customer_photos h2{
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: solid 1px #000000;
+}
+
+#product_share_with_friends ul {
+  margin: 1em auto;
+  padding: 0;
+}
+
+#product_share_with_friends li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  width: 50%;
+}
+
+#product_share_with_friends i {
+  color: rgba(255,165,9,1);
+}
+

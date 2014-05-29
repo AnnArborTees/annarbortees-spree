@@ -1,0 +1,87 @@
+@import 'spree/frontend/variables';
+
+/*
+/*  Small Screens
+/****************************/
+
+@media (max-width: 767px) {
+  #large-nav { display: none; }
+  #small-nav { display: block; margin: 0; border: none; }
+  #small-nav .logo { text-align: center }
+  #small-nav .logo img { width: 90%; }
+  #small-nav .search {padding: inherit 10px;}
+  #variantTabs { margin: 5% 5% 5% 5%; }
+}
+
+
+/*
+/*  Big Screens
+/****************************/
+@media (min-width: 768px) {
+  body { margin-top: 90px;}
+  #large-nav { display: block; }
+  #small-nav { display: none; }
+  #variantTabs { margin: 15% 5% 5% 5%; }
+}
+
+/*
+/*  Header
+/****************************/
+
+.navbar-top { background-color: #cbeafc; }
+.navbar-bottom { background-color: #125e1d; }
+.search .input-group { margin: 2px inherit;}
+
+.search .input-group input { margin: 2px inherit; border-radius: 0; }
+.search .input-group button{ border: none; background: none; color: #125e1d; }
+.cart .badge{ background-color: #cc0000}
+
+/*
+/* large-nav where width > 768px
+/****************************/
+
+#large-nav img.logo { height: 50px; }
+#large-nav .help  a { color: #FFFFFF;}
+#large-nav .help { padding: 8px 15px; font-size: 1em; margin-bottom: 0; }
+
+
+/*
+/* small-nav where width < 768px
+/****************************/
+#small-nav .cart, #small-nav .help  { font-size: 1.2em; padding: 3px 0;}
+
+
+.annarbortees .breadcrumb {
+  padding: 8px 15px;
+  font-size: 1em;
+  margin-bottom: 0;
+  list-style: none;
+  background: none;
+  text-transform: uppercase;
+
+}
+
+
+.annarbortees .breadcrumb a { color: #FFFFFF;}
+
+.annarbortees .breadcrumb > li {
+  display: inline-block;
+}
+
+.annarbortees .breadcrumb > li + li:before {
+  content: ">";
+  padding: 0 5px;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+.breadcrumb > .active {
+  color: #c6da2d;
+}
+
+
+
+
+footer {
+  margin: 50px 0;
+}

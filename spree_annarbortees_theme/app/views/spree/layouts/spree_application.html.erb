@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Ann Arbor Tees</title>
+  <!--<title><%= title %></title>-->
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+  <meta charset="utf-8">
+
+
+  <%== meta_data_tags %>
+  <%= canonical_tag %>
+  <%= favicon_link_tag image_path('favicon.ico') %>
+  <%= stylesheet_link_tag 'spree/frontend/all', :media => 'screen' %>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag 'spree/frontend/all' %>
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+  <![endif]-->
+  <%= render "spree/shared/routes" %>
+  <%= render "spree/shared/frontend_routes" %>
+  <%= yield :head %>
+
+
+
+
+
+</head>
+
+<body class='annarbortees'>
+<nav  id="large-nav" class="navbar navbar-fixed-top" role="navigation">
+  <div class="container-fluid clearfix navbar-top">
+    <div class="container">
+      <div class="col-sm-5">
+        <%= image_tag 'logo.png', class: 'logo' %>
+      </div>
+
+      <div class="col-sm-6 search">
+        <form class="form-inline" role="form">
+          <div class="input-group">
+            <input type="search" class="form-control input-lg" id="exampleInputEmail2" placeholder="Enter Search Terms">
+                             <span class="input-group-btn">
+                                    <button class="btn btn-lg" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-sm-1 text-center cart">
+        <a href="#"><span class="fa fa-shopping-cart btn-30"></span><span class="badge" style="position: absolute; top: 5px; right: 0px;">3</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid navbar-bottom">
+    <div class="container">
+      <div class="col-sm-10">
+        <ol class="breadcrumb">
+          <li><a href="#">Ann Arbor Tees</a></li>
+          <li><a href="#">Michigan Shirt Store</a></li>
+          <li class="active">Ishpaming Tees</li>
+        </ol>
+      </div>
+      <div class="col-sm-2 text-right help">
+        <a href="#help">Help</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav  id="small-nav" class="navbar" role="navigation">
+  <div class="container-fluid clearfix navbar-top">
+    <div class="container">
+      <div class="row logo">
+        <%= image_tag 'logo.png' %>
+      </div>
+      <div class="search clearfix" class="row">
+        <form class="form-inline" role="form">
+          <div class="input-group">
+            <input type="search" class="form-control input-lg" id="exampleInputEmail2" placeholder="Enter Search Terms">
+                             <span class="input-group-btn">
+                                    <button class="btn btn-lg" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                             </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-xs-10 text-left cart">
+        <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart (1 Item)</a>
+      </div>
+
+      <div class="col-xs-2 text-right help">
+        <a href="#help">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid navbar-bottom">
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+          <li><a href="#">Ann Arbor Tees</a></li>
+          <li><a href="#">Michigan Shirt Store</a></li>
+          <li class="active">Ishpaming Tees</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</nav>
+<div id="product_images_and_options">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div id="carousel-product" class="carousel slide">
+
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-product" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-product" data-slide-to="1"></li>
+            <li data-target="#carousel-product" data-slide-to="2"></li>
+          </ol>
+
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <%= image_tag 'Burnt_Orange_Front.png' %>
+            </div>
+            <div class="item">
+              <%= image_tag 'Burnt_Orange_front2.png' %>
+            </div>
+            <div class="item">
+              <%= image_tag 'Burnt_Orange_front3.png' %>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-product" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-product" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <form>
+          <div id="variantTabs">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#standard">Standard</a></li>
+              <li><a href="#girly">Girly</a></li>
+              <li><a href="#unisex">Unisex</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active clearfix" id="standard">
+                <p class="clearfix text-right" style="margin: 0.5em 2.5em">
+                  <a href="#">Sizing Guide</a>
+                </p>
+                <ul class="variants">
+                  <li>
+                    <input class="btn btn-default" type="button" value="XS">
+                  </li>
+                  <li>
+                    <input class="btn btn-default" type="button" value="S">
+                  </li>
+                  <li>
+                    <input class="btn btn-default active" type="button" value="M">
+                  </li>
+                  <li>
+                    <input class="btn btn-default" type="button" value="L">
+                  </li>
+                  <li>
+                    <input class="btn btn-default" type="button" value="XL">
+                  </li>
+                  <li>
+                    <input class="btn btn-default" type="button" value="2XL">
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-pane clearfix" id="girly">Girly</div>
+              <div class="tab-pane clearfix" id="unisex">Unisex</div>
+
+              <div class="btn-group clearfix buy-button">
+                <button type="button" class="btn btn-default">BUY T-SHIRT</button>
+                <button type="button" class="btn btn-default">$19.99</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+      <div id="product_description">
+        <h1 class="product-title">I'm On A boat</h1>
+        <p class="lead section-lead">
+          Whether we are getting loaded on our way out to Jobbie Nooner, chasing suburban booty on jetskis,
+          or floating out to get primo seats for fireworks, St. Clair Shores has been on boats since before Andy
+          Samberg strapped on his first pair of floaties. Available in every SCS school color. Rock it with pride.
+        </p>
+      </div>
+
+      <div id="product_also_like">
+        <h2 class="section-heading">You May Also Like</h2>
+      </div>
+    </div>
+
+    <div class="col-sm-5">
+
+      <div id="product_share_with_friends">
+        <h2 class="section-heading">Share With Friends</h1>
+
+
+          <ul class="clearfix">
+            <li><i class="fa fa-pinterest-square fa-5x"></i><br />Pin It</li>
+            <li><i class="fa fa-tumblr-square fa-5x"></i><br />Tumble It</li>
+            <li><i class="fa fa-facebook-square fa-5x"></i><br />Like It</li>
+            <li><i class="fa fa-twitter-square fa-5x"></i><br />Tweet It</li>
+          </ul>
+      </div>
+
+      <div id="product_customer_photos">
+        <h2 class="section-heading">Customer Photos</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<div class="container">
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        Copyright &copy; Ann Arbor T-shirt Company LLC 2008-2014
+      </div>
+    </div>
+  </footer>
+</div>
+
+</div>
+<!-- /container -->
+
+
+</body>
+
+</html>
