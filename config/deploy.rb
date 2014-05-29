@@ -8,7 +8,7 @@ set :rvm_ruby_version, '2.1.1'
 
 
 # Default branch is :master
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 
