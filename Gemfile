@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.5'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -55,3 +55,5 @@ end
 
 gem 'asset_sync'
 gem 'sprockets', '=2.11.0'
+gem 'spree_multi_domain', github: 'annarbortees/spree-multi-domain', :branch => '2-2-stable'
+gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: '2-2-stable'
