@@ -96,6 +96,12 @@ GIT
     spree_gateway (2.2.1)
       spree_core (~> 2.2.0)
 
+PATH
+  remote: spree_annarbortees_theme
+  specs:
+    spree_annarbortees_theme (2.2.0)
+      spree_core (~> 2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -357,6 +363,7 @@ DEPENDENCIES
   sdoc
   spree!
   spree_amazon_fps!
+  spree_annarbortees_theme!
   spree_auth_devise!
   spree_gateway!
   spree_multi_domain!
