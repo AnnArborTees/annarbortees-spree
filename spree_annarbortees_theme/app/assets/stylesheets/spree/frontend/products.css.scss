@@ -1,13 +1,10 @@
-
-
+@import 'variables';
 
 /*
 /*  Product Images
 /****************************/
 
-
-
-#product_images_and_options{
+#product-images-and-options{
   background: image_url('michigan-golf-course.png') no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -53,11 +50,11 @@
 /****************************/
 
 #variantTabs .tab-content a {
-  color: rgb(255,165,9);
+  color: $orange-rgb;
 }
 
 #variantTabs .tab-content {
-  background: rgba(18,94,29,0.7);
+  background: $dark-green-rgb-70-opacity;
 }
 
 .annarbortees .nav-tabs {
@@ -66,7 +63,7 @@
 }
 .annarbortees .nav-tabs > li {
   float: left;
-  margin-bottom: -1px;
+  margin-bottom: 0px;
 }
 .annarbortees .nav-tabs > li > a {
   margin-right: 2px;
@@ -74,7 +71,7 @@
   border: none;
   border-radius: 0;
   color: #000000;
-  background: rgba(255,165,9,0.7);
+  background: $orange-rgb-70-opacity;
 }
 .annarbortees .nav-tabs > li > a:hover {
   border: none;
@@ -83,7 +80,7 @@
 .annarbortees .nav-tabs > li.active > a:hover,
 .annarbortees .nav-tabs > li.active > a:focus {
   color: #FFFFFF;
-  background: rgba(18,94,29,0.7);
+  background: $dark-green-rgb-70-opacity;
   border-bottom: none;
   cursor: default;
 }
@@ -154,14 +151,14 @@ ul.variants .btn {
   padding: 0.3em inherit;
   font-size: 1.7em;
   border-radius: 0;
-  border: solid 3px rgba(255,165,9,1);
+  border: solid 3px $orange-rgb;
   background: none;
   box-shadow: none;
 }
 
 ul.variants .active {
   color: #fff;
-  background-color: rgba(255,165,9,1);
+  background-color: $orange-rgb;
 }
 
 #variantTabs .btn-group {
@@ -185,7 +182,7 @@ ul.variants .active {
 #product_share_with_friends,
 #product_customer_photos{
   margin: 1em auto;
-  background-color: #ededed;
+  background-color: $light-grey;
   padding: 1em;
 }
 
@@ -200,7 +197,7 @@ ul.variants .active {
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: solid 1px #000000;
+  border-bottom: solid 1px $black;
 }
 
 #product_share_with_friends ul {
@@ -216,6 +213,6 @@ ul.variants .active {
 }
 
 #product_share_with_friends i {
-  color: rgba(255,165,9,1);
+  color: $orange-rgb;
 }
 

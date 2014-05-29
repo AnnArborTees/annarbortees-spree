@@ -1,0 +1,74 @@
+<nav  id="large-nav" class="navbar navbar-fixed-top" role="navigation">
+  <div class="container-fluid clearfix navbar-top">
+    <div class="container">
+      <div class="col-sm-5">
+        <%= link_to image_tag('logo.png', class: 'logo'), spree.root_path %>
+      </div>
+
+      <div class="col-sm-6 search">
+        <form class="form-inline" role="form">
+          <div class="input-group">
+            <input type="search" class="form-control input-lg" id="exampleInputEmail2" placeholder="Enter Search Terms">
+                             <span class="input-group-btn">
+                                    <button class="btn btn-lg" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-sm-1 text-center cart">
+        <%= link_to '/cart' do %><span class="fa fa-shopping-cart btn-30"></span><span class="badge">3</span><% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid navbar-bottom">
+    <div class="container">
+      <div class="col-sm-10">
+        <%= breadcrumbs(@taxon, @product) %>
+      </div>
+      <div class="col-sm-2 text-right help">
+        <a href="#help">Help</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav  id="small-nav" class="navbar" role="navigation">
+  <div class="container-fluid clearfix navbar-top">
+    <div class="container">
+      <div class="row logo">
+        <%= link_to image_tag('logo.png'), spree.root_path %>
+      </div>
+      <div class="search clearfix" class="row">
+        <form class="form-inline" role="form">
+          <div class="input-group">
+            <input type="search" class="form-control input-lg" id="exampleInputEmail2" placeholder="Enter Search Terms">
+                             <span class="input-group-btn">
+                                    <button class="btn btn-lg" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                             </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-xs-10 text-left cart">
+        <%= link_to '/cart' do %><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart (1 Item)<% end %>
+      </div>
+
+      <div class="col-xs-2 text-right help">
+        <a href="#help">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid navbar-bottom">
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+          <%= breadcrumbs(@taxon, @product) %>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</nav>

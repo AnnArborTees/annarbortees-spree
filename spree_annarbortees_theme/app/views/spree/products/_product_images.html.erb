@@ -1,0 +1,29 @@
+<div id="carousel-product" class="carousel slide">
+  <% if @product.images.empty? %>
+      <div class="item active">
+        <%= product_image(@product, :itemprop => "image") %>
+      </div>
+  <% else %>
+      <div class="carousel-inner">
+        <% @product.images.each_with_index do |image, index| %>
+            <div class="item <% if index == 0 %>active<% end %>">
+              <%= image_tag image.attachment.url(:product) %>
+            </div>
+        <% end %>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-product" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-product" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+      <ol class="carousel-indicators">
+        <% @product.images.each_index do | index | %>
+            <li data-target="#carousel-product" data-slide-to="<%= index %>" <% if index == 0 %> class="active"<% end %>></li>
+        <% end %>
+      </ol>
+
+  <% end %>
+</div>

@@ -1,0 +1,65 @@
+<div id="product-images-and-options" data-hook="product-images-and-options">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7" id="product-images" data-hook="product_images">
+        <%= render partial: 'spree/products/product_images' %>
+      </div>
+
+      <div class="col-sm-5">
+        <%= render partial: 'spree/products/cart_form.html.erb' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+      <div id="product_description">
+        <h1 class="product-title"><%= @product.name %></h1>
+        <p class="lead section-lead">
+          <%= @product.description %>
+        </p>
+      </div>
+
+      <div id="product_also_like">
+        <h2 class="section-heading">You May Also Like</h2>
+      </div>
+    </div>
+
+    <div class="col-sm-5">
+
+      <div id="product_share_with_friends">
+        <h2 class="section-heading">Share With Friends</h1>
+
+
+          <ul class="clearfix">
+            <li>
+              <%= link_to pinterest_link_url(request.original_url, @product.meta_description) do %>
+                <i class="fa fa-pinterest-square fa-5x"></i><br />Pin It
+              <% end %>
+            </li>
+            <li>
+              <%= link_to tumblr_link_url(request.original_url, @product.name, @product.meta_description) do %>
+                <i class="fa fa-tumblr-square fa-5x"></i><br />Tumble It
+              <% end %>
+            </li>
+           <li>
+              <%= link_to facebook_link_url(request.original_url) do %>
+                <i class="fa fa-facebook-square fa-5x"></i><br />Like It
+              <% end %>
+           </li>
+            <li>
+              <%= link_to twitter_link_url(request.original_url, @product.meta_description, "#{@product.sku},annarbortees") do %>
+                <i class="fa fa-twitter-square fa-5x"></i><br />Tweet It
+              <% end %>
+            </li>
+          </ul>
+      </div>
+
+      <div id="product_customer_photos">
+        <h2 class="section-heading">Customer Photos</h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -34,7 +34,8 @@
 
 .search .input-group input { margin: 2px inherit; border-radius: 0; }
 .search .input-group button{ border: none; background: none; color: #125e1d; }
-.cart .badge{ background-color: #cc0000}
+.cart .badge{ background-color: #cc0000;position: absolute; top: 5px; right: 0px;}
+.cart .fa-shopping-cart{ position: absolute; top: 0px; right: 0px;}
 
 /*
 /* large-nav where width > 768px
