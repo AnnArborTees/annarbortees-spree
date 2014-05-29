@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 7903d8e29f4c74f958d06befe68f776901afcbdd
+  revision: dde14a49a488ae7911d0108c3ce67ebeed71f6aa
   branch: 2-2-stable
   specs:
     spree (2.2.3.beta)
@@ -53,7 +53,7 @@ GIT
       deface (~> 1.0.0)
       ffaker (~> 1.16)
       font-awesome-rails (~> 4.0)
-      friendly_id (= 5.0.3)
+      friendly_id (~> 5.0.4)
       highline (~> 1.6.18)
       httparty (~> 0.11)
       json (~> 1.7)
@@ -195,7 +195,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
-    excon (0.33.0)
+    excon (0.34.0)
     execjs (2.1.0)
     ffaker (1.24.0)
     fog (1.22.0)
@@ -218,7 +218,7 @@ GEM
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
-    friendly_id (5.0.3)
+    friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     highline (1.6.21)
     hike (1.2.3)
