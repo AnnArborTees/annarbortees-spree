@@ -6,7 +6,7 @@ if defined?(AssetSync)
     # To use AWS reduced redundancy storage.
     # config.aws_reduced_redundancy = true
     config.fog_directory = Figaro.env['fog_directory']
-    config.enabled = Figaro.env['fog_enabled']
+    (config.enabled = false) if Rails.env.test?
 
     # Invalidate a file on a cdn after uploading files
     # config.cdn_distribution_id = "12345"
