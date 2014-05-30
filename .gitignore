@@ -20,3 +20,6 @@
 /.idea/
 /public/spree
 /public/assets
+
+# Ignore application configuration
+/config/application.yml

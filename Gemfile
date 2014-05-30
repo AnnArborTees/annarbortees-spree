@@ -41,6 +41,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'figaro'
+
 
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
