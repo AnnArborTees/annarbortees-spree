@@ -1,6 +1,22 @@
 @import 'variables';
 
 /*
+/*  Small Screens
+/****************************/
+
+@media (max-width: 767px) {
+  #variantTabs { margin: 5% 5% 5% 5%; }
+}
+
+
+/*
+/*  Big Screens
+/****************************/
+@media (min-width: 768px) {
+  #variantTabs { margin: 10px 5% 5% 10px; }
+}
+
+/*
 /*  Product Images
 /****************************/
 
@@ -22,6 +38,7 @@
 
 #carousel-product .item{
   text-align: center;
+  height: 400px;
 }
 
 #carousel-product .carousel-indicators li {
@@ -166,12 +183,29 @@ ul.variants .active {
 }
 
 /*
+/*  Buy Buttons
+/****************************/
+
+.buy-button input {
+  color: $black;
+  background-color: $orange-rgb;
+  font-size: 1.5em;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.buy-button input:hover {
+  color: $orange-rgb;
+}
+
+
+/*
 /*  Product Page
 /****************************/
 
 #product_description .product-title {
   text-transform: uppercase;
-  color: #125e1d;
+  color: $dark-green-rgb;
   font-weight: bold;
 }
 

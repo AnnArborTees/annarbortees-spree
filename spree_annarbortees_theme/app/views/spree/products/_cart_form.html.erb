@@ -26,7 +26,7 @@
       <% end %>
       <%= hidden_field_tag :variant_id, '' %>
       <%= hidden_field_tag :quantity, 1 %>
-      <div class="btn-group clearfix by-button" id="buy-button">
+      <div class="btn-group clearfix buy-button" id="buy-button">
         <%= f.submit 'BUY T-SHIRT', class: 'btn btn-default' %>
         <%= f.submit number_to_currency(@product.price), class: 'btn btn-default', id: 'variant-price' %>
       </div>
