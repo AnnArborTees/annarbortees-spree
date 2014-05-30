@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_annarbortees_theme'
   s.version     = '2.2.0'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
-  s.required_ruby_version = '>= 1.9.3'
+  s.summary     = 'Ann Arbor Tees Spree Theme'
+  s.description = 'Theming extension for Ann Arbor T-shirt co'
+  s.required_ruby_version = '>= 2.1.1'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = 'Ricky Winowiecki'
+  s.email     = 'ricky@annarbortees.com'
+  s.homepage  = 'http://www.annarbortees.com'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
