@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140529011870) do
+ActiveRecord::Schema.define(version: 20140530183439) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -51,6 +51,17 @@ ActiveRecord::Schema.define(version: 20140529011870) do
 
   add_index "spree_adjustments", ["adjustable_id"], name: "index_adjustments_on_order_id", using: :btree
   add_index "spree_adjustments", ["source_type", "source_id"], name: "index_spree_adjustments_on_source_type_and_source_id", using: :btree
+
+  create_table "spree_amazon_fps_checkouts", force: true do |t|
+    t.string   "transaction_id"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "customer_name"
+    t.string   "refund_transaction_id"
+    t.datetime "refunded_at"
+    t.integer  "payment_method_id"
+  end
 
   create_table "spree_assets", force: true do |t|
     t.integer  "viewable_id"
@@ -112,7 +123,12 @@ ActiveRecord::Schema.define(version: 20140529011870) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.integer  "user_id"
+    t.integer  "payment_method_id"
   end
+
+  add_index "spree_credit_cards", ["payment_method_id"], name: "index_spree_credit_cards_on_payment_method_id", using: :btree
+  add_index "spree_credit_cards", ["user_id"], name: "index_spree_credit_cards_on_user_id", using: :btree
 
   create_table "spree_gateways", force: true do |t|
     t.string   "type"
@@ -239,6 +255,7 @@ ActiveRecord::Schema.define(version: 20140529011870) do
 
   add_index "spree_orders", ["completed_at"], name: "index_spree_orders_on_completed_at", using: :btree
   add_index "spree_orders", ["number"], name: "index_spree_orders_on_number", using: :btree
+  add_index "spree_orders", ["user_id", "created_by_id"], name: "index_spree_orders_on_user_id_and_created_by_id", using: :btree
   add_index "spree_orders", ["user_id"], name: "index_spree_orders_on_user_id", using: :btree
 
   create_table "spree_orders_promotions", id: false, force: true do |t|
@@ -313,6 +330,16 @@ ActiveRecord::Schema.define(version: 20140529011870) do
     t.integer  "position"
     t.integer  "product_id"
     t.integer  "option_type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_product_packages", force: true do |t|
+    t.integer  "product_id",             null: false
+    t.integer  "length",     default: 0, null: false
+    t.integer  "width",      default: 0, null: false
+    t.integer  "height",     default: 0, null: false
+    t.integer  "weight",     default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
