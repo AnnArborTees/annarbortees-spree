@@ -6,10 +6,19 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-  # Example:
-  # Uncomment to override the default site name.
-  # config.site_name = "Spree Demo Site"
   config.allow_ssl_in_production = false
 end
+
+if !Rails.env.test?
+  Spree::Image.attachment_definitions[:attachment][:storage] = :s3
+  Spree::Image.attachment_definitions[:attachment][:bucket] = Figaro.env['aws_s3_bucket']
+  Spree::Image.attachment_definitions[:attachment][:s3_credentials] = {
+    access_key_id: Figaro.env['aws_access_key_id'],
+    secret_access_key: Figaro.env['aws_secret_access_key']
+  }
+  Spree::Image.attachment_definitions[:attachment][:path] = 'spree/products/:product_id_partition/:style/:basename.:extension'
+  Spree::Image.attachment_definitions[:attachment][:url] = 'spree/products/:product_id_partition/:style/:basename.:extension'
+end
+
 
 Spree.user_class = "Spree::User"
