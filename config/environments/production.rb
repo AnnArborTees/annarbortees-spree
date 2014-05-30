@@ -91,6 +91,7 @@ ShopAnnarborteesCom::Application.configure do
           access_key_id:  Figaro.env['aws_access_key_id'],
           secret_access_key: Figaro.env['aws_secret_access_key']
       },
-      s3_host_alias: "http://assets%d.annarbortees.com"
+      s3_host_alias: "http://assets0.annarbortees.com",
+      :path => "public/spree/:class/:attachment/:id_partition/:style/:basename.:extension"
   }
 end
