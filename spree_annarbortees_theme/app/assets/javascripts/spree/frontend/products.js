@@ -4,11 +4,29 @@ $( document).ready(function(){
         e.preventDefault()
         $(this).tab('show')
     });
+    /*
+    $("#carousel-product").swiperight(function() {
+        $("#carousel-product").carousel('prev');
+    });
+    $("#carousel-product").swipeleft(function() {
+        $("#carousel-product").carousel('next');
+    });
+    */
 
 
     function updatePrice(e){
         $('#variant-price').attr('value', ($(e).attr('data-price')));
     }
+
+    $('#variantTabs .btn-group input').hover(function(e) {
+            $(this).siblings().css( {
+                "background-color": "#ffffff",
+                "color": "#000000"
+            } );
+        }, function() {
+            $(this).siblings().removeAttr( 'style' );
+        }
+    );
 
     /*
         When loading the page or when changing a tab,
@@ -37,5 +55,18 @@ $( document).ready(function(){
     });
 
     initSelectedVariant();
+
+    /*
+     When loading the page, if the user is in a view less than 768, scroll down to product budy
+     */
+    function scrollToProductBody(){
+        if( $(window).width() < 767) {
+            $('html, body').animate({
+                scrollTop: $("#product-images-and-options").offset().top
+            }, 1);
+        }
+    }
+
+    scrollToProductBody();
 
 });

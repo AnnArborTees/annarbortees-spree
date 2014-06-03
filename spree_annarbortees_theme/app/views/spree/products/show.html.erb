@@ -18,7 +18,7 @@
       <div id="product_description">
         <h1 class="product-title"><%= @product.name %></h1>
         <p class="lead section-lead">
-          <%= @product.description %>
+          <%= @product.description.html_safe %>
         </p>
       </div>
 

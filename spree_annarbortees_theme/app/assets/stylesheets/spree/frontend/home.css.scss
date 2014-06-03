@@ -11,7 +11,7 @@
 }
 
 #carousel-homepage {
-  height: 300px;
+  height: 250px;
 }
 
 #taxon-nav-and-products {
@@ -25,41 +25,5 @@
   padding: 1em 1em 0 0;
 }
 
-#taxon-nav {
-  background-color: $light-grey;
-  padding: 0.3em 0.5em 0.5em 0.5em;
 
-  ul {
-    padding: 0;
-  }
-
-  .subtaxon {border: solid $orange-rgb 2px; background-color: $light-grey}
-
-  li {
-    list-style: none;
-    text-align: center;
-    margin: inherit auto;
-    text-transform: uppercase;
-  }
-
-  li.active {
-    background-color: $orange-rgb;
-    color: $white;
-  }
-
-  h4, h5 {
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  h4 {
-    color: $orange-rgb;
-    border-bottom: solid 1px $black;
-    padding: 0 0 0.5em 0;
-  }
-
-  h5 { font-size: 1.3em; }
-
-}
 

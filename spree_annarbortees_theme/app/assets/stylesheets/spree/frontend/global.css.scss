@@ -26,22 +26,19 @@
 /*  Header
 /****************************/
 
-.navbar-top { background-color: #cbeafc; }
-.navbar-bottom { background-color: #125e1d; }
+.navbar-top { background-color: $light-blue; }
+.navbar-bottom { background-color: $dark-green-rgb; }
 .search .input-group { margin: 2px inherit;}
 
-.search .input-group input { margin: 2px inherit; border-radius: 0; }
-.search .input-group button{ border: none; background: none; color: #125e1d; }
-.cart .badge{ background-color: #cc0000;position: absolute; top: 5px; right: 0px;}
-.cart .fa-shopping-cart{ position: absolute; top: 0px; right: 0px;}
-
-/*
-/* large-nav where width > 768px
-/****************************/
+.search .input-group input { margin: 2px inherit; border-radius: 0; border-color: $white; }
+.search .input-group input:focus { border-color: $dark-green-rgb; }
+.search .input-group button{ border: none; background: none; color: $dark-green-rgb; }
+.cart .badge{ background-color: $deep-red; position: absolute; top: 5px; right: 0px; font-size: 11px;}
+.cart .fa-shopping-cart{ color: $dark-green-rgb; position: absolute; top: 0px; right: 0px;}
 
 #large-nav img.logo { height: 50px; }
-#large-nav .help  a { color: #FFFFFF;}
-#large-nav .help { padding: 8px 15px; font-size: 1em; margin-bottom: 0; }
+#large-nav .help  a { color: $white;}
+#large-nav .help {text-transform: uppercase; padding: 8px 15px; font-size: 1em; margin-bottom: 0; }
 
 
 /*
@@ -70,16 +67,87 @@
 .annarbortees .breadcrumb > li + li:before {
   content: ">";
   padding: 0 5px;
-  color: #FFFFFF;
+  color: $white;
   font-weight: bolder;
 }
 
 .breadcrumb > .active {
-  color: #c6da2d;
+  color: $orange-rgb;
+}
+
+/*
+ *  Taxonomies Nav
+ */
+
+#taxonomies {
+  background-color: $light-grey;
+  padding: 0.3em 0.5em 0.5em 0.5em;
+
+  ul {
+    padding: 0;
+  }
+
+  .subtaxon {border: solid $orange-rgb 2px; background-color: $light-grey}
+
+  li {
+    list-style: none;
+    text-align: center;
+    margin: inherit auto;
+    text-transform: uppercase;
+  }
+
+  li.active {
+    background-color: $orange-rgb;
+    color: $white;
+  }
+
+  h4, h5 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  h4 {
+    color: $orange-rgb;
+    border-bottom: solid 1px $black;
+    padding: 0 0 0.5em 0;
+  }
+
+  h5 { font-size: 1.3em; }
 }
 
 
+/*
+ *  Product Images
+ */
 
+ul#products {
+  list-style: none;
+
+  .price {
+    position: absolute;
+    bottom: 35px;
+    right: 60px;
+    background-color: $orange-rgb;
+    color: $white;
+    width: 60px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.product-image {
+  max-width: 160px;
+  min-height: 250px;
+
+  background-image:
+    radial-gradient(
+        $dark-grey,
+        $light-grey
+    );
+}
 
 footer {
   margin: 50px 0;
