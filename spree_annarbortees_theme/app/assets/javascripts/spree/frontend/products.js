@@ -1,17 +1,19 @@
 $( document).ready(function(){
     $('#carousel-product').carousel();
+
     $('#variantTabs > .nav-tabs a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
     });
-    /*
+
     $("#carousel-product").swiperight(function() {
         $("#carousel-product").carousel('prev');
     });
+
     $("#carousel-product").swipeleft(function() {
         $("#carousel-product").carousel('next');
     });
-    */
+
 
 
     function updatePrice(e){

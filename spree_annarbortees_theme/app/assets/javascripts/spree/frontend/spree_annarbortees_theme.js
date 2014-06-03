@@ -3,5 +3,6 @@
 
 //= require bootstrap/bootstrap
 //= require holder
+//= require jquery
+//= require jquery-mobile
 //= require_tree .
-//= require jquery-mobile.min
