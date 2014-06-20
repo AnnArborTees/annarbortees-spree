@@ -5,7 +5,20 @@
 /****************************/
 
 @media (max-width: 767px) {
-  #variantTabs { margin: 10px;  }
+  #variantTabs { margin-top: 10px;}
+  #product-options { margin: 0; padding: 0;}
+  #product-images {
+    background: image_url('michigan-golf-course.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  #variantTabs .tab-content { background: $dark-green-rgb; }
+  .annarbortees .nav-tabs > li > a { background: $orange-rgb;}
+  .annarbortees .nav-tabs > li.active > a,
+  .annarbortees .nav-tabs > li.active > a:hover,
+  .annarbortees .nav-tabs > li.active > a:focus {  background: $dark-green-rgb; }
+  .annarbortees .nav-tabs > li { float: none; display: inline-block;}
 }
 
 
@@ -14,6 +27,19 @@
 /****************************/
 @media (min-width: 768px) {
   #variantTabs { margin: 10px; }
+
+  #product-images-and-options{
+    background: image_url('michigan-golf-course.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  #variantTabs .tab-content { background: $dark-green-rgb-70-opacity; }
+  .annarbortees .nav-tabs > li > a { background: $orange-rgb-70-opacity;}
+  .annarbortees .nav-tabs > li.active > a,
+  .annarbortees .nav-tabs > li.active > a:hover,
+  .annarbortees .nav-tabs > li.active > a:focus {  background: $dark-green-rgb-70-opacity; }
+  .annarbortees .nav-tabs > li { float: left;}
 }
 
 /*
@@ -21,8 +47,6 @@
 /****************************/
 
 #product-images-and-options{
-  background: image_url('michigan-golf-course.png') no-repeat center center;
-  background-size: cover;
   text-align: center;
 }
 
@@ -71,7 +95,6 @@
 }
 
 #variantTabs .tab-content {
-  background: $dark-green-rgb-70-opacity;
 }
 
 .annarbortees .nav-tabs {
@@ -79,8 +102,8 @@
   text-transform: uppercase;
 }
 .annarbortees .nav-tabs > li {
-  float: left;
   margin-bottom: 0px;
+  font-weight: 200;
 }
 .annarbortees .nav-tabs > li > a {
   margin-right: 2px;
@@ -88,7 +111,6 @@
   border: none;
   border-radius: 0;
   color: #000000;
-  background: $orange-rgb-70-opacity;
 }
 .annarbortees .nav-tabs > li > a:hover {
   border: none;
@@ -97,7 +119,6 @@
 .annarbortees .nav-tabs > li.active > a:hover,
 .annarbortees .nav-tabs > li.active > a:focus {
   color: #FFFFFF;
-  background: $dark-green-rgb-70-opacity;
   border-bottom: none;
   cursor: default;
 }
@@ -167,7 +188,7 @@ ul.variants .btn {
   width: 65px;
   height: 65px;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 5px 0 5px;
 
   color: #fff;
   font-size: 24px;
@@ -262,6 +283,11 @@ ul.variants .active {
 }
 
 #product_share_with_friends i {
-  color: $orange-rgb;
+  font-size: 60px;
+  color: $light-grey;
+  background-color: $orange-rgb;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
 }
 

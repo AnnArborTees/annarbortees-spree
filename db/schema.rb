@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140530183439) do
+ActiveRecord::Schema.define(version: 20140604205301) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -678,6 +678,7 @@ ActiveRecord::Schema.define(version: 20140530183439) do
     t.string   "email"
     t.string   "logo_file_name"
     t.string   "default_currency"
+    t.integer  "url_index"
   end
 
   create_table "spree_tax_categories", force: true do |t|

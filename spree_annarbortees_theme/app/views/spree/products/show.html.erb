@@ -5,7 +5,7 @@
         <%= render partial: 'spree/products/product_images' %>
       </div>
 
-      <div class="col-sm-5">
+      <div class="col-sm-5" id="product-options" data-hook="product_options">
         <%= render partial: 'spree/products/cart_form.html.erb' %>
       </div>
     </div>
@@ -36,22 +36,22 @@
           <ul class="clearfix">
             <li>
               <%= link_to pinterest_link_url(request.original_url, @product.meta_description), target: '_blank' do %>
-                <i class="fa fa-pinterest-square fa-5x"></i><br />Pin It
+                <i class="fa fa-pinterest fa-5x"></i><br />Pin It
               <% end %>
             </li>
             <li>
               <%= link_to tumblr_link_url(request.original_url, @product.name, @product.meta_description), target: '_blank' do %>
-                <i class="fa fa-tumblr-square fa-5x"></i><br />Tumble It
+                <i class="fa fa-tumblr fa-5x"></i><br />Tumble It
               <% end %>
             </li>
            <li>
               <%= link_to facebook_link_url(request.original_url), target: '_blank' do %>
-                <i class="fa fa-facebook-square fa-5x"></i><br />Like It
+                <i class="fa fa-facebook fa-5x"></i><br />Like It
               <% end %>
            </li>
             <li>
               <%= link_to twitter_link_url(request.original_url, @product.meta_description, "#{@product.sku},annarbortees"), target: '_blank' do %>
-                <i class="fa fa-twitter-square fa-5x"></i><br />Tweet It
+                <i class="fa fa-twitter fa-5x"></i><br />Tweet It
               <% end %>
             </li>
           </ul>

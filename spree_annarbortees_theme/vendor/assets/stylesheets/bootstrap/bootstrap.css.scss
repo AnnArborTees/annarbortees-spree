@@ -1,4 +1,26 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+  font-family: 'Generic';
+  src: font_url('generic-Regular.eot?v=4.0.3');
+  src: font_url('generic-Regular.eot?#iefix&v=4.0.3') format('embedded-opentype'), font_url('generic-Regular.woff?v=4.0.3') format('woff'), font_url('generic-Regular.ttf?v=4.0.3') format('truetype'), font_url('generic-Regular.svg?v=4.0.3#genericregular') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Generic';
+  src: font_url('generic-Medium.eot?v=4.0.3');
+  src: font_url('generic-Medium.eot?#iefix&v=4.0.3') format('embedded-opentype'), font_url('generic-Medium.woff?v=4.0.3') format('woff'), font_url('generic-Medium.ttf?v=4.0.3') format('truetype'), font_url('generic-Medium.svg?v=4.0.3#genericmedium') format('svg');
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Generic';
+  src: font_url('generic-Bold.eot?v=4.0.3');
+  src: font_url('generic-Bold.eot?#iefix&v=4.0.3') format('embedded-opentype'), font_url('generic-Bold.woff?v=4.0.3') format('woff'), font_url('generic-Bold.ttf?v=4.0.3') format('truetype'), font_url('generic-Bold.svg?v=4.0.3#genericbold') format('svg');
+  font-weight: 700;
+  font-style: bolder;
+}
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
@@ -256,7 +278,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Generic', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -338,7 +360,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Generic', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;

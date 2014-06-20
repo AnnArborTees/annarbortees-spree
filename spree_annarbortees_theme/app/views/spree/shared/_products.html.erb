@@ -19,7 +19,7 @@
     <ul id="products" class="inline product-listing" data-hook>
       <% products.each do |product| %>
           <% url = product_url(product, :taxon_id => @taxon.try(:id)) %>
-          <li id="product_<%= product.id %>" class="col-lg-3 col-md-3 col-sm-3 col-xs-6" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+          <li id="product_<%= product.id %>" class="" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
             <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
                 <div class="product-image">
                   <%= link_to small_image(product, :itemprop => "image"), url, :itemprop => 'url' %>

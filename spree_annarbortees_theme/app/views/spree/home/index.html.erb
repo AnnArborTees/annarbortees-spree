@@ -40,7 +40,7 @@
 </div>
 
 <div id="taxon-nav-and-products" class="container">
-  <div id="homepage-left-column" class="col-md-2">
+  <div id="homepage-left-column" class="col-md-2 taxonomies-top">
         <%= render :partial => 'spree/shared/taxonomies' %>
   </div>
 
@@ -51,6 +51,12 @@
       <% end %>
     </div>
   </div>
+
+  <div id="homepage-left-column" class="col-md-2 taxonomies-bottom">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
+
+
 </div>
 
 
