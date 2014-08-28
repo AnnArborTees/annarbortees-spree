@@ -61,3 +61,4 @@ gem 'spree_multi_domain', github: 'annarbortees/spree-multi-domain', :branch => 
 gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: '2-2-stable'
 gem 'spree_annarbortees_theme', path: 'spree_annarbortees_theme'
 gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: '2-2-stable'
+gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-2-stable'

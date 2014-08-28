@@ -11,3 +11,4 @@
 
 //= require_tree .
 //= require spree/backend/spree_multi_domain
+//= require spree/backend/spree_paypal_express

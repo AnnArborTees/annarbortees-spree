@@ -10,3 +10,4 @@
 //= require spree/frontend/spree_annarbortees_theme
 //= require spree/frontend
 //= require_tree .
+//= require spree/frontend/spree_paypal_express
