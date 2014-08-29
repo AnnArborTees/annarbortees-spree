@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140828181643) do
+ActiveRecord::Schema.define(version: 20140828200444) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -380,10 +380,12 @@ ActiveRecord::Schema.define(version: 20140828181643) do
     t.integer  "shipping_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "layout"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
   add_index "spree_products", ["deleted_at"], name: "index_spree_products_on_deleted_at", using: :btree
+  add_index "spree_products", ["layout"], name: "index_spree_products_on_layout", using: :btree
   add_index "spree_products", ["name"], name: "index_spree_products_on_name", using: :btree
   add_index "spree_products", ["slug"], name: "index_spree_products_on_slug", using: :btree
   add_index "spree_products", ["slug"], name: "permalink_idx_unique", unique: true, using: :btree

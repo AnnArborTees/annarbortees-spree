@@ -1,10 +1,12 @@
 Spree::ProductsController.class_eval do
-  before_filter :set_styles, only: :show
+  before_filter :load_option_data, only: :show
 
   private
 
-  def set_styles
-      @styles = @product.option_values_for_option_type(Spree::OptionType.find_by(name: 'apparel-style'))
+  def load_option_data
+      if @product.layout == 'imprinted_apparel'
+        @styles = @product.option_values_for_option_type(Spree::OptionType.find_by(name: 'apparel-style'))
+      end
   end
 
 end

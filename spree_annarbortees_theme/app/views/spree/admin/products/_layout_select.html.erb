@@ -1,0 +1,7 @@
+<div data-hook="admin_product_form_layout">
+  <%= f.field_container :layout do %>
+      <%= f.label :layout, Spree.t(:layout) %>
+      <%= f.select(:layout, @layouts, {}, { :class => 'select2' }) %>
+      <%= f.error_message_on :layout %>
+  <% end %>
+</div>

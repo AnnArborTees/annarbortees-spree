@@ -1,0 +1,21 @@
+<%= form_for :order, :url => populate_orders_path do |f| %>
+    <div id="variantTabs">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#product-options">Options</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane clearfix active" id="product-options">
+          Variants Here
+        </div>
+        <%= hidden_field_tag :variant_id, '' %>
+        <%= hidden_field_tag :quantity, 1 %>
+        <div class="btn-group clearfix buy-button" id="buy-button">
+          <%= f.submit 'BUY', class: 'btn btn-default' %>
+          <%= f.submit number_to_currency(@product.price), class: 'btn btn-default', id: 'variant-price' %>
+        </div>
+      </div>
+    </div>
+<% end %>
