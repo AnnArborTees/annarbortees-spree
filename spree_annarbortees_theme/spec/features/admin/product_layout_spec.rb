@@ -1,25 +1,30 @@
 require 'spec_helper'
 
-feature 'ProductLayout' do
+feature 'Admin::ProductLayout' do
   stub_authorization!
 
-  context 'as an admin with valid credentials, I can ', admin: true, pending: false do
+  context 'as an admin with valid credentials, I can ', admin: true, pending: false  do
 
-    let!(:shipping_category) {create(:shipping_category, name: 'Default')}
+    let!(:product) { create(:base_product) }
 
-    let!(:product_in_test)  {
-      create(:product_in_test,
-             shipping_category: shipping_category
-      )
-    }
+    before(:each) do
+      option_types = %w(apparel-style apparel-size)
+      option_types.each do |option|
+        ot = Spree::OptionType.create!(name: option, presentation: option)
+        product.option_types << ot
+      end
+
+      variant = Spree::Variant.create!(product_id: product.id, sku: 'TEST-SKU')
+      option_types.each { |option| variant.set_option_value(option, option) }
+    end
 
     scenario 'assign a layout to a product', js: false, wip: false do
-      visit admin_product_path(product_in_test)
+      visit spree.admin_product_path(product)
       within '[data-hook="admin_product_form_right"]' do
         select 'Imprinted Apparel', from: 'Layout'
       end
       click_button 'Update'
-      expect(product_in_test.reload.layout).to eq('imprinted_apparel')
+      expect(product.reload.layout).to eq('imprinted_apparel')
     end
   end
 

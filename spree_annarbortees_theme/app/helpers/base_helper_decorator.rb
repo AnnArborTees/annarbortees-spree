@@ -2,18 +2,22 @@ require 'uri'
 
 Spree::BaseHelper.class_eval do
   def pinterest_link_url(url, description)
+    url =  url || ''; description = description || ''
     "http://pinterest.com/pin/create/button/?url=#{URI.encode(url)}&description=#{URI.encode(description)}"
   end
 
   def facebook_link_url(url)
+    url =  url || ''
     "https://www.facebook.com/sharer/sharer.php?#{URI.encode(url)}"
   end
 
   def twitter_link_url(url, text, hashtag)
+    url =  url || ''; text = text || ''; hashtag = hashtag || ''
     "https://twitter.com/intent/tweet?hashtags=#{URI.encode(hashtag)}&text=#{URI.encode(text)}&url=#{URI.encode(url)}"
   end
 
   def tumblr_link_url(url, name, description)
+    url =  url || ''; name = name || ''; description = description || ''
     "http://www.tumblr.com/share/link?url=#{URI.encode(url)}&name=#{URI.encode(name)}&description=#{URI.encode(description)}"
   end
 

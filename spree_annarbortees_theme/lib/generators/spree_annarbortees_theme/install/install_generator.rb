@@ -6,10 +6,13 @@ module SpreeAnnarborteesTheme
 
       def add_javascripts
         append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require spree/frontend/spree_annarbortees_theme\n"
+        append_file 'vendor/assets/javascripts/spree/backend/all.js', "//= require spree/backend/spree_annarbortees_theme\n"
       end
 
       def add_stylesheets
         inject_into_file 'vendor/assets/stylesheets/spree/frontend/all.css', " *= require spree/frontend/spree_annarbortees_theme\n", :before => /\*\//, :verbose => true
+        inject_into_file 'vendor/assets/stylesheets/spree/backend/all.css', " *= require spree/backend/spree_annarbortees_theme\n", :before => /\*\//, :verbose => true
+
       end
 
       def add_migrations

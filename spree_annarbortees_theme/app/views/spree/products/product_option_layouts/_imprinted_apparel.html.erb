@@ -10,7 +10,7 @@
         <% end %>
       </ul>
 
-      <div class="tab-content">
+      <div class="tab-content imprinted-product-layout">
         <%@styles.each_with_index do |option_value, index| %>
             <div class="tab-pane clearfix  <% if index == 0 %>active<% end %>" id="<%= option_value.presentation.gsub(' ', '-')%>">
               <p class="clearfix text-right" style="margin: 0.5em 2.5em">

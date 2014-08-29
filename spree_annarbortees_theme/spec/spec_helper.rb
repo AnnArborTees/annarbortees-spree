@@ -1,5 +1,6 @@
 # Run Coverage report
 require 'simplecov'
+
 SimpleCov.start do
   add_filter 'spec/dummy'
   add_group 'Controllers', 'app/controllers'
@@ -28,6 +29,7 @@ require 'spree/testing_support/factories'
 require 'spree/testing_support/controller_requests'
 require 'spree/testing_support/authorization_helpers'
 require 'spree/testing_support/url_helpers'
+require 'spree_multi_domain/factories'
 
 # Requires factories defined in lib/spree_annarbortees_theme/factories.rb
 require 'spree_annarbortees_theme/factories'
