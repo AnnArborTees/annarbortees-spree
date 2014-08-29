@@ -22,6 +22,7 @@
                       <input id="<%= variant.id %>" class="btn btn-default variant-button" type="button" value="<%= variant.option_value('apparel-size') %>" data-price="<%= Spree::Money.new(variant.price, currency: current_currency, with_currency: false).to_s %>" >
                     </li>
                 <% end %>
+              </ul>
             </div>
         <% end %>
         <%= hidden_field_tag :variant_id, '' %>
