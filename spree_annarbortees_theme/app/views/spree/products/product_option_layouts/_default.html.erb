@@ -8,7 +8,13 @@
 
       <div class="tab-content default-product-layout">
         <div class="tab-pane clearfix active" id="product-options">
-          Variants Here
+          <ul class="variants full-width">
+            <% @product.variants.each do |variant| %>
+                <li>
+                  <input id="<%= variant.id %>" class="btn btn-default variant-button" type="button" value="<%= variant_options variant %>" data-price="<%= Spree::Money.new(variant.price, currency: current_currency, with_currency: false).to_s %>" >
+                </li>
+            <% end %>
+          </ul>
         </div>
         <%= hidden_field_tag :variant_id, '' %>
         <%= hidden_field_tag :quantity, 1 %>
