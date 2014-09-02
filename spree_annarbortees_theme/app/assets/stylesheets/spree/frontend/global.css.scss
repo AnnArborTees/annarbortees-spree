@@ -1,36 +1,27 @@
 @import 'spree/frontend/variables';
+@import 'spree/frontend/xxs_media';
+
 
 /*
 /*  Small Screens
 /****************************/
 
-@media (max-width: 767px) {
+@media (max-width: $screen-sm-max) {
   #large-nav { display: none; }
   #small-nav { display: block; margin: 0; border: none; }
   #small-nav .logo { text-align: center }
   #small-nav .logo img { width: 400px; }
   #small-nav .search {padding: inherit 10px;}
-  .taxonomies-top {  display: none;}
-  .taxonomies-bottom { display: block;}
-  .product-image { width: 200px;}
-}
-
-@media (max-width: 400px) {
-  #small-nav .logo { text-align: center }
-  #small-nav .logo img { width: 300px; }
 }
 
 
 /*
 /*  Big Screens
 /****************************/
-@media (min-width: 768px) {
+@media (min-width:  $screen-md-min) {
   body { margin-top: 86px;}
   #large-nav { display: block; }
   #small-nav { display: none; }
-  .taxonomies-top { display: block;}
-  .taxonomies-bottom { display: none;}
-  .product-image { width: 220px;}
 }
 
 /*
@@ -67,7 +58,6 @@
 
 }
 
-
 .annarbortees .breadcrumb a { color: #FFFFFF;}
 
 .annarbortees .breadcrumb > li {
@@ -85,8 +75,12 @@
   color: $orange-rgb;
 }
 
+footer {
+  margin: 50px 0;
+}
+
 /*
- *  Taxonomies Nav
+ *  Taxonomies
  */
 
 #taxonomies {
@@ -103,7 +97,6 @@
   li {
     list-style: none;
     text-align: center;
-    margin: inherit auto;
     text-transform: uppercase;
   }
 
@@ -127,10 +120,35 @@
   h5 { font-size: 1.3em; }
 }
 
+/*
+/* Products List
+/****************************/
+
+@media (max-width: $screen-xxs-max) {
+
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+  .imprinted_apparel {
+
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+}
+@media (min-width: $screen-lg-min) {
+
+}
+
 
 /*
- *  Product Images
- */
+/* Products List (All Sizes)
+/****************************/
 
 ul#products {
   list-style: none;
@@ -140,9 +158,12 @@ ul#products {
 
   li {
     display: inline-block;
-    margin: 10px;
+    margin: 5px auto;
+
+    img{ width: 98%;}
   }
 
+  /*
   .price {
     background-color: $orange-rgb;
     color: $white;
@@ -151,22 +172,5 @@ ul#products {
     padding: 0;
     margin: 0;
     text-align: center;
-  }
-}
-
-.product-image {
-  background-color: $creme-grey;
-
-  img {
-    /* width: 239px;
-    height: 300px; */
-    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-
-  }
-}
-
-footer {
-  margin: 50px 0;
+  } */
 }
