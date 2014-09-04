@@ -95,6 +95,16 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
+  remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
+  revision: c24c52054af14e7b843dfc4b5965b6ba19bbca07
+  specs:
+    spree_mockbot_integration (2.2.0)
+      activeresource
+      activeresource-response
+      figaro
+      spree_core (~> 2.2.0)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: f86f2425b7385051aab9030b575994bf116fd16b
   branch: 2-2-stable
@@ -162,6 +172,12 @@ GEM
       activesupport (= 4.0.8)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
+    activeresource (4.0.0)
+      activemodel (~> 4.0)
+      activesupport (~> 4.0)
+      rails-observers (~> 0.1.1)
+    activeresource-response (1.1.1)
+      activeresource (>= 3, < 5)
     activesupport (4.0.8)
       i18n (~> 0.6, >= 0.6.9)
       minitest (~> 4.2)
@@ -326,6 +342,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.8)
       sprockets-rails (~> 2.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
     railties (4.0.8)
       actionpack (= 4.0.8)
       activesupport (= 4.0.8)
@@ -414,6 +432,7 @@ DEPENDENCIES
   spree_annarbortees_theme!
   spree_auth_devise!
   spree_gateway!
+  spree_mockbot_integration!
   spree_multi_domain!
   spree_paypal_express!
   sprockets (= 2.11.0)
