@@ -96,7 +96,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 9808462ec9d69a6671077523488764444ead4601
+  revision: 065a5e733e43fd37245a4a8d1b023d963c96acc0
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
