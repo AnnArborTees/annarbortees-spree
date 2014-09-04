@@ -12,3 +12,4 @@
 //= require_tree .
 //= require spree/backend/spree_multi_domain
 //= require spree/backend/spree_paypal_express
+//= require spree/backend/spree_mockbot_integration

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140828200444) do
+ActiveRecord::Schema.define(version: 20140904065826) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -62,6 +62,16 @@ ActiveRecord::Schema.define(version: 20140828200444) do
     t.datetime "refunded_at"
     t.integer  "payment_method_id"
   end
+
+  create_table "spree_api_settings", force: true do |t|
+    t.string "type"
+    t.string "homepage"
+    t.string "api_endpoint"
+    t.string "auth_email"
+    t.string "auth_token"
+  end
+
+  add_index "spree_api_settings", ["type"], name: "index_spree_api_settings_on_type", unique: true, using: :btree
 
   create_table "spree_assets", force: true do |t|
     t.integer  "viewable_id"
@@ -183,6 +193,18 @@ ActiveRecord::Schema.define(version: 20140828200444) do
     t.integer  "source_id"
     t.string   "source_type"
     t.text     "details"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_mockbot_publisher_steps", force: true do |t|
+    t.string  "name"
+    t.integer "publisher_id"
+  end
+
+  create_table "spree_mockbot_publishers", force: true do |t|
+    t.string   "idea_sku"
+    t.string   "current_step"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -369,7 +391,7 @@ ActiveRecord::Schema.define(version: 20140828200444) do
   add_index "spree_product_properties", ["product_id"], name: "index_product_properties_on_product_id", using: :btree
 
   create_table "spree_products", force: true do |t|
-    t.string   "name",                 default: "", null: false
+    t.string   "name",                 default: "",        null: false
     t.text     "description"
     t.datetime "available_on"
     t.datetime "deleted_at"
@@ -380,7 +402,7 @@ ActiveRecord::Schema.define(version: 20140828200444) do
     t.integer  "shipping_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "layout"
+    t.string   "layout",               default: "default", null: false
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
@@ -769,6 +791,14 @@ ActiveRecord::Schema.define(version: 20140828200444) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "store_id"
+  end
+
+  create_table "spree_updates", force: true do |t|
+    t.integer  "updatable_id"
+    t.string   "updatable_type"
+    t.string   "info"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "spree_users", force: true do |t|

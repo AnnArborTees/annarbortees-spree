@@ -11,3 +11,4 @@
 //= require spree/frontend
 //= require_tree .
 //= require spree/frontend/spree_paypal_express
+//= require spree/frontend/spree_mockbot_integration
