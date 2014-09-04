@@ -4,13 +4,13 @@ lock '3.1.0'
 set :application, 'annarbortees-spree'
 set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
 set :rvm_ruby_version, '2.1.1'
-""
 
 
 # Default branch is :master
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
+
 
 # Default value for :format is :pretty
 # set :format, :pretty
@@ -29,6 +29,8 @@ set :linked_files, %w{config/database.yml config/application.yml}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
+# set :default_env, { 'GITHUB_OAUTH_KEY' => "a68393f6398b9b5a25b190a2e4641a565a59fd5f" }
+set :default_env, { 'GITHUB_OAUTH_KEY' => ENV['GITHUB_OAUTH_KEY'] }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
