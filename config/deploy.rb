@@ -29,7 +29,6 @@ set :linked_files, %w{config/database.yml config/application.yml}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-# set :default_env, { 'GITHUB_OAUTH_KEY' => "a68393f6398b9b5a25b190a2e4641a565a59fd5f" }
 set :default_env, { 'GITHUB_OAUTH_KEY' => ENV['GITHUB_OAUTH_KEY'] }
 
 # Default value for keep_releases is 5
