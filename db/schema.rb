@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140904065826) do
+ActiveRecord::Schema.define(version: 20140907213208) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -323,7 +323,6 @@ ActiveRecord::Schema.define(version: 20140904065826) do
     t.string   "identifier"
     t.string   "cvv_response_code"
     t.string   "cvv_response_message"
-    t.decimal  "uncaptured_amount",    precision: 10, scale: 2, default: 0.0
   end
 
   add_index "spree_payments", ["order_id"], name: "index_spree_payments_on_order_id", using: :btree
@@ -444,11 +443,13 @@ ActiveRecord::Schema.define(version: 20140904065826) do
   end
 
   create_table "spree_promotion_actions", force: true do |t|
-    t.integer "promotion_id"
-    t.integer "position"
-    t.string  "type"
+    t.integer  "promotion_id"
+    t.integer  "position"
+    t.string   "type"
+    t.datetime "deleted_at"
   end
 
+  add_index "spree_promotion_actions", ["deleted_at"], name: "index_spree_promotion_actions_on_deleted_at", using: :btree
   add_index "spree_promotion_actions", ["id", "type"], name: "index_spree_promotion_actions_on_id_and_type", using: :btree
   add_index "spree_promotion_actions", ["promotion_id"], name: "index_spree_promotion_actions_on_promotion_id", using: :btree
 
@@ -539,7 +540,7 @@ ActiveRecord::Schema.define(version: 20140904065826) do
   create_table "spree_shipments", force: true do |t|
     t.string   "tracking"
     t.string   "number"
-    t.decimal  "cost",                 precision: 8,  scale: 2
+    t.decimal  "cost",                 precision: 10, scale: 2, default: 0.0
     t.datetime "shipped_at"
     t.integer  "order_id"
     t.integer  "address_id"
