@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: bde40da16db8aed1157988938f61bca9e450b293
+  revision: 7ffc7d7083fba808f05e7b0a24b8b1e2079159b4
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -231,9 +231,10 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorize (0.7.3)
-    deface (1.0.0)
+    deface (1.0.1)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
+      polyglot
       rails (>= 3.1)
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -304,10 +305,10 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.6.0)
     minitest (4.7.5)
-    monetize (0.3.0)
-      money (~> 6.1.0.beta1)
-    money (6.1.1)
-      i18n (~> 0.6.4)
+    monetize (0.4.1)
+      money (~> 6.2.1)
+    money (6.2.1)
+      i18n (>= 0.6.4, <= 0.7.0.dev)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     mysql2 (0.3.16)
