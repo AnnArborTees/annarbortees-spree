@@ -1,4 +1,6 @@
 en:
   spree:
     promo_rate: Promotional Rate
-
+    units: Units (imperial or metric)
+    unit_multiplier: Unit Multiplier (1 if weights in oz, 16 if weights in lbs)
+    handling_fee: Handling Fee (In cents, thus 100 = $1.00

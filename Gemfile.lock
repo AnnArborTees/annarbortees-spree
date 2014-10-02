@@ -98,11 +98,11 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_active_shipping.git
-  revision: 1d1b47f68e3b2dc54181daff41ee501534102a12
+  revision: 405f08d5b5638b2c7b6aeb5882d56500791c250b
   branch: 2-2-stable
   specs:
     spree_active_shipping (2.2.0)
-      active_shipping (~> 0.11.0)
+      active_shipping (~> 0.12.0)
       spree_core (~> 2.2.0)
 
 GIT
@@ -150,8 +150,8 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    active_shipping (0.11.2)
-      active_utils (>= 1.0.1)
+    active_shipping (0.12.4)
+      active_utils (~> 2.2.0)
       activesupport (>= 2.3.5)
       builder
       i18n
