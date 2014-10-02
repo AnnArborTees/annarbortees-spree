@@ -20,16 +20,8 @@ if !Rails.env.test?
   Spree::Image.attachment_definitions[:attachment][:url] = 'spree/products/:product_id_partition/:style/:basename.:extension'
 end
 
-=begin
-TODO: Get UPS and USPS shipping keys
-Spree::ActiveShipping::Config[:origin_country] = 'United States of America'
-Spree::ActiveShipping::Config[:origin_city] = 'Ann Arbor'
-Spree::ActiveShipping::Config[:origin_state] = 'MI'
-Spree::ActiveShipping::Config[:origin_zip] = '48104'
-#Spree::ActiveShipping::Config[:ups_login] =
-#Spree::ActiveShipping::Config[:ups_password] =
-#Spree::ActiveShipping::Config[:ups_key]
-Spree::ActiveShipping::Config[:usps_login] =
-=end
-
 Spree.user_class = "Spree::User"
+
+config = Rails.application.config
+config.spree.calculators.shipping_methods << Spree::Calculator::Shipping::PromoRate
+
