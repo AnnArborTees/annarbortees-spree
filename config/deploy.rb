@@ -4,11 +4,6 @@ lock '3.1.0'
 set :application, 'annarbortees-spree'
 set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
 set :rvm_ruby_version, '2.1.1'
-
-
-# Default branch is :master
-ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
-
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 
 

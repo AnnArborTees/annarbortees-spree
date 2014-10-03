@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140907213208) do
+ActiveRecord::Schema.define(version: 20141003185550) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -151,6 +151,20 @@ ActiveRecord::Schema.define(version: 20140907213208) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "spree_homepage_slides", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "label"
+    t.string   "text"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.boolean  "active"
+  end
+
+  add_index "spree_homepage_slides", ["name"], name: "index_spree_homepage_slides_on_name", using: :btree
 
   create_table "spree_inventory_units", force: true do |t|
     t.string   "state"
@@ -401,7 +415,7 @@ ActiveRecord::Schema.define(version: 20140907213208) do
     t.integer  "shipping_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "layout",               default: "default", null: false
+    t.string   "layout",               default: "default"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
@@ -718,6 +732,14 @@ ActiveRecord::Schema.define(version: 20140907213208) do
     t.string   "default_currency"
     t.integer  "url_index"
   end
+
+  create_table "spree_stores_homepage_slides", id: false, force: true do |t|
+    t.integer "store_id"
+    t.integer "homepage_slide_id"
+  end
+
+  add_index "spree_stores_homepage_slides", ["homepage_slide_id"], name: "index_spree_stores_homepage_slides_on_homepage_slide_id", using: :btree
+  add_index "spree_stores_homepage_slides", ["store_id"], name: "index_spree_stores_homepage_slides_on_store_id", using: :btree
 
   create_table "spree_tax_categories", force: true do |t|
     t.string   "name"

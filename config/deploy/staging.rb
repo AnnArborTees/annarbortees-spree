@@ -8,6 +8,9 @@ role :app, %w{ubuntu@10.1.10.238}
 role :web, %w{ubuntu@10.1.10.238}
 role :db,  %w{ubuntu@10.1.10.238}
 
+# Default branch is :master
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server
