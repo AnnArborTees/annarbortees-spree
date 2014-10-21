@@ -13,3 +13,4 @@
 //= require spree/backend/spree_multi_domain
 //= require spree/backend/spree_paypal_express
 //= require spree/backend/spree_mockbot_integration
+//= require spree/backend/spree_annarbortees_theme
