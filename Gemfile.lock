@@ -21,6 +21,18 @@ GIT
       spree_frontend (~> 2.2.1)
 
 GIT
+  remote: git://github.com/annarbortees/spree_annarbortees_theme.git
+  revision: 8d9a5363601c02acd0c968afc29606e05f9e5e89
+  branch: 2-2-stable
+  specs:
+    spree_annarbortees_theme (2.2.0)
+      spree_backend (~> 2.2.0)
+      spree_core (~> 2.2.0)
+      spree_frontend (~> 2.2.0)
+      spree_multi_domain
+      spree_sizing_guides
+
+GIT
   remote: git://github.com/annarbortees/spree_sizing_guides.git
   revision: 93b6c9841c3209bb5ae7040a1e3999278fcec7ae
   branch: 2-2-stable
@@ -107,7 +119,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 20d72ae6680727f7b3e2d0a05536069556878b4a
+  revision: cd87200b2a603adc85a3563531f308f332c92b38
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -138,16 +150,6 @@ GIT
   specs:
     spree_gateway (2.2.1)
       spree_core (~> 2.2.0)
-
-PATH
-  remote: ../spree_annarbortees_theme
-  specs:
-    spree_annarbortees_theme (2.2.0)
-      spree_backend (~> 2.2.0)
-      spree_core (~> 2.2.0)
-      spree_frontend (~> 2.2.0)
-      spree_multi_domain
-      spree_sizing_guides
 
 GEM
   remote: https://rubygems.org/
