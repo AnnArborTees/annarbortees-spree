@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141021184003) do
+ActiveRecord::Schema.define(version: 20141024015030) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -618,6 +618,17 @@ ActiveRecord::Schema.define(version: 20141021184003) do
   end
 
   add_index "spree_shipping_rates", ["shipment_id", "shipping_method_id"], name: "spree_shipping_rates_join_index", unique: true, using: :btree
+
+  create_table "spree_sizing_guides", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "slug"
+    t.datetime "deleted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_sizing_guides", ["slug"], name: "index_spree_sizing_guides_on_slug", using: :btree
 
   create_table "spree_skrill_transactions", force: true do |t|
     t.string   "email"
