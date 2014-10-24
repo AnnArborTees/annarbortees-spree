@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024015030) do
+ActiveRecord::Schema.define(version: 20141024185653) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -832,7 +832,7 @@ ActiveRecord::Schema.define(version: 20141024015030) do
   create_table "spree_updates", force: true do |t|
     t.integer  "updatable_id"
     t.string   "updatable_type"
-    t.string   "info"
+    t.text     "info"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
