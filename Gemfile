@@ -63,4 +63,5 @@ gem 'spree_annarbortees_theme', github: 'annarbortees/spree_annarbortees_theme',
 gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: '2-2-stable'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-2-stable'
 gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: '2-2-stable'
+gem 'spree_digital', github: 'annarbortees/spree_digital', branch: '2-2-stable'
 gem 'spree_mockbot_integration', git: "https://#{ENV['GITHUB_OAUTH_KEY']}:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git", branch: '2-2-stable'

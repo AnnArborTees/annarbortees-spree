@@ -33,6 +33,17 @@ GIT
       spree_sizing_guides
 
 GIT
+  remote: git://github.com/annarbortees/spree_digital.git
+  revision: d6923fd530e83716c156673f3c9803afae1502e9
+  branch: 2-2-stable
+  specs:
+    spree_digital (1.1.1)
+      spree_api
+      spree_backend
+      spree_core (~> 2.2.0)
+      spree_frontend
+
+GIT
   remote: git://github.com/annarbortees/spree_sizing_guides.git
   revision: 93b6c9841c3209bb5ae7040a1e3999278fcec7ae
   branch: 2-2-stable
@@ -119,7 +130,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: c9d6481b22cf7a9ac969a4fbdcd6dce6dd03a70f
+  revision: 011b9f8c4e62fb1bbd01fa1b75e8fc5c877b1e2b
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -460,6 +471,7 @@ DEPENDENCIES
   spree_amazon_fps!
   spree_annarbortees_theme!
   spree_auth_devise!
+  spree_digital!
   spree_gateway!
   spree_mockbot_integration!
   spree_multi_domain!
