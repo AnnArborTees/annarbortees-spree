@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
-  revision: d6923fd530e83716c156673f3c9803afae1502e9
+  revision: 61860d939b76603aee309d9a26042cd898340e97
   branch: 2-2-stable
   specs:
     spree_digital (1.1.1)
@@ -53,6 +53,13 @@ GIT
       spree_backend (~> 2.2.0)
       spree_core (~> 2.2.0)
       spree_frontend (~> 2.2.0)
+
+GIT
+  remote: git://github.com/jetthoughts/yaml_db.git
+  revision: fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba
+  ref: fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba
+  specs:
+    yaml_db (0.2.3)
 
 GIT
   remote: git://github.com/spree-contrib/better_spree_paypal_express.git
@@ -480,3 +487,4 @@ DEPENDENCIES
   sprockets (= 2.11.0)
   turbolinks
   uglifier (>= 1.3.0)
+  yaml_db!

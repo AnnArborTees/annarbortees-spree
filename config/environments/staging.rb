@@ -86,4 +86,14 @@ ShopAnnarborteesCom::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  # Config Paperclip to use S3
+  config.paperclip_defaults = {
+      :storage => :s3,
+      :bucket => Figaro.env.aws_s3_bucket,
+      :s3_credentials => {
+          :access_key_id => Figaro.env.aws_access_key_id,
+          :secret_access_key => Figaro.env.aws_secret_access_key
+      }
+  }
+
 end
