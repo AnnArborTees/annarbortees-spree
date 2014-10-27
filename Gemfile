@@ -45,8 +45,8 @@ gem 'figaro'
 
 
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
-gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', branch: '2-2-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', branch: '2-2-stable'
 
 group :development do
   gem 'capistrano', '~> 3.1.0'
@@ -57,7 +57,7 @@ end
 
 gem 'asset_sync'
 gem 'sprockets', '=2.11.0'
-gem 'spree_multi_domain', github: 'annarbortees/spree-multi-domain', :branch => '2-2-stable'
+gem 'spree_multi_domain', github: 'annarbortees/spree-multi-domain', branch: '2-2-stable'
 gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: '2-2-stable'
 gem 'spree_annarbortees_theme', github: 'annarbortees/spree_annarbortees_theme', branch: '2-2-stable'
 gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: '2-2-stable'
