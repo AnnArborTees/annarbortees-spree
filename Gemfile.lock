@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 472857cba5795cb22ec282ecc880776cf45393db
+  revision: ceac01aa2e51d9597752ff6b0314ff5d7532af05
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -137,7 +137,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: d55d340145b13e7e3dc97cca9700a92af42a89fc
+  revision: c68c469f5be71f42d9b91bf0643284f6d12bee58
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -437,7 +437,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     truncate_html (0.9.2)
-    turbolinks (2.4.0)
+    turbolinks (2.5.1)
       coffee-rails
     tzinfo (0.3.42)
     uglifier (2.5.3)
