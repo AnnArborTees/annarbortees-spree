@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024202631) do
+ActiveRecord::Schema.define(version: 20141027210540) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -86,9 +86,11 @@ ActiveRecord::Schema.define(version: 20141024202631) do
     t.datetime "attachment_updated_at"
     t.text     "alt"
     t.integer  "option_value_id"
+    t.boolean  "thumbnail"
   end
 
   add_index "spree_assets", ["option_value_id"], name: "index_spree_assets_on_option_value_id", using: :btree
+  add_index "spree_assets", ["thumbnail"], name: "index_spree_assets_on_thumbnail", using: :btree
   add_index "spree_assets", ["viewable_id"], name: "index_assets_on_viewable_id", using: :btree
   add_index "spree_assets", ["viewable_type", "type"], name: "index_assets_on_viewable_type_and_type", using: :btree
 
