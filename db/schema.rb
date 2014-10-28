@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141027210540) do
+ActiveRecord::Schema.define(version: 20141028151136) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -444,6 +444,7 @@ ActiveRecord::Schema.define(version: 20141027210540) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "layout",               default: "default"
+    t.text     "digital_preview"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
