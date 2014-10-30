@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 13e0254ac0914f0c15ac27d528b5010b005247c2
+  revision: f43aa7f42f950ebae0293b6a18118e4e178090cb
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -347,10 +347,10 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.6.0)
     minitest (4.7.5)
-    monetize (0.4.1)
-      money (~> 6.2.1)
-    money (6.2.1)
-      i18n (>= 0.6.4, <= 0.7.0.dev)
+    monetize (1.0.0)
+      money (~> 6.4.0)
+    money (6.4.0)
+      i18n (>= 0.6.4, <= 0.7.0.beta1)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     mysql2 (0.3.16)
