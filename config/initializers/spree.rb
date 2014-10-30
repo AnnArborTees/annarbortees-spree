@@ -9,6 +9,9 @@ Spree.config do |config|
   config.allow_ssl_in_production = false
   config.products_per_page = 48
   config.admin_products_per_page = 24
+
+
+
 end
 
 if !Rails.env.test?
@@ -26,3 +29,6 @@ Spree.user_class = "Spree::User"
 config = Rails.application.config
 config.spree.calculators.shipping_methods << Spree::Calculator::Shipping::PromoRate
 
+Rails.application.config.spree.stock_splitters = [
+    Spree::Stock::Splitter::Backordered
+]
