@@ -12,6 +12,8 @@ namespace :qa do
     failures = []
 
     Spree::Product.all.each do |product|
+      (failures <<  "[QA images Fail] Product '#{product.name}'")  if !product.available_on.blank? && product.images.empty?
+
       if product.layout == 'imprinted_apparel'
         product.variants.each do |v|
           begin
