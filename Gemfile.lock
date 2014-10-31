@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: 56e205bc410ae40f9befce6f9fe0bb07c1d9c687
+  revision: 3cad5d986cba86c70033cd3208fef614d9ac420e
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 2189722697c00b1c69435e98700f7cf7d3564468
+  revision: e8027ea1a58c9ff9e8c5ec2ff79dd0713aea03c3
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)

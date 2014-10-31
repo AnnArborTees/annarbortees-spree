@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141028151136) do
+ActiveRecord::Schema.define(version: 20141031045024) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -771,6 +771,7 @@ ActiveRecord::Schema.define(version: 20141028151136) do
     t.string   "logo_file_name"
     t.string   "default_currency"
     t.integer  "url_index"
+    t.string   "homepage_layout"
   end
 
   create_table "spree_stores_homepage_slides", id: false, force: true do |t|
