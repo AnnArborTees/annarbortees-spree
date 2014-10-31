@@ -21,6 +21,8 @@ if !Rails.env.test?
   Spree::HomepageSlide.attachment_definitions[:image][:url] = '/spree/homepage_slides/:id/:style/:basename.:extension'
   Spree::Digital.attachment_definitions[:attachment][:path] = '/spree/private/digitals/:id/:basename.:extension'
   Spree::Digital.attachment_definitions[:attachment][:url] = '/spree/private/digitals/:id/:basename.:extension'
+  Spree::SizingGuideImage.attachment_definitions[:sizing_guide_image][:path] = 'spree/sizing_guides/:id/:style/:basename.:extension'
+  Spree::SizingGuideImage.attachment_definitions[:sizing_guide_image][:url] = 'spree/sizing_guides/:id/:style/:basename.:extension'
 end
 
 
