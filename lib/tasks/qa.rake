@@ -14,7 +14,7 @@ namespace :qa do
     Spree::Product.all.each do |product|
       (failures <<  "[QA images Fail] Product '#{product.name}'")  if !product.available_on.blank? && product.images.empty?
 
-      if product.layout == 'imprinted_apparel'
+      if product.layout == 'imprinted_apparel' and !product.available_on.blank?
         product.variants.each do |v|
           begin
             (failures <<  "[QA weight Fail] Product '#{product.name}' - '#{v.sku}'") if v.weight < 0.1
@@ -30,23 +30,32 @@ namespace :qa do
             (failures <<  "[QA weight Fail] Product '#{product.name}' - '#{v.sku}'") if (v.weight < 0.1 && v.option_value('media-version') != 'Digital Download')
 
             if v.option_value('media-version') == 'Digital Download'
-              (failures <<  "[QA Stock Fail] Product '#{product.name}' - '#{v.sku}'") if !v.total_on_hand.infinite?
+              (failures <<  "[QA Stock Fail A] Product '#{product.name}' - '#{v.sku}'") if !v.total_on_hand.infinite?
             elsif v.option_value('media-version') == 'DVD'
-              (failures <<  "[QA Stock Fail] Product '#{product.name}' - '#{v.sku}'") if !v.total_on_hand.class != 'Fixnum'
+              (failures <<  "[QA Stock Level is not a number] Product '#{product.name}'") if v.total_on_hand.class != Fixnum
+              (failures <<  "[QA Backorderable should be disabled] Product '#{product.name}'") if v.stock_items.first.backorderable?
+
             elsif  v.option_value('media-version') == 'DVD + Digital Download'
-              (failures <<  "[QA Stock Fail] Product '#{product.name}' - '#{v.sku}'") if !v.total_on_hand.class != 'Fixnum'
+              (failures <<  "[QA Stock Fail C] Product '#{product.name}' - '#{v.sku}'") if v.total_on_hand.class != Fixnum
+              (failures <<  "[QA Backorderable should be disabled] Product '#{product.name}'") if v.stock_items.first.backorderable?
+
             elsif v.option_value('media-version') == 'CD'
-              (failures <<  "[QA Stock Fail] Product '#{product.name}' - '#{v.sku}'") if !v.total_on_hand.class != 'Fixnum'
+              (failures <<  "[QA Stock Fail D] Product '#{product.name}' - '#{v.sku}'") if v.total_on_hand.class != Fixnum
+              (failures <<  "[QA Backorderable should be disabled] Product '#{product.name}'") if v.stock_items.first.backorderable?
+
             elsif  v.option_value('media-version') == 'CD + Digital Download'
-              (failures <<  "[QA Stock Fail] Product '#{product.name}' - '#{v.sku}'") if !v.total_on_hand.class != 'Fixnum'
+              (failures <<  "[QA Stock Fail E] Product '#{product.name}' - '#{v.sku}'") if v.total_on_hand.class != Fixnum
+              (failures <<  "[QA Backorderable should be disabled] Product '#{product.name}'") if v.stock_items.first.backorderable?
+
             end
           rescue Exception => e
               failures <<  "[QA Exception Fail] Product '#{product.name}' - '#{v.sku}' - Exception #{e}"
           end
         end
-      else
+      elsif !product.available_on.blank?
         product.variants.each do |v|
-          (failures <<  "[QA weight Fail] Product '#{product.name}' - '#{v.sku}'") if v.weight < 0.1 && v.option_value('media-version') != 'Digital Download'
+          (failures <<  "[QA Digital Download Only Weight should be 0] Product '#{product.name}' - '#{v.sku}'") if v.weight < 0.1 && v.option_value('media-version') != 'Digital Download'
+          (failures <<  "[QA Backorderable should be disabled] Product '#{product.name}' - '#{v.sku}'") if (v.track_inventory and v.stock_items.first.backorderable?)
         end
       end
 
