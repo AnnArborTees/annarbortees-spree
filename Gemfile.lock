@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: da21a179bf6cce4d8499550e8300db65a6bd29fb
+  revision: 9d5b1f23964dcd44ff3016d2096508c076505a7f
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -324,7 +324,7 @@ GEM
       activerecord (>= 4.0.0)
     highline (1.6.21)
     hike (1.2.3)
-    httparty (0.13.1)
+    httparty (0.13.2)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.9)
