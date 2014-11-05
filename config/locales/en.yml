@@ -14,7 +14,7 @@ en:
         total: ! 'Order Total: %{total}'
       confirm_email:
         dear_customer: Dear %{name},
-        greeting: Thanks for your purchase! We appreciate and look forward to serving you.
+        greeting: Thanks for your purchase! We appreciate your business and look forward to serving you.
         instructions1: >
           Orders are processed within 2 working days. Your order will ship
           using the method you selected on our website. When it ships, you’ll

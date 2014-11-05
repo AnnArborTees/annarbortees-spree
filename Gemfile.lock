@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
-  revision: 61860d939b76603aee309d9a26042cd898340e97
+  revision: 756a362914e80b4ca51cfde5220d3f13ec68a1a4
   branch: 2-2-stable
   specs:
     spree_digital (1.1.1)
@@ -346,7 +346,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    mini_portile (0.6.0)
+    mini_portile (0.6.1)
     minitest (4.7.5)
     monetize (1.0.0)
       money (~> 6.4.0)
@@ -358,8 +358,8 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
-    nokogiri (1.6.3.1)
-      mini_portile (= 0.6.0)
+    nokogiri (1.6.4)
+      mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
