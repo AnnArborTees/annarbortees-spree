@@ -4,3 +4,29 @@ en:
     units: Units (imperial or metric)
     unit_multiplier: Unit Multiplier (1 if weights in oz, 16 if weights in lbs)
     handling_fee: Handling Fee (In cents, thus 100 = $1.00
+    order_mailer:
+      cancel_email:
+        dear_customer: Dear %{name},
+        instructions: Your order has been CANCELED.  Please retain this cancellation information for your records.
+        order_summary_canceled: Order Summary [CANCELED]
+        subject: Cancellation of Order
+        subtotal: ! 'Subtotal: %{subtotal}'
+        total: ! 'Order Total: %{total}'
+      confirm_email:
+        dear_customer: Dear %{name},
+        greeting: Thanks for your purchase! We appreciate and look forward to serving you.
+        instructions1: >
+          Orders are processed within 2 working days. Your order will ship
+          using the method you selected on our website. When it ships, you’ll
+          receive an e-mail with tracking information as it applies to your order.
+        instructions2: >
+          If you have any questions, try referring to our help guide! If you still
+          have questions, feel free to e-mail us at support@annarbortees.com
+        order_summary: Order Summary
+        subject: Order Confirmation
+        subtotal: ! 'Subtotal: %{subtotal}'
+        thanks: Thank you for your business.
+        total: ! 'Order Total: %{total}'
+    shipment_mailer:
+      shipped_email:
+        dear_customer: Dear %{name},

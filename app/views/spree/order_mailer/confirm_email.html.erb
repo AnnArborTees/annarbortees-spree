@@ -1,18 +1,27 @@
 <p class="customer">
-  <%= t(:dear_customer, :default => "Dear %{name},", :name => @order.bill_address ? @order.bill_address.full_name : 'Customer' ) %>
+  <%= Spree.t('order_mailer.confirm_email.dear_customer',:name => @order.bill_address ? @order.bill_address.full_name : 'Customer' ) %>
 </p>
 <p class="overview">
-  Please review and retain the following order information for your records.
+  <%= Spree.t('order_mailer.confirm_email.greeting') %>
 </p>
+
+<p class="overview">
+  <%= Spree.t('order_mailer.confirm_email.instructions1') %>
+</p>
+
+<p class="overview">
+  <%= Spree.t('order_mailer.confirm_email.instructions2') %>
+</p>
+
+<p class="thank-you">
+  Thanks again from the Ann Arbor Tees Family! Seriously, You’re the best.
+</p>
+
+<%= render :partial => 'spree/shared/email/digitals', :locals => { :order => @order } %>
+
+<%= render :partial => 'spree/shared/email/order_details', :locals => {:order => @order} %>
+
 <p class="link">
   To view the complete details of your order use the following link:
   <%= link_to(order_url(@order, :host => Spree::Config[:site_url]), order_url(@order, :host => Spree::Config[:site_url])) %>
-</p>
-<h1>
-  Order Summary
-</h1>
-<%= render :partial => 'spree/shared/email/order_details', :locals => {:order => @order} %>
-<%= render :partial => 'spree/shared/email/digitals', :locals => { :order => @order } %>
-<p class="thank-you">
-  Thank you for your business.
 </p>
