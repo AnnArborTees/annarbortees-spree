@@ -1,0 +1,20 @@
+<html>
+<head>
+  <style>
+      <%= render :partial => 'spree/shared/email/stylesheet' %>
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <%= render :partial => 'spree/shared/email/header' %>
+  </header>
+  <section id="main">
+    <%= yield %>
+  </section>
+  <footer>
+    <%= render :partial => 'spree/shared/email/footer' %>
+  </footer>
+</div>
+</body>
+</html>

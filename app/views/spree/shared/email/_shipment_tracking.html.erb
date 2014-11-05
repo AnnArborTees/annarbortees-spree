@@ -1,0 +1,7 @@
+<% if shipment.tracking? %>
+    <h2><span><%= t(:tracking_information) %></span></h2>
+    <p class="tracking">
+        <%= Spree.t('shipment_mailer.shipped_email.track_information', :tracking => @shipment.tracking)     if @shipment.tracking %>
+        <%= Spree.t('shipment_mailer.shipped_email.track_link',        :url      => @shipment.tracking_url) if @shipment.tracking_url %>
+    </p>
+<% end %>
