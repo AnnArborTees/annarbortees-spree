@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141031045024) do
+ActiveRecord::Schema.define(version: 20141107191118) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -178,6 +178,13 @@ ActiveRecord::Schema.define(version: 20141031045024) do
     t.boolean  "test_mode",   default: true
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "spree_google_trusted_store_settings", force: true do |t|
+    t.string   "account_id"
+    t.string   "default_locale"
+    t.datetime "last_shipment_upload"
+    t.datetime "last_cancelation_upload"
   end
 
   create_table "spree_homepage_slides", force: true do |t|

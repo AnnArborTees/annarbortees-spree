@@ -15,3 +15,4 @@
 //= require spree/backend/spree_mockbot_integration
 //= require spree/backend/spree_annarbortees_theme
 //= require spree/backend/spree_digital
+//= require spree/backend/spree_google_trusted_store

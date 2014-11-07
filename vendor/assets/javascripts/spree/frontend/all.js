@@ -14,3 +14,4 @@
 //= require spree/frontend/spree_mockbot_integration
 //= require spree/frontend/spree_sizing_guides
 //= require spree/frontend/spree_digital
+//= require spree/frontend/spree_google_trusted_store

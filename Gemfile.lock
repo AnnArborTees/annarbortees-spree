@@ -22,13 +22,15 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 9c778cf00e46292abebea7043a35a7a82c59a07a
+  revision: bf426b9f411173d0f28f8cee0ed802fb248fd0ac
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
       spree_backend (~> 2.2.0)
       spree_core (~> 2.2.0)
+      spree_digital
       spree_frontend (~> 2.2.0)
+      spree_google_trusted_store
       spree_multi_domain
       spree_sizing_guides
 
@@ -42,6 +44,15 @@ GIT
       spree_backend
       spree_core (~> 2.2.0)
       spree_frontend
+
+GIT
+  remote: git://github.com/annarbortees/spree_google_trusted_store.git
+  revision: 05ec2bae493d0e11ff6501010c5ab98230f482a7
+  branch: 2-2-stable
+  specs:
+    spree_google_trusted_store (2.2.1)
+      business_time
+      spree_core (~> 2.2.1)
 
 GIT
   remote: git://github.com/annarbortees/spree_sizing_guides.git
@@ -72,7 +83,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 8d3437da949c7fa8a25477caa061374fec6d0476
+  revision: 8e4f2cbe307aa12a1a225f4ff039f0b6415f7b88
   branch: 2-2-stable
   specs:
     spree (2.2.7.beta)
@@ -234,6 +245,9 @@ GEM
       uuidtools (~> 2.1)
     bcrypt (3.1.9)
     builder (3.1.4)
+    business_time (0.7.3)
+      activesupport (>= 3.1.0)
+      tzinfo
     cancan (1.6.10)
     canonical-rails (0.0.7)
       rails (>= 3.1, < 5.0)
@@ -277,7 +291,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
-    excon (0.40.0)
+    excon (0.41.0)
     execjs (2.2.2)
     ffaker (1.25.0)
     figaro (1.0.0)
@@ -311,10 +325,10 @@ GEM
     fog-sakuracloud (0.1.1)
       fog-core
       fog-json
-    fog-softlayer (0.3.22)
+    fog-softlayer (0.3.24)
       fog-core
       fog-json
-    fog-xml (0.1.0)
+    fog-xml (0.1.1)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     font-awesome-rails (4.2.0.0)
@@ -358,7 +372,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
-    nokogiri (1.6.4)
+    nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
@@ -455,8 +469,7 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
-    whenever (0.9.2)
-      activesupport (>= 2.3.4)
+    whenever (0.9.4)
       chronic (>= 0.6.3)
     xml-simple (1.1.4)
 
@@ -484,6 +497,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_digital!
   spree_gateway!
+  spree_google_trusted_store!
   spree_mockbot_integration!
   spree_multi_domain!
   spree_paypal_express!
