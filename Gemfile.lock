@@ -21,6 +21,20 @@ GIT
       spree_frontend (~> 2.2.1)
 
 GIT
+  remote: git://github.com/annarbortees/spree_annarbortees_theme.git
+  revision: b81e4b96a1a2f4ddc918eba3a49b7cf1324bedeb
+  branch: 2-2-stable
+  specs:
+    spree_annarbortees_theme (2.2.0)
+      spree_backend (~> 2.2.0)
+      spree_core (~> 2.2.0)
+      spree_digital
+      spree_frontend (~> 2.2.0)
+      spree_google_trusted_store
+      spree_multi_domain
+      spree_sizing_guides
+
+GIT
   remote: git://github.com/annarbortees/spree_digital.git
   revision: 756a362914e80b4ca51cfde5220d3f13ec68a1a4
   branch: 2-2-stable
@@ -165,18 +179,6 @@ GIT
   specs:
     spree_gateway (2.2.1)
       spree_core (~> 2.2.0)
-
-PATH
-  remote: ../spree_annarbortees_theme
-  specs:
-    spree_annarbortees_theme (2.2.0)
-      spree_backend (~> 2.2.0)
-      spree_core (~> 2.2.0)
-      spree_digital
-      spree_frontend (~> 2.2.0)
-      spree_google_trusted_store
-      spree_multi_domain
-      spree_sizing_guides
 
 GEM
   remote: https://rubygems.org/
