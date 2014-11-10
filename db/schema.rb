@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107191118) do
+ActiveRecord::Schema.define(version: 20141110210848) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -815,10 +815,12 @@ ActiveRecord::Schema.define(version: 20141107191118) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "position",   default: 0
-    t.integer  "store_id"
   end
 
-  add_index "spree_taxonomies", ["store_id"], name: "index_spree_taxonomies_on_store_id", using: :btree
+  create_table "spree_taxonomies_stores", id: false, force: true do |t|
+    t.integer "taxonomy_id"
+    t.integer "store_id"
+  end
 
   create_table "spree_taxons", force: true do |t|
     t.integer  "parent_id"
