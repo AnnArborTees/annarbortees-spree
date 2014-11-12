@@ -7,7 +7,7 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
   config.allow_ssl_in_production = false
-  config.products_per_page = 48
+  config.products_per_page = 36
   config.admin_products_per_page = 24
 
 
