@@ -7,6 +7,20 @@ namespace :qa do
     end
   end
 
+
+  desc 'Price products at their lowest variant price'
+  task reprice_products: :environment do
+    Spree::Product.all.each do |product|
+      next if product.variants.empty?
+      price = product.variants.min{ |a, b| a.price <=> b.price }.price
+      if product.price < price
+        puts "[REPRICING] Product #{product.name} priced at #{product.price} should be #{price}"
+        product.price = price
+        product.save
+      end
+    end
+  end
+
   desc 'QA Products'
   task products: :environment do
     failures = []
@@ -58,6 +72,8 @@ namespace :qa do
           (failures <<  "[QA Backorderable should be disabled] Product '#{product.name}' - '#{v.sku}'") if (v.track_inventory and v.stock_items.first.backorderable?)
         end
       end
+
+      (failures <<  "[QA taxons] Product '#{product.name}'") if product.taxons.empty?
 
     end
 
