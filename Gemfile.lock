@@ -148,7 +148,7 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
-  remote: https://c2ecf4f7b37044a81c3be342d6a8c7f783fb3dac:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
+  remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
   revision: ef24877b20a8ea345b5505618a4f307b796e4a53
   branch: 2-2-stable
   specs:
