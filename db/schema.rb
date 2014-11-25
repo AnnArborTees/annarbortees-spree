@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110210848) do
+ActiveRecord::Schema.define(version: 20141125153929) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -178,6 +178,35 @@ ActiveRecord::Schema.define(version: 20141110210848) do
     t.boolean  "test_mode",   default: true
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "spree_google_products", force: true do |t|
+    t.string   "google_product_category"
+    t.string   "condition"
+    t.boolean  "adult"
+    t.boolean  "automatically_update"
+    t.integer  "variant_id"
+    t.string   "product_id"
+    t.datetime "last_insertion_date"
+    t.text     "last_insertion_errors"
+    t.text     "last_insertion_warnings"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_google_products", ["variant_id"], name: "index_spree_google_products_on_variant_id", using: :btree
+
+  create_table "spree_google_shopping_settings", force: true do |t|
+    t.string   "merchant_id"
+    t.string   "oauth2_client_id"
+    t.string   "oauth2_client_secret"
+    t.string   "current_access_token"
+    t.string   "current_refresh_token"
+    t.datetime "current_expiration_date"
+    t.boolean  "use_google_shopping"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "google_api_appplication_name"
   end
 
   create_table "spree_google_trusted_store_settings", force: true do |t|
