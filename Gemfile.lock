@@ -47,7 +47,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: 5e9b36e2641155cf984bc191458d5c3a518788dd
+  revision: fe933a75c7624d2678da9a7413f63736e704dda4
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
@@ -150,7 +150,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 2bb24137b98dd5acce0d24566ba8c138528d478d
+  revision: bda090533da61adff72ac77e0962fa74714fed99
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
