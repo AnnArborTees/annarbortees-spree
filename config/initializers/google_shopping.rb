@@ -1,3 +1,15 @@
+def from_option_type(type_name, &block)
+  proc do |variant|
+    option_type = Spree::OptionType.where(name: type_name)
+    result =
+      variant.option_values.where(option_type_id: option_type.id)
+        .first
+        .try(:presentation)
+
+    block ? block.call(result) : result
+  end
+end
+
 # These settings are how we control how product variant data is sent
 # to Google. It is recommended you look over all of these, and change
 # most of them to fit your specific needs.
@@ -73,5 +85,32 @@ Spree::GoogleProduct.configure do |config|
     variant.is_master? ? nil : variant.product_id
   end
 
+  config.define.brand 'Ann Arbor Tees'
+  config.define.color(&from_option_type('apparel-color'))
+  config.define.sizes(&from_option_type('apparel-size') { |s| [s] })
+  config.define.size_type 'Regular'
+  config.define.size_system 'US'
+  config.define.gender(&from_option_type('apparel_style') do |style|
+    case style.try(:presentation).try(:downcase)
+    when 'unisex', 'ladies' then style.presentation
+    else 'unisex'
+    end
+  end)
+
+  config.define.size_type.as_db_column do |f|
+    f.text_field :size_type, value: f.object.size_type || 'Regular'
+  end
+  config.define.age_group.as_db_column do |f|
+    choices = [
+      ['Newborn (0-3 months)', 'Newborn'],
+      ['Infant (3-12 months)', 'Infant'],
+      ['Toddler (1-5 years)', 'Toddler'],
+      ['Kids (5-13 years)', 'Kids'],
+      ['Adult (13+ years)', 'Adult']
+    ]
+    f.object.age_group ||= 'Adult'
+    f.select :age_group, choices
+  end
+  
   # TODO add shipping fields!
 end
