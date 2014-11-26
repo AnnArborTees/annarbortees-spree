@@ -61,8 +61,8 @@ Spree::GoogleProduct.configure do |config|
     variant.images[1..-1].map(&:url).to_json if variant.images[1..-1]
   end
 
-  config.define.condition.as_db_column do |f|
-    f.select :condition, %w(new used refurbished)
+  config.define.condition.as_db_column(default: 'new') do |f|
+    f.select :condition, %w(new used refurbished), class: 'select2'
   end
   config.define.adult.as_db_column { |f| f.check_box(:adult) }
 
@@ -97,10 +97,12 @@ Spree::GoogleProduct.configure do |config|
     end
   end)
 
-  config.define.size_type.as_db_column do |f|
-    f.text_field :size_type, value: f.object.size_type || 'Regular'
+  config.define.size_type.as_db_column(default: 'Regular') do |f|
+    choices = ['Regular', 'Petite', 'Plus', 'Big and Tall', 'Maternity']
+
+    f.select :size_type, choices, class: 'select2'
   end
-  config.define.age_group.as_db_column do |f|
+  config.define.age_group.as_db_column(default: 'Adult') do |f|
     choices = [
       ['Newborn (0-3 months)', 'Newborn'],
       ['Infant (3-12 months)', 'Infant'],
@@ -108,8 +110,8 @@ Spree::GoogleProduct.configure do |config|
       ['Kids (5-13 years)', 'Kids'],
       ['Adult (13+ years)', 'Adult']
     ]
-    f.object.age_group ||= 'Adult'
-    f.select :age_group, choices
+
+    f.select :age_group, choices, class: 'select2'
   end
   
   # TODO add shipping fields!
