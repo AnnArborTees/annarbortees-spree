@@ -4,4 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper Spree::GoogleTrustedStoreHelper
 
+  before_filter :assign_response_global_if_admin
+
+  def assign_response_global_if_admin
+    return unless is_a?(Spree::Admin::ResourceController)
+
+    Thread.current[:request] = request
+  end
 end
