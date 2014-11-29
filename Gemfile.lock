@@ -150,7 +150,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 56d103ebcb7cccc5bc9d7aed457113d88cb8293e
+  revision: 5cfbde4d0ec50f742ea6641d7f75714706e6b350
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -495,7 +495,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.1)
+    sprockets-rails (2.2.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
