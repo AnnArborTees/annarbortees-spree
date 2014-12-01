@@ -56,7 +56,9 @@ Spree::GoogleProduct.configure do |config|
   # (i.e. when uploading on a callback)
   config.define.link do |variant|
     request = Thread.current[:request]
-    url     = URI request.original_url
+    next if request.nil?
+
+    url = URI request.original_url
 
     "#{url.scheme}://#{url.host}/products/#{variant.product.slug}"
   end

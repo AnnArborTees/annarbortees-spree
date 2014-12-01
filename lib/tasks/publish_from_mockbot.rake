@@ -12,6 +12,9 @@ namespace :mockbot do
       next
     end
 
+    Thread.current[:response] = Struct.new(:original_uri)
+      .new(Spree::Store.default.first.domains.split(/\s/).first)
+
     begin
       idea = Spree::Mockbot::Idea.where(sku: sku).first
     rescue Errno::ECONNREFUSED
