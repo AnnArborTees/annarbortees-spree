@@ -47,7 +47,7 @@ namespace :mockbot do
         Error during `#{publisher.current_step}` step: #{e.message}
       )
       next
-    rescue SpreeMockbotIntegration::SkuError => e
+    rescue SpreeMockbotIntegration::Sku::SkuError => e
       STDOUT.puts %(
         Sku error during `#{publisher.current_step}` step: #{e.message}
       )
