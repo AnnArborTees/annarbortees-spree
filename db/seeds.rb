@@ -9,3 +9,14 @@
 
 Spree::Core::Engine.load_seed if defined?(Spree::Core)
 Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
+
+Spree::Store.create!(
+  name: 'Default',
+  code: 'default',
+  domains: 'http://test.com/',
+  default: true,
+  email: 'piss_master@gmail.com',
+  default_currency: 'USD',
+  url_index: 0
+)
+
