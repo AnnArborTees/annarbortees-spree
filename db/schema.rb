@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125153929) do
+ActiveRecord::Schema.define(version: 20141126214402) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -192,6 +192,9 @@ ActiveRecord::Schema.define(version: 20141125153929) do
     t.text     "last_insertion_warnings"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "age_group"
+    t.string   "size_type"
+    t.string   "product_type"
   end
 
   add_index "spree_google_products", ["variant_id"], name: "index_spree_google_products_on_variant_id", using: :btree
@@ -206,7 +209,8 @@ ActiveRecord::Schema.define(version: 20141125153929) do
     t.boolean  "use_google_shopping"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "google_api_appplication_name"
+    t.string   "google_api_application_name"
+    t.string   "current_host"
   end
 
   create_table "spree_google_trusted_store_settings", force: true do |t|
