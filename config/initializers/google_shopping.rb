@@ -12,10 +12,24 @@ def from_option_type(type_name, &block)
 end
 
 def images_for(variant, conditions, optionals = {})
+  logger = variant.send(:logger)
+
+  optional = optionals[:optional] || []
+
   images = variant.images.where(conditions)
-  if images.empty?
-    images = variant.product.images.where(conditions)
+  images = variant.product.images.where(conditions) if images.empty?
+  # logger.error "Images for #{variant.sku}: none for initial conditions: #{conditions}" if images.empty?
+
+  until optional.empty? || images.any?
+    conditions.delete_key(optional.pop)
+
+    images = variant.images.where(conditions)
+    images = variant.product.images.where(conditions) if images.empty?
+
+    # logger.error "Images for #{variant.sku}: none for conditions #{conditions}"
   end
+  # logger.error "Images for #{variant.sku}: Calling it quits with #{images.map { |i| i.attachment.url(:original) }}"
+ 
   images
 end
 
@@ -59,16 +73,15 @@ Spree::GoogleProduct.configure do |config|
   # config.define.link do |variant, view|
   #   view.try(:product_url, variant.product)
   # end
-  #
-  # I have this hack here because sometimes there is no request context
-  # (i.e. when uploading on a callback)
+
   config.define.link do |variant|
-    request = Thread.current[:request]
-    next if request.nil?
+    store = variant.product.stores.first
+    next if store.nil?
 
-    url = URI request.original_url
+    url = store.domains.split(/\s/).first
+    next if url.nil? || url.empty?
 
-    "#{url.scheme}://#{url.host}/products/#{variant.product.slug}"
+    "http://#{url}/products/#{variant.product.slug}"
   end
 
   # NOTE: It is recommended you implement your own definition for
@@ -165,41 +178,31 @@ Spree::GoogleProduct.configure do |config|
       thumbnail: true,
       option_value_id: variant.option_values.map(&:id) 
     }
-    image = variant.images.where(conditions).first ||
-      variant.product.images.where(conditions).first
 
-    if image.nil?
-      conditions.delete(:option_value_id)
-      image = variant.images.where(conditions).first ||
-        variant.product.images.where(conditions).first
-    end
+    image = images_for(variant, conditions, optional: [:option_value_id]).first
     next if image.nil?
-
     image_url = image.attachment.url(:original)
 
     # HACK? The variant object passed to all these blocks is the
     # same, so we can share info between these calls through
     # instance variables. This relies on the call order though,
     # which is the order of GoogleProduct.G_ATTRIBUTES.
-    variant.instance_variable_set(:@google_image_link)
+    variant.instance_variable_set(:@google_image_url, image_url)
     image_url
   end
 
   config.define.additional_image_link do |variant|
+    first_image_url = variant.instance_variable_get(:@google_image_url)
+    next if first_image_url.nil?
+
     conditions = {
       thumbnail: true,
       option_value_id: variant.option_values.map(&:id) 
     }
+    images     = images_for(variant, conditions, optional: [:option_value_id])
+    image_urls = images.map { |i| i.attachment.url(:original) }
 
-    images = variant.images.where(conditions)
-    if images.empty?
-      images = variant.product.images.where(conditions)
-    end
-
-    if images.empty?
-      conditions.delete(:option_value_id)
-      images = 
-    end
+    image_urls - [first_image_url]
   end
 
   config.define.product_type.as_db_column(default: 'T-Shirt')
