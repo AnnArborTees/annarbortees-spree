@@ -1,3 +1,4 @@
+require 'sidekiq/web'
 ShopAnnarborteesCom::Application.routes.draw do
 
   # This line mounts Spree's routes at the root of your application.
