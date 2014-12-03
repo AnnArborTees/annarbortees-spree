@@ -11,6 +11,14 @@ def from_option_type(type_name, &block)
   end
 end
 
+def images_for(variant, conditions, optionals = {})
+  images = variant.images.where(conditions)
+  if images.empty?
+    images = variant.product.images.where(conditions)
+  end
+  images
+end
+
 # These settings are how we control how product variant data is sent
 # to Google. It is recommended you look over all of these, and change
 # most of them to fit your specific needs.
@@ -165,10 +173,34 @@ Spree::GoogleProduct.configure do |config|
       image = variant.images.where(conditions).first ||
         variant.product.images.where(conditions).first
     end
+    next if image.nil?
 
-    image.attachment.url(:original) unless image.nil?
+    image_url = image.attachment.url(:original)
+
+    # HACK? The variant object passed to all these blocks is the
+    # same, so we can share info between these calls through
+    # instance variables. This relies on the call order though,
+    # which is the order of GoogleProduct.G_ATTRIBUTES.
+    variant.instance_variable_set(:@google_image_link)
+    image_url
   end
-  # TODO perhaps add additional_image_link
+
+  config.define.additional_image_link do |variant|
+    conditions = {
+      thumbnail: true,
+      option_value_id: variant.option_values.map(&:id) 
+    }
+
+    images = variant.images.where(conditions)
+    if images.empty?
+      images = variant.product.images.where(conditions)
+    end
+
+    if images.empty?
+      conditions.delete(:option_value_id)
+      images = 
+    end
+  end
 
   config.define.product_type.as_db_column(default: 'T-Shirt')
 end
