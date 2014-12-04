@@ -21,7 +21,8 @@ def images_for(variant, conditions, optionals = {})
   # logger.error "Images for #{variant.sku}: none for initial conditions: #{conditions}" if images.empty?
 
   until optional.empty? || images.any?
-    conditions.delete_key(optional.pop)
+    conditions.delete(optional.pop) if conditions.class == Hash
+    conditions.delete_key(optional.pop) if conditions.respond_to?(:delete_key)
 
     images = variant.images.where(conditions)
     images = variant.product.images.where(conditions) if images.empty?
@@ -29,7 +30,7 @@ def images_for(variant, conditions, optionals = {})
     # logger.error "Images for #{variant.sku}: none for conditions #{conditions}"
   end
   # logger.error "Images for #{variant.sku}: Calling it quits with #{images.map { |i| i.attachment.url(:original) }}"
- 
+
   images
 end
 
@@ -42,13 +43,13 @@ Spree::GoogleProduct.configure do |config|
   config.define.offer_id(&:sku)
   config.define.title(&:name)
   config.define.description(&:description)
-  
+
   # This defines the google_product_category field as a configurable
   # field of Spree::GoogleProduct. If you add as_db_column defines,
   # you will need to create your own migrations to add the fields.
   # User added fields will be automatically added to the admin views
   # for Google Products.
-  # 
+  #
   # Not passing a block will default to { |f, n| f.text_field(n) }
   config.define.google_product_category.as_db_column do |f|
     categories = Net::HTTP.get(
@@ -63,7 +64,7 @@ Spree::GoogleProduct.configure do |config|
       { class: 'select2-min-len-4' }
     )
   end
-  
+
   # This grabs the url to the product the variant represents for the
   # link field. During an insert, the view/controller context is also
   # passed to these methods in order to provide access to url helpers.
@@ -85,7 +86,7 @@ Spree::GoogleProduct.configure do |config|
   end
 
   # NOTE: It is recommended you implement your own definition for
-  # image_link and additional_image_link, so as to conform to 
+  # image_link and additional_image_link, so as to conform to
   # Google's specifications:
   # https://support.google.com/merchants/answer/188494
   #
@@ -146,7 +147,7 @@ Spree::GoogleProduct.configure do |config|
 
     f.select :age_group, choices, {}, class: 'select2'
   end
-  
+
   config.define.shipping_weight do |variant|
     {
       unit: 'ounces',
@@ -176,7 +177,7 @@ Spree::GoogleProduct.configure do |config|
     # Note that this relies on products representing one color each:
     conditions = {
       thumbnail: true,
-      option_value_id: variant.option_values.map(&:id) 
+      option_value_id: variant.option_values.map(&:id)
     }
 
     image = images_for(variant, conditions, optional: [:option_value_id]).first
@@ -197,7 +198,7 @@ Spree::GoogleProduct.configure do |config|
 
     conditions = {
       thumbnail: true,
-      option_value_id: variant.option_values.map(&:id) 
+      option_value_id: variant.option_values.map(&:id)
     }
     images     = images_for(variant, conditions, optional: [:option_value_id])
     image_urls = images.map { |i| i.attachment.url(:original) }
