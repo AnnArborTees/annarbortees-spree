@@ -34,4 +34,24 @@ namespace :product do
     on_error = args.email_errors == 'email' ? email_errors : print_errors
     upload_all_to_google(on_error: on_error)
   end
+
+  desc %(
+    Remove any google products that belong to variants whose sku
+    has been changed.
+  )
+  task :remove_dangling_from_google, [:id_or_sku] => :environment do
+    args.with_defaults id_or_sku: nil, email_errors: nil
+
+    if args.id_or_sku.nil?
+      STDOUT.puts %(
+        Please specify a product id or sku:
+        `bundle exec rake product:upload_to_google[some_sku]`
+      )
+      next
+    end
+
+    include Spree::GoogleShoppingTasks
+
+    remove_dangling(args.id_or_sku)
+  end
 end
