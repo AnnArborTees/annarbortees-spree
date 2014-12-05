@@ -39,7 +39,7 @@ namespace :product do
     Remove any google products that belong to variants whose sku
     has been changed.
   )
-  task :remove_dangling_from_google, :environment do
+  task :remove_dangling_from_google, [] => :environment do |_t|
     include Spree::GoogleShoppingTasks
 
     remove_dangling
