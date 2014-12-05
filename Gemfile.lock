@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: e9243f632614986651621b4f587968ccba504724
+  revision: fb792048936d7997b1be117b58a09bc9e619e151
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -504,11 +504,12 @@ GEM
       sidekiq (>= 2.16.0)
     sidekiq-status (0.5.1)
       sidekiq (>= 2.7, < 3.4)
-    signet (0.5.1)
-      addressable (>= 2.2.3)
-      faraday (>= 0.9.0.rc5)
-      jwt (>= 0.1.5)
-      multi_json (>= 1.0.0)
+    signet (0.6.0)
+      addressable (~> 2.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      jwt (~> 1.0)
+      multi_json (~> 1.10)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
