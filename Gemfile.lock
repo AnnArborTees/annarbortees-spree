@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 7f5311a1d46e3a168e7dfb14c6a4ef1463c1901c
+  revision: 3d142f98bd7f30b94a89366e2aeacb93415cc463
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -47,7 +47,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: 763900136678bcdd5070d3b6e546e0b07d8fafa5
+  revision: db6c6d1e0efaebd0aaaa93772db82d7322c586a8
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
@@ -85,29 +85,29 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 74b5793b335c6c6e5792eed57100db9ac0b390ba
+  revision: accd271e961e14a095540ef8b2f47b955b538774
   branch: 2-2-stable
   specs:
-    spree (2.2.8.beta)
-      spree_api (= 2.2.8.beta)
-      spree_backend (= 2.2.8.beta)
-      spree_cmd (= 2.2.8.beta)
-      spree_core (= 2.2.8.beta)
-      spree_frontend (= 2.2.8.beta)
-      spree_sample (= 2.2.8.beta)
-    spree_api (2.2.8.beta)
+    spree (2.2.9.beta)
+      spree_api (= 2.2.9.beta)
+      spree_backend (= 2.2.9.beta)
+      spree_cmd (= 2.2.9.beta)
+      spree_core (= 2.2.9.beta)
+      spree_frontend (= 2.2.9.beta)
+      spree_sample (= 2.2.9.beta)
+    spree_api (2.2.9.beta)
       rabl (= 0.9.3)
-      spree_core (= 2.2.8.beta)
+      spree_core (= 2.2.9.beta)
       versioncake (~> 1.2.0)
-    spree_backend (2.2.8.beta)
+    spree_backend (2.2.9.beta)
       jquery-rails (~> 3.1.2)
       jquery-ui-rails (~> 4.1.0)
       select2-rails (~> 3.4.7)
-      spree_api (= 2.2.8.beta)
-      spree_core (= 2.2.8.beta)
-    spree_cmd (2.2.8.beta)
+      spree_api (= 2.2.9.beta)
+      spree_core (= 2.2.9.beta)
+    spree_cmd (2.2.9.beta)
       thor (~> 0.14)
-    spree_core (2.2.8.beta)
+    spree_core (2.2.9.beta)
       activemerchant (~> 1.43.1)
       acts_as_list (= 0.3.0)
       awesome_nested_set (~> 3.0.0.rc.3)
@@ -130,14 +130,14 @@ GIT
       state_machine (= 1.2.0)
       stringex (~> 1.5.1)
       truncate_html (= 0.9.2)
-    spree_frontend (2.2.8.beta)
+    spree_frontend (2.2.9.beta)
       canonical-rails (~> 0.0.4)
       jquery-rails (~> 3.1.2)
-      spree_api (= 2.2.8.beta)
-      spree_core (= 2.2.8.beta)
+      spree_api (= 2.2.9.beta)
+      spree_core (= 2.2.9.beta)
       stringex (~> 1.5.1)
-    spree_sample (2.2.8.beta)
-      spree_core (= 2.2.8.beta)
+    spree_sample (2.2.9.beta)
+      spree_core (= 2.2.9.beta)
 
 GIT
   remote: git://github.com/spree/spree_active_shipping.git
@@ -302,7 +302,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
-    excon (0.41.0)
+    excon (0.42.1)
     execjs (2.2.2)
     extlib (0.9.16)
     faraday (0.9.0)
@@ -327,10 +327,10 @@ GEM
       ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
       opennebula
-    fog-brightbox (0.6.1)
+    fog-brightbox (0.7.1)
       fog-core (~> 1.22)
       fog-json
-      inflecto
+      inflecto (~> 0.0.2)
     fog-core (1.25.0)
       builder
       excon (~> 0.38)
@@ -351,7 +351,7 @@ GEM
     fog-sakuracloud (0.1.1)
       fog-core
       fog-json
-    fog-softlayer (0.3.24)
+    fog-softlayer (0.3.25)
       fog-core
       fog-json
     fog-terremark (0.0.3)
@@ -360,7 +360,7 @@ GEM
     fog-vmfusion (0.0.1)
       fission
       fog-core
-    fog-voxel (0.0.1)
+    fog-voxel (0.0.2)
       fog-core
       fog-xml
     fog-xml (0.1.1)
