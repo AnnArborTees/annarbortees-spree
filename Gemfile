@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'sinatra'
 gem 'sidekiq'
 gem 'sidekiq-status'
+gem 'sidekiq-failures'
 
 
 group :doc do
