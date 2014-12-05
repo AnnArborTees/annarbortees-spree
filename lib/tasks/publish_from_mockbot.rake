@@ -69,4 +69,20 @@ namespace :mockbot do
     #   Successfully published products for idea #{sku}!
     # )
   end
+
+  desc 'Publish products that are ready_to_publish'
+  task publish_all: :environment do
+    page = 1
+    ideas = Spree::Mockbot::Idea.all(params: {page: page})
+    until ideas.empty?
+      ideas.each do |idea|
+        if idea.status == 'ready_to_publish'
+          Spree::Product.delay.publish_from_mockbot(idea.sku)
+        end
+      end
+      page += 1
+      ideas = Spree::Mockbot::Idea.all(params: {page: page})
+    end
+  end
+
 end
