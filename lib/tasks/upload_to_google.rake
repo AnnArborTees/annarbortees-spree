@@ -34,4 +34,14 @@ namespace :product do
     on_error = args.email_errors == 'email' ? email_errors : print_errors
     upload_all_to_google(on_error: on_error)
   end
+
+  desc %(
+    Remove any google products that belong to variants whose sku
+    has been changed.
+  )
+  task :remove_dangling_from_google, :environment do
+    include Spree::GoogleShoppingTasks
+
+    remove_dangling
+  end
 end
