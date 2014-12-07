@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: fb792048936d7997b1be117b58a09bc9e619e151
+  revision: 0f05dfba3a8b6263133d7930137633dc21614c89
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -33,6 +33,7 @@ GIT
       spree_google_trusted_store
       spree_multi_domain
       spree_sizing_guides
+      spree_wishlist
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
@@ -81,6 +82,14 @@ GIT
   specs:
     spree_paypal_express (2.0.3)
       paypal-sdk-merchant (= 1.106.1)
+      spree_core (~> 2.2.0)
+
+GIT
+  remote: git://github.com/spree-contrib/spree_wishlist.git
+  revision: 6b3fee88fd7d7f7b578690f06476493b3b7a62ea
+  branch: 2-2-stable
+  specs:
+    spree_wishlist (2.2)
       spree_core (~> 2.2.0)
 
 GIT
@@ -590,6 +599,7 @@ DEPENDENCIES
   spree_multi_domain!
   spree_paypal_express!
   spree_sizing_guides!
+  spree_wishlist!
   sprockets (= 2.11.0)
   turbolinks
   uglifier (>= 1.3.0)
