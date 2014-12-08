@@ -32,13 +32,18 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
+  gem 'sunspot_solr'
+
 end
 
 gem 'asset_sync'
 gem 'sprockets', '=2.11.0'
 
-
 gem 'spree_multi_domain', github: 'annarbortees/spree-multi-domain', branch: spree_branch
+gem 'spree_solr', github: 'annarbortees/spree_solr', branch: spree_branch
+gem 'sunspot_rails'
+gem 'progress_bar'
+
 gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: spree_branch
 gem 'spree_google_trusted_store', github: 'annarbortees/spree_google_trusted_store', branch: spree_branch
 gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: spree_branch

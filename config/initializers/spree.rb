@@ -10,7 +10,6 @@ Spree.config do |config|
   config.allow_ssl_in_production = false
   config.products_per_page = 36
   config.admin_products_per_page = 24
-  config.searcher_class = Spree::Core::Search::Solr
 end
 
 if !Rails.env.test?
