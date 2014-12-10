@@ -21,8 +21,7 @@ def images_for(variant, conditions, optionals = {})
   # logger.error "Images for #{variant.sku}: none for initial conditions: #{conditions}" if images.empty?
 
   until optional.empty? || images.any?
-    conditions.delete(optional.pop) if conditions.class == Hash
-    conditions.delete_key(optional.pop) if conditions.respond_to?(:delete_key)
+    conditions.delete(optional.pop)
 
     images = variant.images.where(conditions)
     images = variant.product.images.where(conditions) if images.empty?

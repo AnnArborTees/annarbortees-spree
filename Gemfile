@@ -47,5 +47,6 @@ gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express',
 gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: spree_branch
 gem 'spree_digital', github: 'annarbortees/spree_digital', branch: spree_branch
 gem 'spree_mockbot_integration', git: "https://#{ENV['GITHUB_OAUTH_KEY']}:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git", branch: spree_branch
+gem 'spree_solr', github: 'annarbortees/spree_solr', branch: spree_branch
 gem 'yaml_db', github: 'jetthoughts/yaml_db', ref: 'fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba'
 gem 'whenever'
