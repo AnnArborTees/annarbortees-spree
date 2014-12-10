@@ -22,7 +22,8 @@ namespace :product do
   end
 
   desc %(
-    Upload every t-shirt product variant to Google Shopping.
+    Upload every t-shirt product variant to Google Shopping that 
+    hasn't already been uploaded.
     If there is no Spree::ShippingCategory with the name "T-shirt",
     this task will inform you via STDOUT and do nothing.
   )
@@ -33,6 +34,15 @@ namespace :product do
 
     on_error = args.email_errors == 'email' ? email_errors : print_errors
     upload_all_to_google(on_error: on_error)
+  end
+
+  desc %(
+    Re-uploads every product that's already been uploaded to Google.
+  )
+  task :reupload_all_to_google, [] => :environment do |_t, args|
+    include Spree::GoogleShoppingTasks
+
+    reupload_all_to_google()    
   end
 
   desc %(
