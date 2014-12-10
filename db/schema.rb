@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141207051401) do
+ActiveRecord::Schema.define(version: 20141210194906) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -104,6 +104,25 @@ ActiveRecord::Schema.define(version: 20141207051401) do
 
   add_index "spree_calculators", ["calculable_id", "calculable_type"], name: "index_spree_calculators_on_calculable_id_and_calculable_type", using: :btree
   add_index "spree_calculators", ["id", "type"], name: "index_spree_calculators_on_id_and_type", using: :btree
+
+  create_table "spree_commission_agents", force: true do |t|
+    t.integer  "product_id"
+    t.integer  "user_id"
+    t.string   "calculator_type"
+    t.decimal  "rate",            precision: 4, scale: 2
+    t.decimal  "max",             precision: 4, scale: 2
+    t.decimal  "min",             precision: 4, scale: 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_commissions", force: true do |t|
+    t.decimal  "amount",              precision: 10, scale: 2
+    t.integer  "commission_agent_id"
+    t.integer  "line_item_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_configurations", force: true do |t|
     t.string   "name"

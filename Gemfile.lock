@@ -25,10 +25,18 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: a8a48e71fb15d33af89a5c7ee024448b3c7f93f1
+  revision: aa796804441155386e94358bba282c5fcaf26197
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
+
+GIT
+  remote: git://github.com/annarbortees/spree_commission_agents.git
+  revision: 5cf2371e29c0ddc11ee08ee70a201c280ac7cf12
+  branch: 2-2-stable
+  specs:
+    spree_commission_agents (2.2.0)
+      spree_core (~> 2.2.0)
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
@@ -43,7 +51,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: 8438d7ac50ac508cad6cfa07c646ab18be438ed6
+  revision: ef4309e61a1d0bd2225daaf0c1ca595fa5861335
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
@@ -65,11 +73,13 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_solr.git
-  revision: a7a3166d70f20effbea8ec3e5f6cbf0daac8bd89
+  revision: 400f9090bb79082051fe384aa89424eae41cf8b0
   branch: 2-2-stable
   specs:
-    spree_solr (2.2.0)
-      spree_core (~> 2.2.0)
+    spree_solr (2.2.3.beta)
+      spree_core (~> 2.2.3.beta)
+      sunspot_rails (>= 2.1.1)
+      sunspot_solr (>= 2.1.1)
 
 GIT
   remote: git://github.com/jetthoughts/yaml_db.git
@@ -162,7 +172,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 5d198d34fcb5f40578e82503a8283fa71f16ddc9
+  revision: 21428ddafc1fe9dc35e5ce37beee7e928705bc61
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -611,6 +621,7 @@ DEPENDENCIES
   spree_amazon_fps!
   spree_annarbortees_theme!
   spree_auth_devise!
+  spree_commission_agents!
   spree_digital!
   spree_gateway!
   spree_google_trusted_store!
