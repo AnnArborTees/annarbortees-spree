@@ -25,18 +25,18 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 8285d0be8c23723eaa5459bb3fc3a5bf8aab7600
+  revision: a8a48e71fb15d33af89a5c7ee024448b3c7f93f1
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
-      spree_backend (~> 2.2.0)
+
+GIT
+  remote: git://github.com/annarbortees/spree_commission_agents.git
+  revision: 5cf2371e29c0ddc11ee08ee70a201c280ac7cf12
+  branch: 2-2-stable
+  specs:
+    spree_commission_agents (2.2.0)
       spree_core (~> 2.2.0)
-      spree_digital
-      spree_frontend (~> 2.2.0)
-      spree_google_trusted_store
-      spree_multi_domain
-      spree_sizing_guides
-      spree_wishlist
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
@@ -299,7 +299,7 @@ GEM
     chronic (0.10.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.4)
+    cocaine (0.5.5)
       climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -621,6 +621,7 @@ DEPENDENCIES
   spree_amazon_fps!
   spree_annarbortees_theme!
   spree_auth_devise!
+  spree_commission_agents!
   spree_digital!
   spree_gateway!
   spree_google_trusted_store!
