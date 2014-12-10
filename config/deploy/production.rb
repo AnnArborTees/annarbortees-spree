@@ -16,7 +16,6 @@ set :branch, '2-2-stable'
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server '54.221.198.113', user: 'ubuntu', roles: %w{web app db rake bundler}#, my_property: :my_value
-server 'ec2-54-146-67-112.compute-1.amazonaws.com', user: 'ubuntu', roles: %w{web app}#, my_property: :my_value
+server '54.221.198.113', user: 'ubuntu', roles: %w{web app db}#, my_property: :my_value
 
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
