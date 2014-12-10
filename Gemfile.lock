@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: ef4309e61a1d0bd2225daaf0c1ca595fa5861335
+  revision: 8bac1578f5ce92375399fcec25a151271bbb0acf
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
@@ -308,7 +308,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    colorize (0.7.3)
+    colorize (0.7.4)
     connection_pool (2.1.0)
     deface (1.0.1)
       colorize (>= 0.5.8)
