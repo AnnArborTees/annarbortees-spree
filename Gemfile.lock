@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: a8a48e71fb15d33af89a5c7ee024448b3c7f93f1
+  revision: aa796804441155386e94358bba282c5fcaf26197
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
