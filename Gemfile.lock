@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_commission_agents.git
-  revision: 3f79c46c7f6941cde69ccc97e355e56abf9c3822
+  revision: 59b13385858e6de809a7ca04b73d36e243c4f6bd
   branch: 2-2-stable
   specs:
     spree_commission_agents (2.2.0)
@@ -73,11 +73,11 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_solr.git
-  revision: 400f9090bb79082051fe384aa89424eae41cf8b0
+  revision: a7a3166d70f20effbea8ec3e5f6cbf0daac8bd89
   branch: 2-2-stable
   specs:
-    spree_solr (2.2.3.beta)
-      spree_core (~> 2.2.3.beta)
+    spree_solr (2.2.0)
+      spree_core (~> 2.2.0)
       sunspot_rails (>= 2.1.1)
       sunspot_solr (>= 2.1.1)
 
@@ -172,7 +172,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 21428ddafc1fe9dc35e5ce37beee7e928705bc61
+  revision: 5d198d34fcb5f40578e82503a8283fa71f16ddc9
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
