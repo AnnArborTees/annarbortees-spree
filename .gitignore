@@ -28,3 +28,8 @@
 
 # Ignore vim swp files
 *.swp
+
+# Whatever that is
+log/sunspot-solr-development.log.lck
+# Ignore local solr stuff
+/solr
