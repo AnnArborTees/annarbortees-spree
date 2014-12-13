@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210194906) do
+ActiveRecord::Schema.define(version: 20141213003041) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -504,6 +504,7 @@ ActiveRecord::Schema.define(version: 20141210194906) do
     t.datetime "updated_at"
     t.string   "layout",               default: "default"
     t.text     "digital_preview"
+    t.string   "hashtag"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
@@ -919,6 +920,35 @@ ActiveRecord::Schema.define(version: 20141210194906) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "store_id"
+  end
+
+  create_table "spree_twitter_hashtags", force: true do |t|
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_twitter_hashtags_spree_twitter_tweets", id: false, force: true do |t|
+    t.integer "spree_twitter_hashtag_id", null: false
+    t.integer "spree_twitter_tweet_id",   null: false
+  end
+
+  add_index "spree_twitter_hashtags_spree_twitter_tweets", ["spree_twitter_hashtag_id", "spree_twitter_tweet_id"], name: "by_hashtags_tweets", using: :btree
+  add_index "spree_twitter_hashtags_spree_twitter_tweets", ["spree_twitter_tweet_id", "spree_twitter_hashtag_id"], name: "by_tweets_hashtags", using: :btree
+
+  create_table "spree_twitter_tweets", force: true do |t|
+    t.string   "in_reply_to_screen_name"
+    t.integer  "in_reply_to_status_id"
+    t.integer  "in_reply_to_user_id"
+    t.string   "lang"
+    t.integer  "retweet_count"
+    t.string   "source"
+    t.text     "text"
+    t.text     "attrs"
+    t.string   "full_text"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "spree_updates", force: true do |t|

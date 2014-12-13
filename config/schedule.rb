@@ -5,3 +5,7 @@ every 1.minute do
   rake "shipments:ship_digital"
 end
 
+every 2.minutes do
+  rake "twitter:populate_tweets"
+end
+
