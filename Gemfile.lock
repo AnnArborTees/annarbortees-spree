@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: d2b7a770aa19add36846d208d1347c8440bfbe95
+  revision: cf73da3eaebb66aadff2f717a473468e4e6136ef
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -60,7 +60,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: 9ba22768d40a4b3ec27a8fcb67cd728174312fb4
+  revision: 0333f21ef3532d83138b07e162045f5c324de6d1
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
