@@ -60,7 +60,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: 16210c4be2ae28ee4fb68c382539f855e7077872
+  revision: 9ba22768d40a4b3ec27a8fcb67cd728174312fb4
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
