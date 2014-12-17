@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141213003041) do
+ActiveRecord::Schema.define(version: 20141216204320) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -239,6 +239,18 @@ ActiveRecord::Schema.define(version: 20141213003041) do
     t.datetime "last_cancelation_upload"
   end
 
+  create_table "spree_homepage_products", force: true do |t|
+    t.integer  "product_id"
+    t.integer  "store_id"
+    t.integer  "position_id"
+    t.integer  "integer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_homepage_products", ["product_id"], name: "index_spree_homepage_products_on_product_id", using: :btree
+  add_index "spree_homepage_products", ["store_id"], name: "index_spree_homepage_products_on_store_id", using: :btree
+
   create_table "spree_homepage_slides", force: true do |t|
     t.string   "name"
     t.string   "description"
@@ -252,6 +264,15 @@ ActiveRecord::Schema.define(version: 20141213003041) do
   end
 
   add_index "spree_homepage_slides", ["name"], name: "index_spree_homepage_slides_on_name", using: :btree
+
+  create_table "spree_homepages", force: true do |t|
+    t.string   "name"
+    t.integer  "store_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_homepages", ["store_id"], name: "index_spree_homepages_on_store_id", using: :btree
 
   create_table "spree_inventory_units", force: true do |t|
     t.string   "state"
@@ -942,14 +963,15 @@ ActiveRecord::Schema.define(version: 20141213003041) do
     t.integer  "in_reply_to_user_id"
     t.string   "lang"
     t.integer  "retweet_count"
-    t.string   "source"
-    t.text     "text"
+    t.text     "source"
     t.text     "attrs"
-    t.string   "full_text"
-    t.string   "url"
+    t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "tweet_id",                limit: 8
   end
+
+  add_index "spree_twitter_tweets", ["tweet_id"], name: "index_spree_twitter_tweets_on_tweet_id", using: :btree
 
   create_table "spree_updates", force: true do |t|
     t.integer  "updatable_id"

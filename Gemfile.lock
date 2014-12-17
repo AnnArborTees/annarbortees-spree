@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: bdbd7fb25341a2371d654d8d01219c2d2ff4148f
+  revision: 9c944c6d83febd01932bf545f07a8fb47f9e3188
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 08884a3e73d750ac080b309d9d498a592e7885aa
+  revision: 9fc93af36e7158435e59a68d787d3df282316637
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -318,7 +318,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    colorize (0.7.4)
+    colorize (0.7.5)
     connection_pool (2.1.0)
     deface (1.0.1)
       colorize (>= 0.5.8)
