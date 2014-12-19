@@ -12,6 +12,8 @@ role :db,  %w{ubuntu@staging.shop.annarbortees.com}
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 set :branch, '2-2-stable'
 
+set :linked_files fetch(:linked_files) + %w{config/remote_database.yml}
+
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server
