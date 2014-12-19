@@ -17,6 +17,7 @@
 /tmp
 
 /config/*.yml
+!/config/business_time.yml
 
 /.idea/
 /public/spree

@@ -19,8 +19,8 @@ set :assets_prefix, 'spree/assets'
 
 # Default value for :linked_files is []
 set :linked_files, %w{config/database.yml config/application.yml
-                      config/business_time.yml config/sunspot.yml
-                      config/remote_database.yml config/test_garbage.yml}
+                      config/sunspot.yml config/remote_database.yml
+                      config/test_garbage.yml}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{solr}
