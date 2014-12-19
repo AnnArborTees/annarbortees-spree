@@ -58,3 +58,4 @@ gem 'spree_mockbot_integration', git: "https://#{ENV['GITHUB_OAUTH_KEY']}:x-oaut
 gem 'spree_commission_agents', github: 'annarbortees/spree_commission_agents', branch: spree_branch
 gem 'spree_annarbortees_twitter', github: 'annarbortees/spree_annarbortees_twitter', branch: spree_branch
 gem 'twitter'
+gem 'dumpsync', github: 'Resonious/dumpsync', branch: 'master'
