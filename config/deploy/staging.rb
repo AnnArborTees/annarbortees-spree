@@ -4,12 +4,13 @@
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :app, %w{ubuntu@10.1.10.238}
-role :web, %w{ubuntu@10.1.10.238}
-role :db,  %w{ubuntu@10.1.10.238}
+role :app, %w{ubuntu@staging.shop.annarbortees.com}
+role :web, %w{ubuntu@staging.shop.annarbortees.com}
+role :db,  %w{ubuntu@staging.shop.annarbortees.com}
 
 # Default branch is :master
-ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :branch, '2-2-stable'
 
 # Extended Server Syntax
 # ======================
@@ -17,7 +18,7 @@ ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server '10.1.10.238', user: 'ubuntu', roles: %w{web app}
+server 'staging.shop.annarbortees.com', user: 'ubuntu', roles: %w{web app}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
