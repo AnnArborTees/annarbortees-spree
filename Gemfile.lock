@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/Resonious/dumpsync.git
+  revision: d973380c4c20a16396fe1434f5cea4d57151ec7e
+  branch: master
+  specs:
+    dumpsync (0.0.1)
+
+GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
   revision: 9c944c6d83febd01932bf545f07a8fb47f9e3188
   branch: 2-2-stable
@@ -318,7 +325,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    colorize (0.7.5)
+    colorize (0.7.4)
     connection_pool (2.1.0)
     deface (1.0.1)
       colorize (>= 0.5.8)
@@ -633,6 +640,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.0.0)
+  dumpsync!
   figaro
   jbuilder (~> 1.2)
   jquery-rails
