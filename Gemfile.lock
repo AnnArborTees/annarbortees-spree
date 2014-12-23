@@ -41,7 +41,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_commission_agents.git
-  revision: be3d7e8a00807686fecdd7cc0086e1554640586b
+  revision: 90655b0cb3909b195ff6365ba890cca618c3e78c
   branch: 2-2-stable
   specs:
     spree_commission_agents (2.2.0)
@@ -449,10 +449,10 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.1)
     minitest (4.7.5)
-    monetize (1.0.0)
-      money (~> 6.4.0)
-    money (6.4.0)
-      i18n (>= 0.6.4, <= 0.7.0.beta1)
+    monetize (1.1.0)
+      money (~> 6.5.0)
+    money (6.5.0)
+      i18n (>= 0.6.4, <= 0.7.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -570,8 +570,8 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sshkit (1.5.1)
-      colorize
+    sshkit (1.6.1)
+      colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     state_machine (1.2.0)
