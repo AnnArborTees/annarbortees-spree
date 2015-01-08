@@ -1,6 +1,6 @@
 Spree::Product.class_eval do
 
-  searchable do
+  searchable if: :indexable? do
     text :meta_keywords
     text :meta_description
     text :apparel_color
