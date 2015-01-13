@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: 9c944c6d83febd01932bf545f07a8fb47f9e3188
+  revision: 95745afd90b1ca22edf747c5533df6fe259932ff
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 9fc93af36e7158435e59a68d787d3df282316637
+  revision: 20003357eb760aa3f995e3affd06b986ce23102a
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -283,7 +283,7 @@ GEM
       addressable (>= 2.3.1)
       extlib (>= 0.9.15)
       multi_json (>= 1.0.0)
-    awesome_nested_set (3.0.1)
+    awesome_nested_set (3.0.2)
       activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
       json (~> 1.4)
@@ -347,7 +347,7 @@ GEM
     extlib (0.9.16)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    ffaker (1.25.0)
+    ffaker (1.30.0)
     figaro (1.0.0)
       thor (~> 0.14)
     fission (0.5.0)
@@ -442,7 +442,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (4.1.2)
       railties (>= 3.1.0)
-    json (1.8.1)
+    json (1.8.2)
     jwt (1.2.0)
     kaminari (0.15.1)
       actionpack (>= 3.0.0)
@@ -454,7 +454,7 @@ GEM
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     mime-types (2.4.3)
-    mini_portile (0.6.1)
+    mini_portile (0.6.2)
     minitest (4.7.5)
     monetize (1.1.0)
       money (~> 6.5.0)
@@ -501,7 +501,7 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.0.12)
       actionmailer (= 4.0.12)
