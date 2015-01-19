@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: f7025ae838bf25fb83d12e8fa66f563b41369aab
+  revision: c842182cf433eead386f33447cce7813c637632b
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_commission_agents.git
-  revision: dd60c0a203d90f41877684a80ff70bcefa7f10f8
+  revision: 6b8a88a4a9cacd8ba96fe3ee0bfd642628cfe4f8
   branch: 2-2-stable
   specs:
     spree_commission_agents (2.2.0)
