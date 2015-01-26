@@ -33,7 +33,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
   gem 'sunspot_solr'
-
+  gem 'byebug'
 end
 
 gem 'asset_sync'
