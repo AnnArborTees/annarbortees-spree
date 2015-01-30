@@ -1,4 +1,12 @@
 Spree::Product.class_eval do
+  # NOTE These analytics_ methods are called by multidomain for Google Analytics.
+  def analytics_category
+    property('product-type')
+  end
+
+  def analytics_brand
+    'Ann Arbor Tees'
+  end
 
   def self.publish_from_mockbot(sku)
     if sku.nil?
