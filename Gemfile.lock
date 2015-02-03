@@ -188,7 +188,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 0a96fff6a9e6e49011f8466550529948ecea86c1
+  revision: 6c1fb92c651f111749fe43e214035942fbcdda26
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -354,7 +354,7 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffaker (1.31.0)
-    figaro (1.0.0)
+    figaro (1.1.0)
       thor (~> 0.14)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
