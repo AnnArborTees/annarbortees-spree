@@ -11,5 +11,7 @@ ShopAnnarborteesCom::Application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
+  get '/checkedout' => 'spree/checkout#complete', as: :checkedout
+
   get '/support/show', to: redirect('/help')
 end
