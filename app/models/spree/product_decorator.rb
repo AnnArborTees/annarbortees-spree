@@ -8,6 +8,26 @@ Spree::Product.class_eval do
     'Ann Arbor Tees'
   end
 
+  searchable if: :indexable? do
+    text :meta_keywords
+    text :meta_description
+    text :apparel_color
+  end
+
+  def apparel_color
+    # NOTE assumes all variants have the same apparel-color value.
+    utils = Class.new { extend Spree::OptionValueUtils }
+    return unless option_types.include?(utils.color_type)
+
+    variants.find_each do |variant|
+      relation = variant.option_values.where(option_type_id: utils.color_type.id)
+      if relation.exists?
+        return relation.first.presentation
+      end
+    end
+    nil
+  end
+
   def self.publish_from_mockbot(sku)
     if sku.nil?
       fail %(
