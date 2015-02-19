@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: 9c1805191d0f363a01e7e0a3a3a56047d9e0c293
+  revision: a9e7a8c59a605630515ec9c26d0d1af6897b260e
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -32,14 +32,14 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 802a9ea38a309c50f150b3ca787473d9b93642cf
+  revision: 68958db8d1f43cfb2a4d1a3270d73d0a6abc7ad7
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_twitter.git
-  revision: 27cf25ff2ca947f5deaca2ac0e67698d0b58a7a9
+  revision: effa9e964869e71d2c3391d5a1b6322fb8d9e4ff
   branch: 2-2-stable
   specs:
     spree_annarbortees_twitter (2.2.0)
@@ -67,7 +67,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_google_trusted_store.git
-  revision: 8bac1578f5ce92375399fcec25a151271bbb0acf
+  revision: a994aa2ccae5de0d1560d0752380acba7667de00
   branch: 2-2-stable
   specs:
     spree_google_trusted_store (2.2.1)
@@ -188,7 +188,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 6c1fb92c651f111749fe43e214035942fbcdda26
+  revision: 0308ccda22e0e8f6933ac8fcbe57df8318f46367
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -273,7 +273,7 @@ GEM
       tzinfo (~> 0.3.37)
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
-    addressable (2.3.6)
+    addressable (2.3.7)
     arel (4.0.2)
     asset_sync (1.1.0)
       activemodel
@@ -351,9 +351,9 @@ GEM
     excon (0.42.1)
     execjs (2.2.2)
     extlib (0.9.16)
-    faraday (0.9.0)
+    faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
-    ffaker (1.31.0)
+    ffaker (1.32.1)
     figaro (1.1.0)
       thor (~> 0.14)
     fission (0.5.0)
@@ -417,17 +417,16 @@ GEM
     formatador (0.2.5)
     friendly_id (5.0.5)
       activerecord (>= 4.0.0)
-    google-api-client (0.7.1)
-      addressable (>= 2.3.2)
-      autoparse (>= 0.3.3)
-      extlib (>= 0.9.15)
-      faraday (>= 0.9.0)
-      jwt (>= 0.1.5)
-      launchy (>= 2.1.1)
-      multi_json (>= 1.0.0)
-      retriable (>= 1.4)
-      signet (>= 0.5.0)
-      uuidtools (>= 2.1.0)
+    google-api-client (0.8.2)
+      activesupport (>= 3.2)
+      addressable (~> 2.3)
+      autoparse (~> 0.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      launchy (~> 2.4)
+      multi_json (~> 1.10)
+      retriable (~> 1.4)
+      signet (~> 0.6)
     highline (1.6.21)
     hike (1.2.3)
     hitimes (1.2.2)
@@ -449,7 +448,7 @@ GEM
     jquery-ui-rails (4.1.2)
       railties (>= 3.1.0)
     json (1.8.2)
-    jwt (1.2.0)
+    jwt (1.2.1)
     kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -464,7 +463,7 @@ GEM
     minitest (4.7.5)
     monetize (1.1.0)
       money (~> 6.5.0)
-    money (6.5.0)
+    money (6.5.1)
       i18n (>= 0.6.4, <= 0.7.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
@@ -569,7 +568,7 @@ GEM
       faraday (~> 0.9)
       jwt (~> 1.0)
       multi_json (~> 1.10)
-    simple_oauth (0.3.0)
+    simple_oauth (0.3.1)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -607,7 +606,7 @@ GEM
     truncate_html (0.9.2)
     turbolinks (2.5.2)
       coffee-rails
-    twitter (5.13.0)
+    twitter (5.14.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.9)
