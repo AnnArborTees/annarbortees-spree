@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 802a9ea38a309c50f150b3ca787473d9b93642cf
+  revision: 68958db8d1f43cfb2a4d1a3270d73d0a6abc7ad7
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -188,7 +188,7 @@ GIT
 
 GIT
   remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 6c1fb92c651f111749fe43e214035942fbcdda26
+  revision: 0308ccda22e0e8f6933ac8fcbe57df8318f46367
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -320,7 +320,7 @@ GEM
     chronic (0.10.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.5)
+    cocaine (0.5.7)
       climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -538,7 +538,7 @@ GEM
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     retriable (1.4.1)
-    rsolr (1.0.10)
+    rsolr (1.0.11)
       builder (>= 2.1.2)
     sass (3.2.19)
     sass-rails (4.0.5)
