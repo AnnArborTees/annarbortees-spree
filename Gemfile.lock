@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 68958db8d1f43cfb2a4d1a3270d73d0a6abc7ad7
+  revision: 6d6eba940cd71f2de4ac42a2815888b0e0b9b115
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -186,7 +186,7 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
-  remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
+  remote: https://fbbbb5e02b5e6bf298c4b19aa755c45927a50dba:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
   revision: 2d485fde39c44dc8854370403eae0ee071acfafd
   branch: 2-2-stable
   specs:
