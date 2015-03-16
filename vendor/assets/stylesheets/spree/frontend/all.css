@@ -10,4 +10,6 @@
  *= require_tree .
  *= require spree/frontend/spree_mockbot_integration
  *= require spree/frontend/spree_google_trusted_store
+ *= require spree/frontend/spree_annarbortees_twitter
+ *= require spree/frontend/spree_digital
 */
