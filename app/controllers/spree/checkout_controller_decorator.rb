@@ -21,6 +21,6 @@ Spree::CheckoutController.class_eval do
 
   def completion_route
     session[:completed_order_id] = @order.id
-    '/checkedout'
+    '/checkedout?checkout_complete=true'
   end
 end
