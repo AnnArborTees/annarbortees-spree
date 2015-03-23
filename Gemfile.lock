@@ -7,15 +7,15 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: a9e7a8c59a605630515ec9c26d0d1af6897b260e
+  revision: 3f808ce9528e1a92147c2df629565c294363adbf
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
+      acts_as_list
       spree_api (~> 2.2.0)
       spree_backend (~> 2.2.0)
       spree_core (~> 2.2.0)
       spree_frontend (~> 2.2.0)
-      spree_solr (~> 2.2.0)
       sunspot_rails
       sunspot_solr
 
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 68958db8d1f43cfb2a4d1a3270d73d0a6abc7ad7
+  revision: 305d227cb9a3ce84ee0ce20dfa36c9b1e57f8a34
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -187,7 +187,7 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
-  remote: https://a68393f6398b9b5a25b190a2e4641a565a59fd5f:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
+  remote: https://fbbbb5e02b5e6bf298c4b19aa755c45927a50dba:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
   revision: 2d485fde39c44dc8854370403eae0ee071acfafd
   branch: 2-2-stable
   specs:
@@ -300,7 +300,7 @@ GEM
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
     cancan (1.6.10)
-    canonical-rails (0.0.7)
+    canonical-rails (0.0.8)
       rails (>= 3.1, < 5.0)
     capistrano (3.1.0)
       i18n
@@ -465,7 +465,7 @@ GEM
       money (~> 6.5.0)
     money (6.5.1)
       i18n (>= 0.6.4, <= 0.7.0)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.3.17)
@@ -538,7 +538,7 @@ GEM
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     retriable (1.4.1)
-    rsolr (1.0.11)
+    rsolr (1.0.12)
       builder (>= 2.1.2)
     sass (3.2.19)
     sass-rails (4.0.5)
@@ -598,7 +598,7 @@ GEM
       sunspot (= 2.1.1)
     sunspot_solr (2.1.1)
     thor (0.19.1)
-    thread_safe (0.3.4)
+    thread_safe (0.3.5)
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
