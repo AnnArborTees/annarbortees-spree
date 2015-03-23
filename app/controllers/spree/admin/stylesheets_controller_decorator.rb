@@ -1,5 +1,5 @@
 Spree::Admin::StylesheetsController.class_eval do
-  before_filter :expire_cache, only: [:update, :create, :destroy]
+  before_filter :expire_cache, only: [:update, :destroy]
 
   private
 
