@@ -7,15 +7,15 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: a9e7a8c59a605630515ec9c26d0d1af6897b260e
+  revision: 3f808ce9528e1a92147c2df629565c294363adbf
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
+      acts_as_list
       spree_api (~> 2.2.0)
       spree_backend (~> 2.2.0)
       spree_core (~> 2.2.0)
       spree_frontend (~> 2.2.0)
-      spree_solr (~> 2.2.0)
       sunspot_rails
       sunspot_solr
 
@@ -302,7 +302,7 @@ GEM
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
     cancan (1.6.10)
-    canonical-rails (0.0.7)
+    canonical-rails (0.0.8)
       rails (>= 3.1, < 5.0)
     capistrano (3.1.0)
       i18n
@@ -540,7 +540,7 @@ GEM
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     retriable (1.4.1)
-    rsolr (1.0.11)
+    rsolr (1.0.12)
       builder (>= 2.1.2)
     sass (3.2.19)
     sass-rails (4.0.5)
