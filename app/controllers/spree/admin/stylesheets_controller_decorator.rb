@@ -11,10 +11,10 @@ Spree::Admin::StylesheetsController.class_eval do
   end
 
   def sync_asset
-    unless Rails.application.config.action_controller.asset_host.blank? and respond_to? AssetSync
+    if !Rails.application.config.action_controller.asset_host.blank? and respond_to? AssetSync
       connection = fog_connection
       bucket = connection.directories.get(AssetSync.config.fog_directory)
-      key = Digest::SHA1.hexdigest @stylesheet.updated_at
+      key = Digest::SHA1.hexdigest @stylesheet.updated_at.to_s
       bucket.files.create(
           key: "spree/stylesheets/#{@stylesheet.id.to_s}-#{key}.css",
           body: render_to_string(template: 'spree/stylesheets/show.css.erb', format: :css),
