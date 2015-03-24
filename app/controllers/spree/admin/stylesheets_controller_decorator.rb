@@ -11,7 +11,7 @@ Spree::Admin::StylesheetsController.class_eval do
   end
 
   def sync_asset
-    if !Rails.application.config.action_controller.asset_host.blank? and respond_to? AssetSync
+    if !Rails.application.config.action_controller.asset_host.blank? and defined? AssetSync
       connection = fog_connection
       bucket = connection.directories.get(AssetSync.config.fog_directory)
       key = Digest::SHA1.hexdigest @stylesheet.updated_at.to_s
