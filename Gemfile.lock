@@ -188,7 +188,7 @@ GIT
 
 GIT
   remote: https://fbbbb5e02b5e6bf298c4b19aa755c45927a50dba:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 2d485fde39c44dc8854370403eae0ee071acfafd
+  revision: 17762fb29e1b3eadfcd830d05be8f240fc3eb0cf
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -489,7 +489,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
       mime-types
-    paranoia (2.1.0)
+    paranoia (2.1.1)
       activerecord (~> 4.0)
     paypal-sdk-core (0.2.10)
       multi_json (~> 1.0)
