@@ -59,9 +59,9 @@ ShopAnnarborteesCom::Application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  # config.action_controller.asset_host = "http://assets.example.com"
+   config.action_controller.asset_host = "http://staging-assets1.annarbortees.com"
   #config.action_controller.asset_host = "http://assets%d.annarbortees.com"
-  config.action_controller.asset_host = "//s3.amazonaws.com/#{Figaro.env.fog_directory ||= Figaro.env['fog_directory']}"
+  # config.action_controller.asset_host = "//s3.amazonaws.com/#{Figaro.env.fog_directory ||= Figaro.env['fog_directory']}"
   config.assets.prefix = '/spree/assets'
 
   # Precompile additional assets.
