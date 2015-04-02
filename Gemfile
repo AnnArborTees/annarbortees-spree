@@ -59,3 +59,4 @@ gem 'spree_commission_agents', github: 'annarbortees/spree_commission_agents', b
 gem 'spree_annarbortees_twitter', github: 'annarbortees/spree_annarbortees_twitter', branch: spree_branch
 gem 'twitter'
 gem 'dumpsync', github: 'Resonious/dumpsync', branch: 'master'
+gem 'actionpack-page_caching'
