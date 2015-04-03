@@ -60,7 +60,7 @@ ShopAnnarborteesCom::Application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"
-  config.action_controller.asset_host = "assets%d.annarbortees.com"
+  config.action_controller.asset_host = "d2hcwbsn3lam8q.cloudfront.net"
   # config.action_controller.asset_host = "//s3.amazonaws.com/#{Figaro.env.fog_directory || Figaro.env['fog_directory']}"
   config.assets.prefix = '/spree/assets'
 
