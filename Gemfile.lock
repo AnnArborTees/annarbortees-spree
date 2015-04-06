@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_commission_agents.git
-  revision: 303c13981a314e16eda9186b794aa443d592a36d
+  revision: f54ede459beee40afa80c592c59506560b42cf4b
   branch: 2-2-stable
   specs:
     spree_commission_agents (2.2.0)
@@ -260,7 +260,7 @@ GEM
       activerecord-deprecated_finders (~> 1.0.2)
       activesupport (= 4.0.12)
       arel (~> 4.0.0)
-    activerecord-deprecated_finders (1.0.3)
+    activerecord-deprecated_finders (1.0.4)
     activeresource (4.0.0)
       activemodel (~> 4.0)
       activesupport (~> 4.0)
@@ -463,7 +463,7 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (4.7.5)
-    monetize (1.1.0)
+    monetize (1.2.0)
       money (~> 6.5.0)
     money (6.5.1)
       i18n (>= 0.6.4, <= 0.7.0)
