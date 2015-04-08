@@ -3,7 +3,7 @@ lock '3.1.0'
 
 set :application, 'annarbortees-spree'
 set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
-set :rvm_ruby_version, '2.1.1'
+set :rvm_ruby_version, 'rbx-2.5.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
 
