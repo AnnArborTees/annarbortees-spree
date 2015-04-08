@@ -33,7 +33,8 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
   gem 'sunspot_solr'
-  gem 'byebug'
+  gem 'byebug', platforms: :rbx
+  gem 'rubinius-debugger', platforms: :rbx
 end
 
 gem 'asset_sync'
