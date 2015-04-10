@@ -1,4 +1,4 @@
-if Rails.env.production?
+if ENV['RAILS_ENV'] == 'production'
   set :output, {:error => '/home/ubuntu/RailsApps/wip.annarbortees.com/shared/log/cron.error.log',
                 :standard => '/home/ubuntu/RailsApps/wip.annarbortees.com/shared/log/cron.log'}
 
