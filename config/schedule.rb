@@ -1,11 +1,12 @@
-set :output, {:error => '/home/ubuntu/RailsApps/wip.annarbortees.com/shared/log/cron.error.log',
-              :standard => '/home/ubuntu/RailsApps/wip.annarbortees.com/shared/log/cron.log'}
+if Rails.env.production?
+  set :output, {:error => '/home/ubuntu/RailsApps/wip.annarbortees.com/shared/log/cron.error.log',
+                :standard => '/home/ubuntu/RailsApps/wip.annarbortees.com/shared/log/cron.log'}
 
-every 1.minute do
-  rake "shipments:ship_digital"
+  every 1.minute do
+    rake "shipments:ship_digital"
+  end
+
+  every 2.minutes do
+    rake "twitter:populate_tweets"
+  end
 end
-
-every 2.minutes do
-  rake "twitter:populate_tweets"
-end
-
