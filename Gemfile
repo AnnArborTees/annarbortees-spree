@@ -61,3 +61,4 @@ gem 'spree_annarbortees_twitter', github: 'annarbortees/spree_annarbortees_twitt
 gem 'twitter'
 gem 'dumpsync', github: 'Resonious/dumpsync', branch: 'master'
 gem 'actionpack-page_caching'
+gem 'posix-spawn'

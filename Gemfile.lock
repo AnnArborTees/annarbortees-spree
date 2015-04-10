@@ -499,6 +499,7 @@ GEM
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.5)
+    posix-spawn (0.3.11)
     pr_geohash (1.0.0)
     progress_bar (1.0.3)
       highline (~> 1.6.1)
@@ -656,6 +657,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
+  posix-spawn
   progress_bar
   rails (= 4.0.12)
   rubinius-debugger
