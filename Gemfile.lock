@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: c614893dd6332c549d682938e5ee3ac8f93e09f3
+  revision: d22d86ad484057342e14e0b9db20efc6a12e1702
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: fb1fa55a42ab7a551b35e3006e29f72cf9dae8fc
+  revision: 9aafa79b94f40fcad9def8275a3e3418222ce1bb
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -45,6 +45,19 @@ GIT
     spree_annarbortees_twitter (2.2.0)
       spree_core (~> 2.2.0)
       twitter
+
+GIT
+  remote: git://github.com/annarbortees/spree_auth_devise.git
+  revision: b27895049cd1b70cdcd5c72e42ace2ed41574953
+  branch: 2-2-stable
+  specs:
+    spree_auth_devise (2.2.1)
+      cancan (~> 1.6.10)
+      devise (~> 3.2.3)
+      devise-encryptable (= 0.1.2)
+      json
+      multi_json
+      spree_core (~> 2.2.0)
 
 GIT
   remote: git://github.com/annarbortees/spree_commission_agents.git
@@ -187,8 +200,16 @@ GIT
       spree_core (~> 2.2.0)
 
 GIT
+  remote: git://github.com/spree/spree_gateway.git
+  revision: 06042d0d1422ac9cb4e37ed24565b8204848d287
+  branch: 2-2-stable
+  specs:
+    spree_gateway (2.2.1)
+      spree_core (~> 2.2.0)
+
+GIT
   remote: https://fbbbb5e02b5e6bf298c4b19aa755c45927a50dba:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 17762fb29e1b3eadfcd830d05be8f240fc3eb0cf
+  revision: d27e6c308eed18809b3ecebeb5a83b3da7d7febd
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -198,27 +219,6 @@ GIT
       spree_annarbortees_theme (~> 2.2.0)
       spree_core (~> 2.2.0)
       spree_multi_domain
-
-GIT
-  remote: https://github.com/spree/spree_auth_devise.git
-  revision: 01901766a2562026e2f3eb523a3f0f9bea8ae31e
-  branch: 2-2-stable
-  specs:
-    spree_auth_devise (2.2.0)
-      cancan (~> 1.6.10)
-      devise (~> 3.2.3)
-      devise-encryptable (= 0.1.2)
-      json
-      multi_json
-      spree_core (~> 2.2.0)
-
-GIT
-  remote: https://github.com/spree/spree_gateway.git
-  revision: 5cbe3890d1a0b7da030a75bb20d6b390a6b84160
-  branch: 2-2-stable
-  specs:
-    spree_gateway (2.2.1)
-      spree_core (~> 2.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -291,7 +291,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    bcrypt (3.1.9)
+    bcrypt (3.1.10)
     buftok (0.2.0)
     builder (3.1.4)
     business_time (0.7.3)
@@ -302,7 +302,7 @@ GEM
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
     cancan (1.6.10)
-    canonical-rails (0.0.8)
+    canonical-rails (0.0.9)
       rails (>= 3.1, < 5.0)
     capistrano (3.1.0)
       i18n
@@ -593,14 +593,14 @@ GEM
       net-ssh (>= 2.8.0)
     state_machine (1.2.0)
     stringex (1.5.1)
-    sunspot (2.1.1)
+    sunspot (2.2.0)
       pr_geohash (~> 1.0)
       rsolr (~> 1.0.7)
-    sunspot_rails (2.1.1)
+    sunspot_rails (2.2.0)
       nokogiri
       rails (>= 3)
-      sunspot (= 2.1.1)
-    sunspot_solr (2.1.1)
+      sunspot (= 2.2.0)
+    sunspot_solr (2.2.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
