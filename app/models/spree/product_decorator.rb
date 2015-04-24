@@ -60,6 +60,10 @@ Spree::Product.class_eval do
 
     end
 
+    idea.update_attributes(
+        status: 'queued_to_publish'
+    )
+
     publisher = idea.publisher
     publisher.try(:destroy)
 
@@ -72,12 +76,17 @@ Spree::Product.class_eval do
       fail %(
         Error during `#{publisher.current_step}` step: #{e.message}
            )
+      idea.update_attributes(
+          status: 'failed_to_publish'
+      )
 
     rescue SpreeMockbotIntegration::Sku::SkuError => e
       fail %(
         Sku error during `#{publisher.current_step}` step: #{e.message}
            )
-
+        idea.update_attributes(
+            status: 'failed_to_publish'
+        )
     end
 
     publisher.destroy

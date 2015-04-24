@@ -209,7 +209,7 @@ GIT
 
 GIT
   remote: https://fbbbb5e02b5e6bf298c4b19aa755c45927a50dba:x-oauth-basic@github.com/annarbortees/spree_mockbot_integration.git
-  revision: d27e6c308eed18809b3ecebeb5a83b3da7d7febd
+  revision: 213e01bada22bfa09cb3382b1d5df92a940ead85
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -331,7 +331,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    colorize (0.7.5)
+    colorize (0.7.7)
     columnize (0.8.9)
     connection_pool (2.1.0)
     debugger-linecache (1.2.0)
@@ -621,7 +621,7 @@ GEM
       memoizable (~> 0.4.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (0.3.43)
+    tzinfo (0.3.44)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
