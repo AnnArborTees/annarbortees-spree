@@ -1,7 +1,6 @@
-namespace :shipments do
+Spree::Shipment.class_eval do
 
-  desc 'Digital Downloads Should be marked as shipped immediately'
-  task ship_digital: :environment do
+  def self.ship_digital_orders
     digital_shipping_methods = Spree::ShippingMethod.where(name: 'Digital Download')
     digital_shipping_methods.each do |sm|
       shipments = Spree::Shipment.joins(:shipping_rates).where(spree_shipping_rates: {shipping_method_id: sm.id})
