@@ -19,3 +19,4 @@ set :branch, '2-2-stable'
 server '54.243.215.193', user: 'ubuntu', roles: %w{web app db}#, my_property: :my_value
 
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
+

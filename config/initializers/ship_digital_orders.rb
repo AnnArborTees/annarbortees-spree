@@ -1,5 +1,5 @@
 SHIP_EVERY = 1.minute
-unless defined?(Rails::Console)
+unless defined?(Rails::Console) || Rails.env.development?
   Thread.new do
 
     load "#{Rails.root}/app/models/spree/shipment_decorator.rb"
