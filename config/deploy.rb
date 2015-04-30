@@ -8,19 +8,7 @@ set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
 
 
-# Default value for :format is :pretty
-# set :format, :pretty
-
-# Default value for :log_level is :debug
-# set :log_level, :debug
-
-# Default value for :pty is false
-# set :pty, true
-
-# Default value for :linked_files is []
-set :linked_files, %w{config/remote_database.yml config/database.yml config/application.yml config/sunspot.yml config/asset_sync.yml config/business_time.yml config/sidekiq.yml}
-
-# Default value for linked_dirs is []
+set :linked_files, %w{config/remote_database.yml config/database.yml config/application.yml config/sunspot.yml config/asset_sync.yml config/business_time.yml}
 set :linked_dirs, %w{solr}
 
 # Default value for default_env is {}
