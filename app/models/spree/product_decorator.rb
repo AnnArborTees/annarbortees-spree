@@ -73,17 +73,20 @@ Spree::Product.class_eval do
     begin
       publisher.do_everything!
     rescue Spree::Mockbot::Idea::PublishError => e
-      fail %(
-        Error during `#{publisher.current_step}` step: #{e.message}
-           )
       idea.update_attributes(
           status: 'failed_to_publish'
       )
+      fail %(
+        Error during `#{publisher.current_step}` step: #{e.message},
+        #{e.backtrace}
+      )
+
 
     rescue SpreeMockbotIntegration::Sku::SkuError => e
       fail %(
         Sku error during `#{publisher.current_step}` step: #{e.message}
-           )
+
+        )
         idea.update_attributes(
             status: 'failed_to_publish'
         )
