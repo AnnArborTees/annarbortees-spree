@@ -26,6 +26,7 @@ spree_branch = '2-2-stable'
 gem 'spree', github: 'spree/spree', branch: spree_branch
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: spree_branch
 gem 'spree_auth_devise', github: 'annarbortees/spree_auth_devise', branch: spree_branch
+gem 'sunspot_rails'
 
 group :development do
   gem 'capistrano', '~> 3.1.0'
@@ -37,6 +38,27 @@ group :development do
   gem 'byebug', platforms: :mri
 end
 
+group :test do
+  gem 'rubinius-debugger', platforms: :rbx
+  gem 'capybara', '~> 2.4'
+  gem 'database_cleaner', '~> 1.3'
+  gem 'email_spec'
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'launchy'
+  gem 'rspec-activemodel-mocks'
+  gem 'rspec-collection_matchers'
+  gem 'rspec-its'
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'simplecov'
+  gem 'webmock', '1.8.11'
+  gem 'poltergeist', '1.5.0'
+  gem 'timecop'
+  gem 'with_model'
+  gem 'selenium-webdriver'
+  gem 'sunspot_matchers'
+  gem 'sunspot_solr'
+end
+
 gem 'asset_sync'
 gem 'sprockets', '=2.11.0'
 gem 'yaml_db', github: 'jetthoughts/yaml_db', ref: 'fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba'
@@ -44,7 +66,6 @@ gem 'whenever'
 
 gem 'spree_multi_domain', github: 'annarbortees/spree-multi-domain', branch: spree_branch
 gem 'spree_solr', github: 'annarbortees/spree_solr', branch: spree_branch
-gem 'sunspot_rails'
 gem 'progress_bar'
 
 gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: spree_branch
