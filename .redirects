@@ -1,0 +1,2832 @@
+location /t/retail-partners/guns-n-hoses {
+        rewrite ^ http://shop.annarbortees.com/s/guns-n-hoses;
+}
+
+location /products/drinking-team-has-hockey-problem {
+  rewrite ^ http://shop.annarbortees.com/products/our-drinking-team-has-a-hockey-problem-t-shirt-black permanent;
+}
+location /products/avoid-hangover-stay-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/avoid-hangovers-stay-drunk-drinking-party-humor-t-shirt-natural permanent;
+}
+location /products/kiss-me-im-irish {
+  rewrite ^ http://shop.annarbortees.com/products/kiss-me-i-m-irish-t-shirt-white permanent;
+}
+location /products/keep-calm-and-drink-on {
+  rewrite ^ http://shop.annarbortees.com/products/keep-calm-and-drink-on-t-shirt-green permanent;
+}
+location /products/designated-drinker {
+  rewrite ^ http://shop.annarbortees.com/products/designated-drinker-drinking-bar-humor-t-shirt-green permanent;
+}
+location /products/one-martini-two-martini-dot-dot-dot-floor {
+  rewrite ^ http://shop.annarbortees.com/products/one-martini-two-martini-floor-drinking-humor-t-shirt-royal permanent;
+}
+location /products/some-call-beer-problem-i-call-it-hobby {
+  rewrite ^ http://shop.annarbortees.com/products/some-call-it-a-problem-i-call-it-a-hobby-t-shirt-black permanent;
+}
+location /products/if-i-m-hunting-i-m-happy-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/if-i-m-hunting-i-m-happy-t-shirt-green permanent;
+}
+location /products/screw-it-let-s-hunt-funny-deer-hunting-humor-joke-tee {
+  rewrite ^ http://shop.annarbortees.com/products/screw-it-let-s-hunt-t-shirt-grey permanent;
+}
+location /products/buck-off-funny-deer-hunting-hunt-humor-joke-tee {
+  rewrite ^ http://shop.annarbortees.com/products/buck-off-t-shirt-grey permanent;
+}
+location /products/no-need-to-be-faster-than-a-bear-just-you-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/no-need-to-be-faster-than-a-bear-just-you-t-shirt-gold permanent;
+}
+location /products/brazil-national-flag-bandeira-do-brasil-brazilian {
+  rewrite ^ http://shop.annarbortees.com/products/brazil-national-flag-t-shirt-green permanent;
+}
+location /products/usaf-air-force-insignia-united-states-airman-pride-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/usaf-air-force-insignia-t-shirt-royal permanent;
+}
+location /products/california-state-flag-tee-california-fan-shirt-la-lakers-clippers-kings-dodgers-san-diego-chargers-san-francisco-49ers-giants-golden-state-warriors-oakland-athletics-san-jose-sharks {
+  rewrite ^ http://shop.annarbortees.com/products/california-state-flag-tee-t-shirt-white permanent;
+}
+location /products/new-york-city-skyline-nyc-big-apple-manhattan-sky-tee {
+  rewrite ^ http://shop.annarbortees.com/products/new-york-city-skyline-t-shirt-grey permanent;
+}
+location /products/swiss-national-flag-switzerland-geneva-zurich-tee {
+  rewrite ^ http://shop.annarbortees.com/products/swiss-national-flag-t-shirt-red permanent;
+}
+location /products/oklahoma-state-flag-ok-fan-tee-thunder-sooners-cowboys-tulsa {
+  rewrite ^ http://shop.annarbortees.com/products/oklahoma-state-flag-t-shirt-royal permanent;
+}
+location /products/memphis-tn-city-skyline-tennessee-river-city-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/memphis-tn-city-skyline-t-shirt-grey permanent;
+}
+location /products/the-codfather-funny-fishing-humor-cod-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/the-codfather-t-shirt-black permanent;
+}
+location /products/vietnam-flag-national-vietnamese-star-historic-costume-tee {
+  rewrite ^ http://shop.annarbortees.com/products/vietnam-flag-t-shirt-red permanent;
+}
+location /products/australian-coat-of-arms-australia-flag-crest-sydney-tee {
+  rewrite ^ http://shop.annarbortees.com/products/australian-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/philadelphia-pa-city-skyline-brotherly-love-philly-tee {
+  rewrite ^ http://shop.annarbortees.com/products/philadelphia-pa-city-skyline-t-shirt-grey permanent;
+}
+location /products/hay-clan-tee-scottish-hay-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/hay-clan-tee-t-shirt-black permanent;
+}
+location /products/florida-state-flag-tee-florida-fan-shirt-gators-seminoles-orland-magic-miami-heat-miami-dolphins-buccaneers-panthers-marlins-lightning {
+  rewrite ^ http://shop.annarbortees.com/products/florida-state-flag-tee-t-shirt-white permanent;
+}
+location /products/u-s-army-infantry-since-1775-soldier-military-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/u-s-army-infantry-since-1775-t-shirt-black permanent;
+}
+location /products/spanish-coat-of-arms-spain-national-emblem-flag-madrid-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/spanish-coat-of-arms-t-shirt-red permanent;
+}
+location /products/u-s-army-retired-united-states-soldier-veteran-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/u-s-army-retired-t-shirt-green permanent;
+}
+location /products/wisconsin-state-flag-tee-wisconsin-fan-tee-madison-green-bay-milwaukee-badgers-packers-brewers-bucks-golden-eagles {
+  rewrite ^ http://shop.annarbortees.com/products/wisconsin-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/support-your-local-hookers-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/support-your-local-hookers-t-shirt-light-blue permanent;
+}
+location /products/alberta-provincial-coat-of-arms-calgary-edmonton-flag {
+  rewrite ^ http://shop.annarbortees.com/products/alberta-provincial-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/maclean-clan-tee-scottish-maclean-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/maclean-clan-tee-t-shirt-black permanent;
+}
+location /products/maclaren-clan-tee-scottish-maclaren-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/maclaren-clan-tee-t-shirt-black permanent;
+}
+location /products/i-d-rather-be-golfing-funny-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-d-rather-be-golfing-t-shirt-navy permanent;
+}
+location /products/i-like-big-bucks-and-i-cannot-lie-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/i-like-big-bucks-and-i-cannot-lie-t-shirt-natural permanent;
+}
+location /products/portland-or-city-skyline-portlandia-beervana-oregon-tee {
+  rewrite ^ http://shop.annarbortees.com/products/portland-or-city-skyline-t-shirt-grey permanent;
+}
+location /products/french-third-republic-coat-of-arms-france-paris-wwi-era-3rd {
+  rewrite ^ http://shop.annarbortees.com/products/french-third-republic-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/great-britain-union-jack-british-flag-of-the-united-kingdom-uk-england-scotland-northern-ireland-wales-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/united-kingdom-country-flag-t-shirt-navy permanent;
+}
+location /products/chicago-city-skyline-bulls-bears-cubs-blackhawks-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/chicago-city-skyline-t-shirt-grey permanent;
+}
+location /products/australian-flag-australia-sydney-melbourne-brisbane-perth-adelaide-tee {
+  rewrite ^ http://shop.annarbortees.com/products/australian-flag-t-shirt-royal permanent;
+}
+location /products/grand-rapids-mi-city-skyline-gr-michigan-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/grand-rapids-mi-city-skyline-t-shirt-grey permanent;
+}
+location /products/michigan-state-flag-tee-michigan-fan-tee-detroit-tigers-red-wings-lions-pistons-wolverines-spartans-broncos-lakers {
+  rewrite ^ http://shop.annarbortees.com/products/michigan-state-flag-t-shirt-navy permanent;
+}
+location /products/gadsden-flag-dont-tread-on-me-tee {
+  rewrite ^ http://shop.annarbortees.com/products/gadsden-flag-t-shirt-gold permanent;
+}
+location /products/america-fuck-yeah {
+  rewrite ^ http://shop.annarbortees.com/products/america-fuck-yeah-t-shirt-white permanent;
+}
+location /products/boston-ma-city-skyline-red-sox-bruins-patriots-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/boston-ma-city-skyline-t-shirt-grey permanent;
+}
+location /products/milwaukee-wi-city-skyline-brewers-bucks-best-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/milwaukee-wi-city-skyline-t-shirt-grey permanent;
+}
+location /products/ecuadoran-coat-of-arms-escudo-de-ecuador-flag-camiseta {
+  rewrite ^ http://shop.annarbortees.com/products/ecuadoran-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/maryland-state-flag-tee-maryland-fan-tee-baltimore-ravens-orioles-terrapins-terps {
+  rewrite ^ http://shop.annarbortees.com/products/maryland-state-flag-t-shirt-white permanent;
+}
+location /products/miggy-triple-crown-miguel-cabrera-tigers-hitting-champion-tee {
+  rewrite ^ http://shop.annarbortees.com/products/miggy-triple-crown-t-shirt-navy permanent;
+}
+location /products/tennessee-state-flag-tee-nashville-knoxville-memphis-fan-shirt-volunteers-titans-grizzlies-predators {
+  rewrite ^ http://shop.annarbortees.com/products/tennessee-state-flag-tee-t-shirt-red permanent;
+}
+location /products/nashville-tn-city-skyline-country-music-city-titans-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/nashville-tn-city-skyline-t-shirt-grey permanent;
+}
+location /products/revolutionary-war-pine-tree-flag-appeal-to-heaven-history-tee {
+  rewrite ^ http://shop.annarbortees.com/products/revolutionary-war-pine-tree-flag-t-shirt-white permanent;
+}
+location /products/maclennan-clan-tee-scottish-maclennan-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/maclennan-clan-tee-t-shirt-black permanent;
+}
+location /products/maine-state-flag-tee-maine-fan-tee-portland-bangor-lewiston-auburn {
+  rewrite ^ http://shop.annarbortees.com/products/maine-state-flag-t-shirt-navy permanent;
+}
+location /products/denmark-national-flag-danish-copenhagen-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/denmark-national-flag-t-shirt-red permanent;
+}
+location /products/new-brunswick-provincial-coat-of-arms-st-john-moncton-fredericton {
+  rewrite ^ http://shop.annarbortees.com/products/new-brunswick-provincial-coat-of-arms-t-shirt-red permanent;
+}
+location /products/nepal-coat-of-arms-nepalese-national-symbol-flag-crest-tee {
+  rewrite ^ http://shop.annarbortees.com/products/nepal-coat-of-arms-t-shirt-navy permanent;
+}
+location /products/ussr-hammer-sickle-flag-soviet-union-communist-russia-costume-tee {
+  rewrite ^ http://shop.annarbortees.com/products/ussr-hammer-sickle-flag-t-shirt-red permanent;
+}
+location /products/nunavut-provincial-coat-of-arms-iqaluit-inuit-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/nunavut-provincial-coat-of-arms-t-shirt-red permanent;
+}
+location /products/alaska-state-flag-tee-alaskan-juneau-anchorage-fairbanks-kenai-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/alaska-state-flag-t-shirt-navy permanent;
+}
+location /products/macgregor-clan-tee-scottish-macgregor-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macgregor-clan-tee-t-shirt-black permanent;
+}
+location /products/delaware-state-flag-tee-wilmington-dover-blue-hen-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/delaware-state-flag-tee-t-shirt-aqua-blue permanent;
+}
+location /products/austrian-flag-austria-vienna-coat-of-arms-crest-tee {
+  rewrite ^ http://shop.annarbortees.com/products/austrian-flag-t-shirt-red permanent;
+}
+location /products/chicago-city-flag-municipal-flag-of-the-city-of-chicago-il-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/chicago-city-flag-t-shirt-light-blue permanent;
+}
+location /products/macmillan-clan-tee-scottish-macmillan-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macmillan-clan-tee-t-shirt-black permanent;
+}
+location /products/walley-world-80s-tribute-wally-vacation-tee {
+  rewrite ^ http://shop.annarbortees.com/products/walley-world-t-shirt-royal permanent;
+}
+location /products/clan-cameron-scottish-clan-cameron-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-cameron-t-shirt-black permanent;
+}
+location /products/mackenzie-clan-tee-scottish-mackenzie-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/mackenzie-clan-tee-t-shirt-black permanent;
+}
+location /products/jack-o-lantern-pumpkin-easy-halloween-costume-fun-tee {
+  rewrite ^ http://shop.annarbortees.com/products/jack-o-lantern-pumpkin-t-shirt-orange permanent;
+}
+location /products/leslie-clan-tee-scottish-leslie-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/leslie-clan-tee-t-shirt-black permanent;
+}
+location /products/colombia-coat-of-arms-escudo-de-colombia-camiseta-tee {
+  rewrite ^ http://shop.annarbortees.com/products/colombia-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/sock-it-to-me-fight-club-brad-pitt-palahniuk-tribute-tee {
+  rewrite ^ http://shop.annarbortees.com/products/sock-it-to-me-t-shirt-white permanent;
+}
+location /products/mexican-coat-of-arms-escudo-de-mexico-bandera-camiseta-flag-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/mexican-coat-of-arms-t-shirt-green permanent;
+}
+location /products/denver-co-city-skyline-broncos-nuggets-rockies-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/denver-co-city-skyline-t-shirt-grey permanent;
+}
+location /products/bucks-fear-me-women-love-me-funny-deer-hunting-humor-joke-tee {
+  rewrite ^ http://shop.annarbortees.com/products/bucks-fear-me-women-love-me-t-shirt-grey permanent;
+}
+location /products/forbes-clan-tee-scottish-clan-forbes-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/forbes-clan-tee-t-shirt-black permanent;
+}
+location /products/epic-ronald-reagan-punching-through-berlin-wall {
+  rewrite ^ http://shop.annarbortees.com/products/ronald-reagan-punching-through-berlin-wall-t-shirt-royal permanent;
+}
+location /products/tulsa-ok-city-skyline-tulsan-green-country-oklahoma {
+  rewrite ^ http://shop.annarbortees.com/products/tulsa-ok-city-skyline-t-shirt-grey permanent;
+}
+location /products/dallas-city-skyline-cowboys-mavericks-rangers-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/dallas-city-skyline-t-shirt-grey permanent;
+}
+location /products/colorado-state-flag-tee-colorado-fan-tee-denver-broncos-rockies-nuggets-avalanche-uc-buffaloes-csu-rams {
+  rewrite ^ http://shop.annarbortees.com/products/colorado-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/clan-bruce-scottish-clan-bruce-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-bruce-t-shirt-black permanent;
+}
+location /products/erin-go-bragh-st-patrick-battalion-flag-ireland-forever {
+  rewrite ^ http://shop.annarbortees.com/products/erin-go-bragh-t-shirt-green permanent;
+}
+location /products/moultrie-flag-revolutionary-liberty-tea-party-carolina-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/moultrie-flag-t-shirt-navy permanent;
+}
+location /products/burnett-clan-tee-scottish-clan-burnett-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/clan-burnett-t-shirt-black permanent;
+}
+location /products/spooning-leads-to-forking-cute-pick-up-line-funny-flirty-tee {
+  rewrite ^ http://shop.annarbortees.com/products/spooning-leads-to-forking-t-shirt-royal permanent;
+}
+location /products/i-d-tap-that-funny-golf-ball-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-d-tap-that-t-shirt-white permanent;
+}
+location /products/belarus-national-emblem-belarusian-crest-arms-flag-tee {
+  rewrite ^ http://shop.annarbortees.com/products/belarus-national-emblem-t-shirt-black permanent;
+}
+location /products/houston-tx-city-skyline-texans-rockets-astros-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/houston-tx-city-skyline-t-shirt-grey permanent;
+}
+location /products/anarchy-distressed-symbol-anarchist-punk-riot-disorder-tee {
+  rewrite ^ http://shop.annarbortees.com/products/anarchy-distressed-symbol-t-shirt-black permanent;
+}
+location /products/grant-clan-tee-scottish-clan-grant-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/grant-clan-tee-t-shirt-black permanent;
+}
+location /products/50-shades-of-gray-funny-clever-halloween-costume-party-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/50-shades-of-gray-t-shirt-white permanent;
+}
+location /products/macleod-clan-tee-scottish-macleod-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macleod-clan-tee-t-shirt-black permanent;
+}
+location /products/u-s-army-artillery-since-1775-insignia-military-pride-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/u-s-army-artillery-since-1775-t-shirt-black permanent;
+}
+location /products/merlotte-s-bar-louisiana-cajun-vampire-waitress-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/merlotte-s-bar-t-shirt-white permanent;
+}
+location /products/new-hampshire-state-flag-tee-ladies-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/new-hampshire-state-flag-tee-ladies-t-shirt-t-shirt-navy permanent;
+}
+location /products/guy-in-a-t-shirt-cheap-halloween-costume-quick-easy-clever-funny-solution {
+  rewrite ^ http://shop.annarbortees.com/products/guy-in-a-t-shirt-cheap-halloween-costume-t-shirt-black permanent;
+}
+location /products/kerr-clan-tee-scottish-kerr-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/kerr-clan-tee-t-shirt-black permanent;
+}
+location /products/cobra-kai-karate-80s-movie-throwback-vintage-martial-arts-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/cobra-kai-karate-t-shirt-black permanent;
+}
+location /products/vietnam-coat-of-arms-national-vietnamese-emblem-historic-costume-tee {
+  rewrite ^ http://shop.annarbortees.com/products/vietnam-coat-of-arms-t-shirt-red permanent;
+}
+location /products/made-in-canada-fabrique-au-canada-canadian-pride-perfect-for-friends-who-came-out-of-a-canadian {
+  rewrite ^ http://shop.annarbortees.com/products/made-in-canada-fabrique-au-canada-t-shirt-red permanent;
+}
+location /products/u-s-army-armor-since-1776-tank-military-cavalry-pride {
+  rewrite ^ http://shop.annarbortees.com/products/u-s-army-armor-since-1776-t-shirt-black permanent;
+}
+location /products/philippines-coat-of-arms-republika-ng-pilipinas-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/philippines-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/zombie-bite-halloween-costume-gory-bloody-gross-blood-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/zombie-bite-halloween-costume-t-shirt-white permanent;
+}
+location /products/jesse-and-the-rippers-90s-tv-uncle-sex-symbol-mullet {
+  rewrite ^ http://shop.annarbortees.com/products/jesse-and-the-rippers-t-shirt-black permanent;
+}
+location /products/teach-a-man-to-fish-he-ll-drink-all-day-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/teach-a-man-to-fish-he-ll-drink-all-day-t-shirt-light-blue permanent;
+}
+location /products/this-machine-kills-fascists-woody-guthrie-folk-music-usa-guitar-tee {
+  rewrite ^ http://shop.annarbortees.com/products/this-machine-kills-fascists-t-shirt-grey permanent;
+}
+location /products/chile-coat-of-arms-escudo-de-armas-de-chile-camiseta-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/chile-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/who-is-john-galt-ayn-rand-atlas-shrugged-libertarian-tee-capitalist-conservative-tee {
+  rewrite ^ http://shop.annarbortees.com/products/who-is-john-galt-t-shirt-black permanent;
+}
+location /products/i-d-rather-be-fishing-funny-fishing-humor-fisherman-joke {
+  rewrite ^ http://shop.annarbortees.com/products/i-d-rather-be-fishing-t-shirt-white permanent;
+}
+location /products/skeleton-rib-cage-with-songbirds-bluebirds-on-a-skeletal-print {
+  rewrite ^ http://shop.annarbortees.com/products/skeleton-rib-cage-with-songbirds-t-shirt-black permanent;
+}
+location /products/mackay-clan-tee-scottish-mackay-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/mackay-clan-tee-t-shirt-black permanent;
+}
+location /products/i-m-retired-this-is-my-office-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-retired-this-is-my-office-t-shirt-white permanent;
+}
+location /products/army-pt-shirt-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/army-pt-shirt-t-shirt-grey permanent;
+}
+location /products/tigers-sweep-yankees-alcs-2012-world-series-miggy-verlander-delmon-jesus-hates-the-yankees {
+  rewrite ^ http://shop.annarbortees.com/products/tigers-sweep-yankees-alcs-2012-t-shirt-navy permanent;
+}
+location /products/be-the-person-your-dog-thinks-you-are-dog-lover-optimist-positive-message-tee {
+  rewrite ^ http://shop.annarbortees.com/products/be-the-person-your-dog-thinks-you-are-t-shirt-yellow permanent;
+}
+location /products/san-antonio-tx-city-skyline-alamo-spurs-river-walk-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/san-antonio-tx-city-skyline-t-shirt-grey permanent;
+}
+location /products/keep-calm-and-kill-zombies-zombie-hunting-walking-dead-tee {
+  rewrite ^ http://shop.annarbortees.com/products/keep-calm-kill-zombies-t-shirt-black permanent;
+}
+location /products/skeleton-face-halloween-fun-spooky-trick-or-treat-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/skeleton-face-t-shirt-white permanent;
+}
+location /products/resistance-to-tyrants-is-obedience-to-god-1776-jefferson-mottotee {
+  rewrite ^ http://shop.annarbortees.com/products/resistance-to-tyrants-is-obedience-to-god-t-shirt-gold permanent;
+}
+location /products/washington-dc-city-skyline-capitol-district-of-columbia-tee {
+  rewrite ^ http://shop.annarbortees.com/products/washington-dc-city-skyline-t-shirt-grey permanent;
+}
+location /products/join-or-die-benjamin-franklin {
+  rewrite ^ http://shop.annarbortees.com/products/join-or-die-t-shirt-gold permanent;
+}
+location /products/culpeper-minutemen-revolutionary-war-virginia-va-militia {
+  rewrite ^ http://shop.annarbortees.com/products/culpeper-minutemen-t-shirt-gold permanent;
+}
+location /products/minuteman-on-bicycle {
+  rewrite ^ http://shop.annarbortees.com/products/minuteman-on-bicycle-t-shirt-royal permanent;
+}
+location /products/push-button-receive-bacon-ron-america-swanson-pork-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/push-button-receive-bacon-t-shirt-royal permanent;
+}
+location /products/belgium-coat-of-arms-belgian-flag-crest-brussels-tee {
+  rewrite ^ http://shop.annarbortees.com/products/belgium-coat-of-arms-t-shirt-black permanent;
+}
+location /products/quebec-provincial-coat-of-arms-quebecois-montreal-flag-tee {
+  rewrite ^ http://shop.annarbortees.com/products/quebec-provincial-coat-of-arms-t-shirt-royal permanent;
+}
+location /products/hamilton-clan-tee-scottish-hamilton-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/hamilton-clan-tee-t-shirt-black permanent;
+}
+location /products/macpherson-clan-tee-scottish-macpherson-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macpherson-clan-tee-t-shirt-black permanent;
+}
+location /products/si-se-puede-farm-workers-hispanic-latino-mexican-civil-rights-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/si-se-puede-t-shirt-black permanent;
+}
+location /products/nova-scotia-provincial-coat-of-arms-halifax-cape-breton {
+  rewrite ^ http://shop.annarbortees.com/products/nova-scotia-provincial-coat-of-arms-t-shirt-red permanent;
+}
+location /products/it-puts-the-lotion-on-the-skin-super-cute-silence-lambs-tribute-tee {
+  rewrite ^ http://shop.annarbortees.com/products/it-puts-the-lotion-on-the-skin-t-shirt-purple permanent;
+}
+location /products/charlotte-nc-city-skyline-north-carolina-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/charlotte-nc-city-skyline-t-shirt-grey permanent;
+}
+location /products/san-diego-ca-city-skyline-chargers-padres-aztecs-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/san-diego-ca-city-skyline-t-shirt-grey permanent;
+}
+location /products/clan-colquhoun-scottish-clan-colquhoun-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-colquhoun-t-shirt-black permanent;
+}
+location /products/i-m-fat-let-s-party-husky-pride-party-bar-shirt-for-big-people-tee {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-fat-let-s-party-t-shirt-grey permanent;
+}
+location /products/hunter-clan-tee-scottish-hunter-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/hunter-clan-tee-t-shirt-black permanent;
+}
+location /products/saskatchewan-provincial-coat-of-arms-regina-saskatoon {
+  rewrite ^ http://shop.annarbortees.com/products/saskatchewan-provincial-coat-of-arms-t-shirt-red permanent;
+}
+location /products/rasta-lion-of-judah-rastafarian-reggae-marley-jamaica-tee {
+  rewrite ^ http://shop.annarbortees.com/products/rasta-lion-of-judah-t-shirt-black permanent;
+}
+location /products/everybody-loves-a-nice-russian-boy-cute-funny-russia-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-russian-boy-t-shirt-red permanent;
+}
+location /products/maclachlan-clan-tee-scottish-maclachlan-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/maclachlan-clan-tee-t-shirt-black permanent;
+}
+location /products/bieber-slayer-metal-humor-rock-and-roll-death-metal-funny-tee {
+  rewrite ^ http://shop.annarbortees.com/products/bieber-slayer-metal-humor-t-shirt-black permanent;
+}
+location /products/ems-star-of-life-emt-ambulance-paramedic-snake-symbol-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/ems-star-of-life-t-shirt-black permanent;
+}
+location /products/keep-the-change-ya-filthy-animal-home-alone-90s-movie-tee {
+  rewrite ^ http://shop.annarbortees.com/products/keep-the-change-ya-filthy-animal-t-shirt-grey permanent;
+}
+location /products/kentucky-state-flag-tee-kentucky-fan-tee-wildcats-louisville-derby-lexington-cardinals {
+  rewrite ^ http://shop.annarbortees.com/products/kentucky-state-flag-t-shirt-navy permanent;
+}
+location /products/zodiac-taurus-astrology-horoscope-the-bull-vrishaba {
+  rewrite ^ http://shop.annarbortees.com/products/zodiac-taurus-t-shirt-navy permanent;
+}
+location /products/zodiac-scorpio-horoscope-astrology-scorpius-scorpion-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/zodiac-scorpio-t-shirt-black permanent;
+}
+location /products/zodiac-pices-astrology-horoscope-the-fish-illustrated {
+  rewrite ^ http://shop.annarbortees.com/products/zodiac-pisces-t-shirt-royal permanent;
+}
+location /products/zodiac-capricorn-horoscope-astrology-sea-goat-pan-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/zodiac-capricorn-t-shirt-red permanent;
+}
+location /products/zodiac-cancer-astrology-horoscope-the-crab-karkata-tee {
+  rewrite ^ http://shop.annarbortees.com/products/zodiac-cancer-t-shirt-navy permanent;
+}
+location /products/zodiac-cancer-design-astrology-astrological-crab-horoscope-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/zodiac-cancer-design-t-shirt-royal permanent;
+}
+location /products/yukon-territory-coat-of-arms-inuit-pride-whitehorse-tee {
+  rewrite ^ http://shop.annarbortees.com/products/yukon-territory-coat-of-arms-t-shirt-red permanent;
+}
+location /products/you-say-deer-slayer-like-it-s-a-bad-thing-funny-hunting-tee {
+  rewrite ^ http://shop.annarbortees.com/products/you-say-deer-slayer-like-it-s-a-bad-thing-t-shirt-black permanent;
+}
+location /products/yippee-yah-yei-schweinebacke-funny-german-die-hard-deutsch-tee {
+  rewrite ^ http://shop.annarbortees.com/products/yippee-yah-yei-schweinebacke-t-shirt-black permanent;
+}
+location /products/wyoming-state-flag-tee-yellowstone-cheyenne-casper-laramie-grand-teton {
+  rewrite ^ http://shop.annarbortees.com/products/wyoming-state-flag-tee-t-shirt-red permanent;
+}
+location /products/work-is-for-people-who-don-t-fish-funny-fishing-humor-tee-joke-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/work-is-for-people-who-don-t-fish-t-shirt-grey permanent;
+}
+location /products/work-is-for-people-who-can-t-hunt-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/work-is-for-people-who-can-t-hunt-t-shirt-natural permanent;
+}
+location /products/wonk-policy-political-junky-democrat-republican-staffer-tee {
+  rewrite ^ http://shop.annarbortees.com/products/wonk-t-shirt-black permanent;
+}
+location /products/wishin-i-was-fishin-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/wishin-i-was-fishin-t-shirt-light-blue permanent;
+}
+location /products/west-virginia-state-flag-tee-wv-fan-tee-marshall-thundering-herd-yellow-jackets-mountaineers {
+  rewrite ^ http://shop.annarbortees.com/products/west-virginia-state-flag-tee-t-shirt-white permanent;
+}
+location /products/went-fishing-caught-this-crappie-fish-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/went-fishing-caught-this-crappie-fish-t-shirt-black permanent;
+}
+location /products/welcome-to-las-vegas-bitches-bachelorette-party-tee {
+  rewrite ^ http://shop.annarbortees.com/products/welcome-to-las-vegas-bitches-t-shirt-black permanent;
+}
+location /products/welcome-to-las-vegas-baby-sin-city-what-happens-tee {
+  rewrite ^ http://shop.annarbortees.com/products/welcome-to-las-vegas-baby-t-shirt-black permanent;
+}
+location /products/we-interrupt-this-marriage-for-hunting-season-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/we-interrupt-this-marriage-for-hunting-season-t-shirt-orange permanent;
+}
+location /products/ussr-coat-of-arms-soviet-union-communist-russia-flag-tee-costume {
+  rewrite ^ http://shop.annarbortees.com/products/ussr-coat-of-arms-t-shirt-red permanent;
+}
+location /products/us-army-flag-tee {
+  rewrite ^ http://shop.annarbortees.com/products/u-s-army-flag-t-shirt-black permanent;
+}
+location /products/trust-the-government-libertarian-liberty-tea-party-native-american-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/trust-the-government-t-shirt-black permanent;
+}
+location /products/trabbi-trabant-moon-east-german-ddr-deutschland-deutsch-car-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/trabbi-trabant-moon-t-shirt-black permanent;
+}
+location /products/the-trouble-with-fishing-is-funny-humor-joke-fishing-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/the-trouble-with-fishing-is-t-shirt-natural permanent;
+}
+location /products/the-rich-have-therapy-the-rest-of-us-have-fishing-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/the-rich-have-therapy-the-rest-of-us-have-fishing-t-shirt-black permanent;
+}
+location /products/the-guido-godfather-spoof-mafia-italian-italy-wise-guy-tee {
+  rewrite ^ http://shop.annarbortees.com/products/the-guido-t-shirt-black permanent;
+}
+location /products/thailand-national-emblem-phra-khrut-phah-garuda-coat-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/thailand-national-emblem-t-shirt-black permanent;
+}
+location /products/texas-does-not-play-well-with-others-conservative-texan-republican-tee {
+  rewrite ^ http://shop.annarbortees.com/products/texas-does-not-play-well-with-others-t-shirt-black permanent;
+}
+location /products/stop-puppy-mills-animal-rights-protest-shirt-dog-lovers-friends-of-peta {
+  rewrite ^ http://shop.annarbortees.com/products/stop-puppy-mills-t-shirt-purple permanent;
+}
+location /products/siamese-coat-of-arms-phra-rajalancakorn-pracham-phaendin-siam {
+  rewrite ^ http://shop.annarbortees.com/products/siamese-coat-of-arms-t-shirt-black permanent;
+}
+location /products/seattle-city-skyline-space-needle-206-pike-place-tee {
+  rewrite ^ http://shop.annarbortees.com/products/seattle-city-skyline-t-shirt-grey permanent;
+}
+location /products/santa-cruz-bolivia-department-coat-of-arms-escudo-del-departamento-de-santa-cruz {
+  rewrite ^ http://shop.annarbortees.com/products/santa-cruz-bolivia-department-coat-of-arms-t-shirt-green permanent;
+}
+location /products/santa-cruz-de-la-sierra-flag-bandera-de-santa-cruz-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/santa-cruz-de-la-sierra-flag-t-shirt-green permanent;
+}
+location /products/santa-cruz-de-la-sierra-coat-of-arms-escudo-de-santa-cruz-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/santa-cruz-de-la-sierra-coat-of-arms-t-shirt-green permanent;
+}
+location /products/san-francisco-city-skyline-golden-gate-bay-area-alcatraz {
+  rewrite ^ http://shop.annarbortees.com/products/san-francisco-city-skyline-t-shirt-grey permanent;
+}
+location /products/ronald-regan-gipper-conservative-gop-republican-tea-party-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/ronald-regan-gipper-t-shirt-red permanent;
+}
+location /products/ronald-raygun-80s-laser-president-reagan-funny-goofy-political-sci-fi-tee {
+  rewrite ^ http://shop.annarbortees.com/products/ronald-raygun-t-shirt-black permanent;
+}
+location /products/redneck-golf-cart-funny-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/redneck-golf-cart-t-shirt-green permanent;
+}
+location /products/rage-shirt-awesome-party-frat-bro-greek-rager-drinking-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/rage-shirt-t-shirt-black permanent;
+}
+location /products/prince-edward-island-province-coat-of-arms-charlottetown-summerside-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/prince-edward-island-province-coat-of-arms-t-shirt-red permanent;
+}
+location /products/portuguese-coat-of-arms-portugal-national-emblem-flag {
+  rewrite ^ http://shop.annarbortees.com/products/portuguese-coat-of-arms-t-shirt-red permanent;
+}
+location /products/pope-hope-spoof-pope-benedict-papal-catholic-art-tee {
+  rewrite ^ http://shop.annarbortees.com/products/pope-hope-spoof-t-shirt-white permanent;
+}
+location /products/minnesota-state-flag-tee-minnesota-fan-tee-twins-vikings-wild-timberwolves-golden-gophers-bulldogs {
+  rewrite ^ http://shop.annarbortees.com/products/minnesota-state-flag-t-shirt-navy permanent;
+}
+location /products/clan-barclay-scottish-clan-barclay-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-barclay-t-shirt-black permanent;
+}
+location /products/alaska-fly-fisherman-funny-humor-joke-fishing-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/alaska-fly-fisherman-t-shirt-white permanent;
+}
+location /products/phoenix-az-city-skyline-arizona-suns-cardinals-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/phoenix-az-city-skyline-t-shirt-grey permanent;
+}
+location /products/peruvian-coat-of-arms-flag-peru-escudo-bandera-camiseta-para-lima-arequipa-cusco-y-puno {
+  rewrite ^ http://shop.annarbortees.com/products/peruvian-coat-of-arms-flag-t-shirt-red permanent;
+}
+location /products/pentagram-satan-satanic-goth-metal-rock-roll-costume-tee {
+  rewrite ^ http://shop.annarbortees.com/products/pentagram-t-shirt-black permanent;
+}
+location /products/orgasm-donor-funny-pick-up-line-adult-humor-bar-party-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/orgasm-donor-t-shirt-white permanent;
+}
+location /products/orgasm-donor-funny-adult-sex-pick-up-line-party-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/orgasm-donor-t-shirt-red permanent;
+}
+location /products/ontario-provincial-coat-of-arms-toronto-ottawa-hamilton-kitchener-london-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/ontario-provincial-coat-of-arms-t-shirt-red permanent;
+}
+location /products/old-hunters-never-die-they-just-smell-that-way-funny-tee-for-deer-hunting {
+  rewrite ^ http://shop.annarbortees.com/products/old-hunters-never-die-they-just-smell-that-way-t-shirt-orange permanent;
+}
+location /products/o-bama-s-irish-pub-obama-st-patrick-s-st-paddy-s-tee-st-patty-s {
+  rewrite ^ http://shop.annarbortees.com/products/o-bama-s-olde-irish-pub-t-shirt-green permanent;
+}
+location /products/northwest-territories-coat-of-arms-yellowknife-inuit-nwt {
+  rewrite ^ http://shop.annarbortees.com/products/northwest-territories-coat-of-arms-t-shirt-red permanent;
+}
+location /products/newfoundland-labrador-provincial-coat-of-arms-newfie-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/newfoundland-labrador-provincial-coat-of-arms-t-shirt-red permanent;
+}
+location /products/newfie-pride-newfoundland-and-labrador-st-john-s-great-big-sea-atlantic-canada-tee {
+  rewrite ^ http://shop.annarbortees.com/products/newfie-pride-t-shirt-red permanent;
+}
+location /products/new-zealand-flag-kiwi-new-zealander-auckland-wellington-tee {
+  rewrite ^ http://shop.annarbortees.com/products/new-zealand-flag-t-shirt-royal permanent;
+}
+location /products/nepal-flag-nepalese-kathmandu-himalaya-nepali-tee {
+  rewrite ^ http://shop.annarbortees.com/products/nepal-flag-t-shirt-royal permanent;
+}
+location /products/nebraska-state-flag-tee-nebraska-fan-tee-cornhuskers-lincoln-omaha-grand-island {
+  rewrite ^ http://shop.annarbortees.com/products/nebraska-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/montana-state-flag-tee-bozeman-butte-helena-kalispell-missoula-havre-tee {
+  rewrite ^ http://shop.annarbortees.com/products/montana-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/missouri-state-flag-tee-missouri-fan-tee-kansas-city-chiefs-st-louis-cardinals-st-louis-rams-st-louis-blues {
+  rewrite ^ http://shop.annarbortees.com/products/missouri-state-flag-tee-t-shirt-white permanent;
+}
+location /products/masterbaiter-funny-fishing-joke-humor-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/masterbaiter-t-shirt-black permanent;
+}
+location /products/malcolm-clan-tee-scottish-malcolm-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/malcolm-clan-tee-t-shirt-black permanent;
+}
+location /products/makgill-clan-tee-scottish-makgill-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/makgill-clan-tee-t-shirt-black permanent;
+}
+location /products/make-love-not-war-60s-free-love-hippy-pacifist-peace-tee {
+  rewrite ^ http://shop.annarbortees.com/products/make-love-not-war-t-shirt-royal permanent;
+}
+location /products/maitland-clan-tee-scottish-maitland-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/maitland-clan-tee-t-shirt-black permanent;
+}
+location /products/made-in-the-usa-tee {
+  rewrite ^ http://shop.annarbortees.com/products/made-in-the-usa-t-shirt-royal permanent;
+}
+location /products/macneil-clan-tee-scottish-macneil-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macneil-clan-tee-t-shirt-black permanent;
+}
+location /products/macneacail-clan-tee-scottish-macneacail-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macneacail-clan-tee-t-shirt-black permanent;
+}
+location /products/macnaughten-clan-tee-scottish-macnaughten-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macnaughten-clan-tee-t-shirt-black permanent;
+}
+location /products/maclaine-clan-tee-scottish-maclaine-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/maclaine-clan-tee-t-shirt-black permanent;
+}
+location /products/mackintosh-clan-tee-scottish-mackintosh-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/mackintosh-clan-tee-t-shirt-black permanent;
+}
+location /products/mackinnon-clan-tee-scottish-mackinnon-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/mackinnon-clan-tee-t-shirt-black permanent;
+}
+location /products/macintyre-clan-tee-scottish-macintyre-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macintyre-clan-tee-t-shirt-black permanent;
+}
+location /products/macdowall-clan-tee-scottish-macdowall-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macdowall-clan-tee-t-shirt-black permanent;
+}
+location /products/macdonnell-clan-tee-scottish-macdonnell-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macdonnell-clan-tee-t-shirt-black permanent;
+}
+location /products/macbain-clan-tee-scottish-macbain-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macbain-clan-tee-t-shirt-black permanent;
+}
+location /products/macalister-clan-tee-scottish-macalister-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/macalister-clan-tee-t-shirt-black permanent;
+}
+location /products/lyon-clan-tee-scottish-lyon-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/lyon-clan-tee-t-shirt-black permanent;
+}
+location /products/louisville-ky-city-skyline-kentucky-derby-cardinals-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/louisville-ky-city-skyline-t-shirt-grey permanent;
+}
+location /products/louisiana-state-flag-tee-louisiana-fan-tee-new-orleans-saints-hornets-lsu-tigers-mardis-gras {
+  rewrite ^ http://shop.annarbortees.com/products/louisiana-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/los-angeles-ca-city-skyline-lakers-angels-la-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/los-angeles-ca-city-skyline-t-shirt-grey permanent;
+}
+location /products/lockhart-clan-tee-scottish-lockhart-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/lockhart-clan-tee-t-shirt-black permanent;
+}
+location /products/lindsay-clan-tee-scottish-lindsay-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/lindsay-clan-tee-t-shirt-black permanent;
+}
+location /products/lennox-clan-tee-scottish-lennox-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/lennox-clan-tee-t-shirt-black permanent;
+}
+location /products/leask-clan-tee-scottish-leask-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/leask-clan-tee-t-shirt-black permanent;
+}
+location /products/las-vegas-nv-city-skyline-sin-city-nevada-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/las-vegas-nv-city-skyline-t-shirt-grey permanent;
+}
+location /products/lamont-clan-tee-scottish-lamont-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/lamont-clan-tee-t-shirt-black permanent;
+}
+location /products/la-paz-coat-of-arms-escudo-de-la-paz-flag-bandera-tee {
+  rewrite ^ http://shop.annarbortees.com/products/la-paz-coat-of-arms-t-shirt-black permanent;
+}
+location /products/kobe-city-flag-japan-keihanshin-osaka-hyogo-rokko-kyoto {
+  rewrite ^ http://shop.annarbortees.com/products/kobe-city-flag-japan-t-shirt-green permanent;
+}
+location /products/kincaid-clan-tee-scottish-kincaid-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/kincaid-clan-tee-t-shirt-black permanent;
+}
+location /products/kennedy-clan-tee-scottish-kennedy-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/kennedy-clan-tee-t-shirt-black permanent;
+}
+location /products/keith-clan-tee-scottish-keith-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/keith-clan-tee-t-shirt-black permanent;
+}
+location /products/kansas-state-flag-tee-kansas-fan-tee-jayhawks-wildcats-wichita-topeka {
+  rewrite ^ http://shop.annarbortees.com/products/kansas-state-flag-t-shirt-navy permanent;
+}
+location /products/johnstone-clan-tee-scottish-johnstone-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/johnstone-clan-tee-t-shirt-black permanent;
+}
+location /products/jardine-clan-tee-scottish-jardine-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/jardine-clan-tee-t-shirt-black permanent;
+}
+location /products/japanese-imperial-seal-chrysanthemum-flower-seal-japan-kikukamon-kikukamonsho {
+  rewrite ^ http://shop.annarbortees.com/products/japanese-imperial-seal-t-shirt-royal permanent;
+}
+location /products/japanese-flag-rising-sun-of-japan-tokyo-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/japanese-flag-t-shirt-white permanent;
+}
+location /products/jackson-ms-city-skyline-missippi-dixie-southern-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/jackson-ms-city-skyline-t-shirt-grey permanent;
+}
+location /products/irvine-clan-tee-scottish-irvine-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/irvine-clan-tee-t-shirt-black permanent;
+}
+location /products/iowa-state-flag-tee-iowa-fan-tee-cyclones-hawkeyes-des-moines-cedar-rapids {
+  rewrite ^ http://shop.annarbortees.com/products/iowa-state-flag-t-shirt-white permanent;
+}
+location /products/indianapolis-in-city-skyline-indy-500-pacers-colts-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/indianapolis-in-city-skyline-t-shirt-grey permanent;
+}
+location /products/indian-national-emblem-ashoka-lion-at-sarnath-royal-blue-dharma-chakra {
+  rewrite ^ http://shop.annarbortees.com/products/indian-national-emblem-t-shirt-royal permanent;
+}
+location /products/indian-national-emblem-lion-capital-of-ashoka-at-sarnath-dharma-chakra {
+  rewrite ^ http://shop.annarbortees.com/products/indian-national-emblem-t-shirt-green permanent;
+}
+location /products/indian-national-emblem-ashoka-lion-at-sarnath-purple-dharma-chakra {
+  rewrite ^ http://shop.annarbortees.com/products/indian-national-emblem-t-shirt-purple permanent;
+}
+location /products/indian-flag-india-pride-bharat-ganarajya-hindi-tee {
+  rewrite ^ http://shop.annarbortees.com/products/indian-flag-t-shirt-black permanent;
+}
+location /products/illinois-state-flag-tee-chicago-fan-tee-bears-cubs-blackhawks-white-sox-bulls {
+  rewrite ^ http://shop.annarbortees.com/products/illinois-state-flag-tee-t-shirt-white permanent;
+}
+location /products/if-you-ain-t-dutch-you-ain-t-much-funny-netherlands-pride-amsterdam-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/if-you-ain-t-dutch-you-ain-t-much-t-shirt-orange permanent;
+}
+location /products/idaho-state-flag-tee-fighting-sioux-fargo-bismarck-minot-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/idaho-state-flag-tee-t-shirt-royal permanent;
+}
+location /products/i-m-with-stupid-classic-funny-humorous-humor-silly-tee {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-with-stupid-t-shirt-white permanent;
+}
+location /products/i-taught-mary-jane-how-to-dance-rock-roll-marijuana-pot-party-tee {
+  rewrite ^ http://shop.annarbortees.com/products/i-taught-mary-jane-how-to-dance-t-shirt-black permanent;
+}
+location /products/i-associate-with-hunters-fishers-and-other-liars-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/i-associate-with-hunters-fishers-and-other-liars-t-shirt-orange permanent;
+}
+location /products/hunting-liquor-are-in-my-blood-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/hunting-liquor-are-in-my-blood-t-shirt-gold permanent;
+}
+location /products/hunters-do-it-in-the-woods-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/hunters-do-it-in-the-woods-t-shirt-gold permanent;
+}
+location /products/hope-clan-tee-scottish-hope-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/hope-clan-tee-t-shirt-black permanent;
+}
+location /products/hooked-on-fishing-funny-fishing-joke-fisherman-humor {
+  rewrite ^ http://shop.annarbortees.com/products/hooked-on-fishing-t-shirt-navy permanent;
+}
+location /products/home-clan-tee-scottish-home-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/home-clan-tee-t-shirt-black permanent;
+}
+location /products/holler-at-your-boy-stupid-hip-hop-rap-holla-swag-tee-for-people-who-hate-well-drawn-t-shirts {
+  rewrite ^ http://shop.annarbortees.com/products/holler-at-your-boy-t-shirt-green permanent;
+}
+location /products/henderson-clan-tee-scottish-henderson-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/henderson-clan-tee-t-shirt-black permanent;
+}
+location /products/hecho-en-mexico-mexican-pride-latino-orgullo-mexicano-camiseta-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/hecho-en-mexico-t-shirt-black permanent;
+}
+location /products/have-a-great-fuckin-day-super-cute-teddy-bear-happy-fuck-f-word-tee {
+  rewrite ^ http://shop.annarbortees.com/products/have-a-great-fuckin-day-t-shirt-light-blue permanent;
+}
+location /products/hannay-clan-tee-scottish-hannay-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/hannay-clan-tee-t-shirt-black permanent;
+}
+location /products/haldane-clan-tee-scottish-haldane-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/haldane-clan-tee-t-shirt-black permanent;
+}
+location /products/haig-clan-tee-scottish-clan-haig-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/haig-clan-tee-t-shirt-black permanent;
+}
+location /products/guthrie-clan-tee-scottish-guthrie-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/guthrie-clan-tee-t-shirt-black permanent;
+}
+location /products/grierson-clan-tee-scottish-clan-grierson-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/grierson-clan-tee-t-shirt-black permanent;
+}
+location /products/got-fishing-pole-for-wife-best-trade-ever-funny-humor-joke-fishing-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/got-fishing-pole-for-wife-best-trade-ever-t-shirt-white permanent;
+}
+location /products/goliad-flag-texas-revolution-texan-pride-independence-flag {
+  rewrite ^ http://shop.annarbortees.com/products/goliad-flag-t-shirt-red permanent;
+}
+location /products/golf-tee-shirt-funny-golfer-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/golf-tee-shirt-t-shirt-navy permanent;
+}
+location /products/get-reel-funny-fishing-joke-fisherman-retirement-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/get-reel-t-shirt-navy permanent;
+}
+location /products/georgia-state-flag-tee-georgia-fan-shirt-atlanta-braves-atlanta-falcons-atlanta-hawks-georgia-bulldogs {
+  rewrite ^ http://shop.annarbortees.com/products/georgia-state-flag-tee-t-shirt-white permanent;
+}
+location /products/funny-golf-19th-hole-drinking-novelty-golf-cocktails-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/funny-golf-19th-hole-drinking-t-shirt-navy permanent;
+}
+location /products/funny-golf-swinger-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/funny-golf-swinger-t-shirt-white permanent;
+}
+location /products/funny-evolution-of-golfer-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/funny-evolution-of-golfer-t-shirt-navy permanent;
+}
+location /products/fraser-clan-tee-scottish-fraser-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/fraser-clan-tee-t-shirt-black permanent;
+}
+location /products/fort-worth-city-skyline-rangers-cowboys-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/fort-worth-city-skyline-t-shirt-grey permanent;
+}
+location /products/forsyth-clan-tee-scottish-forsyth-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/forsyth-clan-tee-t-shirt-black permanent;
+}
+location /products/fo-drizzle-umbrella-snoop-dogg-s-umbrella-funny-hip-hop-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/fo-drizzle-umbrella-t-shirt-royal permanent;
+}
+location /products/fishing-jerk-on-one-end-waiting-for-jerk-on-other-funny-fishing-joke-fisherman-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/fishing-jerk-t-shirt-t-shirt-black permanent;
+}
+location /products/fisherman-s-measuring-tape-funny-fishing-joke-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/fisherman-s-measuring-tape-t-shirt-navy permanent;
+}
+location /products/fire-fighter-crest-firefighter-rescue-shield-insignia-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/fire-fighter-crest-t-shirt-black permanent;
+}
+location /products/finland-flag-finnish-suomi-national-flag-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/finnish-country-flag-t-shirt-white permanent;
+}
+location /products/fergusson-clan-tee-scottish-fergusson-shirt-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/fergusson-clan-tee-t-shirt-black permanent;
+}
+location /products/farquharson-clan-tee-scottish-clan-farquharson-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/farquharson-clan-tee-t-shirt-black permanent;
+}
+location /products/evolution-of-the-fisherman-funny-humor-joke-fishing-tee {
+  rewrite ^ http://shop.annarbortees.com/products/evolution-of-the-fisherman-t-shirt-white permanent;
+}
+location /products/everybody-loves-a-nice-russian-girl-cute-funny-russia-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-russian-girl-t-shirt-red permanent;
+}
+location /products/everybody-loves-a-nice-romanian-girl-funny-cute-romania-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-romanian-girl-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-romanian-boy-funny-cute-romania-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-romanian-boy-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-polish-girl-cute-funny-poland-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-polish-girl-t-shirt-red permanent;
+}
+location /products/everybody-loves-a-nice-polish-boy-cute-funny-poland-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-polish-boy-t-shirt-red permanent;
+}
+location /products/everybody-loves-a-nice-jewish-girl-cute-hebrew-israeli {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-jewish-girl-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-jewish-boy-cute-hebrew-israeli-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-jewish-boy-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-italian-girl-cute-italy-pride-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-italian-girl-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-italian-boy-cute-italy-pride-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-italian-boy-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-irish-girl-cute-ireland-st-patrick-s-irish-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-irish-girl-t-shirt-green permanent;
+}
+location /products/everybody-loves-a-nice-irish-boy-cute-ireland-st-patrick-s-tee {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-irish-boy-t-shirt-green permanent;
+}
+location /products/everybody-loves-a-nice-albanian-girl-cute-funny-albania-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-albanian-girl-t-shirt-red permanent;
+}
+location /products/everybody-loves-a-nice-albanian-boy-cute-funny-albania-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-albanian-boy-t-shirt-red permanent;
+}
+location /products/even-fish-d-stay-out-of-trouble-if-they-kept-mouth-shut-funny-fishing-joke-fisherman-humor {
+  rewrite ^ http://shop.annarbortees.com/products/even-fish-d-stay-out-of-trouble-if-they-kept-mouth-shut-t-shirt-navy permanent;
+}
+location /products/erskine-clan-tee-scottish-clan-erskine-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/erskine-clan-tee-t-shirt-black permanent;
+}
+location /products/elliot-clan-tee-scottish-clan-elliot-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/elliot-clan-tee-t-shirt-black permanent;
+}
+location /products/el-paso-tx-city-skyline-west-texas-pride-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/el-paso-tx-city-skyline-t-shirt-grey permanent;
+}
+location /products/eat-sleep-fish-funny-fishing-humor-fisherman-joke {
+  rewrite ^ http://shop.annarbortees.com/products/eat-sleep-fish-t-shirt-grey permanent;
+}
+location /products/dundas-clan-tee-scottish-clan-dundas-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/clan-dundas-t-shirt-black permanent;
+}
+location /products/dunbar-clan-tee-scottish-clan-dunbar-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/clan-dunbar-t-shirt-black permanent;
+}
+location /products/drummond-clan-tee-scottish-clan-drummond-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/clan-drummond-t-shirt-black permanent;
+}
+location /products/drive-it-like-you-stole-it-golf-cart-funny-golfing-golf-humor-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/drive-it-like-you-stole-it-golf-cart-t-shirt-black permanent;
+}
+location /products/dewar-clan-tee-scottish-clan-dewar-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/clan-dewar-t-shirt-black permanent;
+}
+location /products/deer-hunters-get-all-the-big-racks-funny-deer-hunting-hunter-tee {
+  rewrite ^ http://shop.annarbortees.com/products/deer-hunters-get-all-the-big-racks-t-shirt-gold permanent;
+}
+location /products/deer-bear-beer-funny-deer-hunting-hunt-humor-tee {
+  rewrite ^ http://shop.annarbortees.com/products/deer-bear-beer-t-shirt-royal permanent;
+}
+location /products/darroch-clan-tee-scottish-clan-darroch-shirt-scotland-pride {
+  rewrite ^ http://shop.annarbortees.com/products/clan-darroch-t-shirt-black permanent;
+}
+location /products/czech-flag-national-flag-of-the-czech-republic-prague-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/czech-republic-flag-t-shirt-red permanent;
+}
+location /products/cuban-national-flag-la-bandera-de-cuba-havana-camiseta-tee {
+  rewrite ^ http://shop.annarbortees.com/products/cuban-national-flag-t-shirt-royal permanent;
+}
+location /products/cougar-hunter-funny-hunting-hunt-milf-humor-tee {
+  rewrite ^ http://shop.annarbortees.com/products/cougar-hunter-t-shirt-black permanent;
+}
+location /products/connecticut-state-flag-tee-connecticut-fan-tee-uconn-huskies-yale-bulldogs-elis-yalies {
+  rewrite ^ http://shop.annarbortees.com/products/connecticut-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/clan-cranstoun-scottish-clan-cranstoun-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-cranstoun-t-shirt-black permanent;
+}
+location /products/clan-colville-scottish-clan-colville-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-colville-t-shirt-black permanent;
+}
+location /products/clan-cathcart-scottish-clan-cathcart-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-cathcart-t-shirt-black permanent;
+}
+location /products/clan-carnegie-scottish-clan-carnegie-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-carnegie-t-shirt-black permanent;
+}
+location /products/clan-buchan-scottish-clan-buchan-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-buchan-t-shirt-black permanent;
+}
+location /products/clan-brodie-scottish-clan-brodie-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-brodie-t-shirt-black permanent;
+}
+location /products/clan-boyle-scottish-clan-boyle-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-boyle-t-shirt-black permanent;
+}
+location /products/clan-boyd-scottish-clan-boyd-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-boyd-t-shirt-black permanent;
+}
+location /products/clan-borthwick-scottish-clan-borthwick-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-borthwick-t-shirt-black permanent;
+}
+location /products/clan-bannerman-scottish-clan-bannerman-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-bannerman-t-shirt-black permanent;
+}
+location /products/clan-anstuther-scottish-clan-anstuther-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-anstuther-t-shirt-black permanent;
+}
+location /products/clan-agnew-scottish-clan-agnew-coat-of-arms-crest-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/clan-agnew-t-shirt-black permanent;
+}
+location /products/chile-flag-bandera-de-chile-camiseta-santiago-chilean {
+  rewrite ^ http://shop.annarbortees.com/products/chile-flag-t-shirt-royal permanent;
+}
+location /products/cesar-chavez-memorial-si-se-puede-latino-hispanic-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/cesar-chavez-memorial-t-shirt-green permanent;
+}
+location /products/canadian-national-coat-of-arms-canada-pride-flag-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/canadian-national-coat-of-arms-t-shirt-red permanent;
+}
+location /products/buy-me-a-shot-i-m-tying-the-knot-bachelor-bachelorette-party-wedding-marriage-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/buy-me-a-shot-i-m-tying-the-knot-t-shirt-black permanent;
+}
+location /products/buenos-aires-coat-of-arms-argentina-capital-flag-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/buenos-aires-coat-of-arms-t-shirt-light-blue permanent;
+}
+location /products/brazil-coat-of-arms-escudo-de-armas-do-brasil-brazilian-flag-tee {
+  rewrite ^ http://shop.annarbortees.com/products/brazil-coat-of-arms-t-shirt-green permanent;
+}
+location /products/boob-lover-usa {
+  rewrite ^ http://shop.annarbortees.com/products/boob-lover-usa-t-shirt-royal permanent;
+}
+location /products/bolivian-coat-of-arms-escudo-de-armas-de-bolivia-flag-tee {
+  rewrite ^ http://shop.annarbortees.com/products/bolivian-coat-of-arms-t-shirt-black permanent;
+}
+location /products/beer-hunter-funny-deer-hunting-hunt-tee {
+  rewrite ^ http://shop.annarbortees.com/products/beer-hunter-t-shirt-red permanent;
+}
+location /products/bar-star-party-drinking-booze-alcohol-beer-funny-tee {
+  rewrite ^ http://shop.annarbortees.com/products/bar-star-party-drinking-humor-t-shirt-black permanent;
+}
+location /products/band-meeting-folk-rock-roll-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/band-meeting-t-shirt-white permanent;
+}
+location /products/baltimore-md-city-skyline-maryland-ravens-fan-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/baltimore-md-city-skyline-t-shirt-grey permanent;
+}
+location /products/bad-day-fishing-beats-good-day-working-funny-humor-joke {
+  rewrite ^ http://shop.annarbortees.com/products/a-bad-day-fishing-beats-a-good-day-working-t-shirt-white permanent;
+}
+location /products/bacon-made-out-of-bacon-ron-america-swanson-pork-pride-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/bacon-made-out-of-bacon-t-shirt-black permanent;
+}
+location /products/bacon-heart-i-love-bacon-pork-pig-swine-bbq-breakfast-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/bacon-heart-t-shirt-black permanent;
+}
+location /products/awkward-funny-silly-fun-shirt-for-awkward-people {
+  rewrite ^ http://shop.annarbortees.com/products/awkward-t-shirt-royal permanent;
+}
+location /products/austin-tx-city-skyline-texas-austinite-pride-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/austin-tx-city-skyline-t-shirt-grey permanent;
+}
+location /products/attractive-nuisance-funny-law-school-lawyer-legal-joke-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/attractive-nuisance-t-shirt-navy permanent;
+}
+location /products/arkansas-state-flag-tee-arkansas-fan-shirt-razorbacks-little-rock-fort-smith-red-wolves {
+  rewrite ^ http://shop.annarbortees.com/products/arkansas-state-flag-tee-t-shirt-red permanent;
+}
+location /products/argentina-national-flag-argentine-bandera-ensign-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/argentina-national-flag-t-shirt-light-blue permanent;
+}
+location /products/anglers-have-more-allure-funny-fishing-humor-joke-tee {
+  rewrite ^ http://shop.annarbortees.com/products/anglers-have-more-allure-t-shirt-black permanent;
+}
+location /products/alabama-state-flag-tee-alabama-fan-shirt-crimson-tide-auburn-tigers-birmingham-montgomery {
+  rewrite ^ http://shop.annarbortees.com/products/alabama-state-flag-tee-t-shirt-white permanent;
+}
+location /products/akita-city-tohoku-flag-akita-prefecture-japan-crest {
+  rewrite ^ http://shop.annarbortees.com/products/akita-city-tohoku-flag-t-shirt-green permanent;
+}
+location /products/abstinence-is-for-virgins-funny-adult-humor-sex-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/abstinence-is-for-virgins-t-shirt-red permanent;
+}
+location /products/abashiri-hokkaido-flag-japan-okhotsk-prefecture-tee {
+  rewrite ^ http://shop.annarbortees.com/products/abashiri-hokkaido-flag-t-shirt-royal permanent;
+}
+location /products/sketchy-funny-bar-party-humor-shirt-for-the-sketchy-dude-in-your-life {
+  rewrite ^ http://shop.annarbortees.com/products/sketchy-t-shirt-black permanent;
+}
+location /products/awkward-funny-fun-awesome-shirt-for-awkward-people {
+  rewrite ^ http://shop.annarbortees.com/products/awkward-t-shirt-red permanent;
+}
+location /products/the-older-i-get-the-harder-it-is-to-find-my-balls-funny-golf-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/the-older-i-get-the-harder-it-is-to-find-my-balls-t-shirt-green permanent;
+}
+location /products/that-s-how-i-roll-funny-golf-humor-novelty-golfing-pun-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/that-s-how-i-roll-t-shirt-grey permanent;
+}
+location /products/my-other-car-is-a-golf-cart-funny-novelty-golfing-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/my-other-car-is-a-golf-cart-t-shirt-white permanent;
+}
+location /products/i-d-hit-that-funny-golf-humor-novelty-golfing-pun-joke-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-d-hit-that-t-shirt-white permanent;
+}
+location /products/i-like-big-putts-and-i-cannot-lie-funny-golf-novelty-golfing-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-like-big-putts-and-i-cannot-lie-funny-golf-t-shirt-white permanent;
+}
+location /products/eat-sleep-golf-funny-golf-humor-novelty-golfing-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/eat-sleep-golf-t-shirt-white permanent;
+}
+location /products/karma-recycle-sign-spiritual-philosphical-what-goes-around-tee {
+  rewrite ^ http://shop.annarbortees.com/products/karma-recycle-sign-t-shirt-green permanent;
+}
+location /products/i-pooped-today-funny-party-bar-bowel-movement-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/i-pooped-today-t-shirt-black permanent;
+}
+location /products/proud-firefighter-s-wife-fire-fighter-rescue-family-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/proud-firefighter-s-wife-t-shirt-black permanent;
+}
+location /products/tree-hugger-green-environmental-activist-earth-hippy-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/tree-hugger-t-shirt-green permanent;
+}
+location /products/cats-potato-chips-impossible-to-have-just-one-cat-lover-tee-for-cat-ficienados-perfect-for-lazy-caturdays {
+  rewrite ^ http://shop.annarbortees.com/products/cats-potato-chips-impossible-to-have-just-one-t-shirt-light-blue permanent;
+}
+location /products/don-t-tread-on-me-liberty-libertarian-conservative-gadsden-tea-party-flag {
+  rewrite ^ http://shop.annarbortees.com/products/don-t-tread-on-me-t-shirt-black permanent;
+}
+location /products/fart-loading-awesome-fart-joke-humor-tee-for-farters {
+  rewrite ^ http://shop.annarbortees.com/products/fart-loadinga-t-shirt-black permanent;
+}
+location /products/epic-unicorn-vs-narwhal-duel-fantasy-magical-horn-on-horn-action {
+  rewrite ^ http://shop.annarbortees.com/products/unicorn-narwhal-duel-t-shirt-purple permanent;
+}
+location /products/the-future-mrs-bieber-funny-cute-fan-girl-love-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/the-future-mrs-bieber-t-shirt-black permanent;
+}
+location /products/snatch-the-best-stuff-on-earth-funny-inappropriate-bad-taste-adult-humor {
+  rewrite ^ http://shop.annarbortees.com/products/snatch-the-best-stuff-on-earth-t-shirt-navy permanent;
+}
+location /products/beer-is-proof-that-god-loves-us-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/beer-is-proof-that-god-loves-us-ben-franklin-t-shirt-navy permanent;
+}
+location /products/firefighter-brotherhood {
+  rewrite ^ http://shop.annarbortees.com/products/firefighter-brotherhood-t-shirt-black permanent;
+}
+location /products/callahan-auto-parts-farley-90s-comedy-tommy-boy-tribute {
+  rewrite ^ http://shop.annarbortees.com/products/callahan-auto-parts-t-shirt-green permanent;
+}
+location /products/colorado-state-flag-distressed-vintage-look-co-denver-tee {
+  rewrite ^ http://shop.annarbortees.com/products/colorado-state-flag-distressed-t-shirt-royal permanent;
+}
+location /products/like-a-boss-snl-lonely-island-internet-bamf-tribute-tee {
+  rewrite ^ http://shop.annarbortees.com/products/like-a-boss-t-shirt-white permanent;
+}
+location /products/sunday-funday-fantasy-football-nfl-beer-and-sports-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/sunday-funday-t-shirt-grey permanent;
+}
+location /products/vintage-blue-tuxedo-tee-bachelor-party-prom-fancy-fun-tee {
+  rewrite ^ http://shop.annarbortees.com/products/vintage-blue-tuxedo-tee-t-shirt-light-blue permanent;
+}
+location /products/proud-firefighter-s-daughter-fire-fighter-rescue-family-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/proud-firefighter-s-daughter-t-shirt-black permanent;
+}
+location /products/i-love-heart-dance-ballet-tap-hip-hop-dancing-lover-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-heart-dance-fleece-sweatshirt-black permanent;
+}
+location /products/have-you-talked-to-your-cat-about-catnip-kitty-drug-awareness-d-a-r-e-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/have-you-talked-to-your-cat-about-catnip-t-shirt-black permanent;
+}
+location /products/future-mrs-tatum-funny-channing-fan-magic-mike-tee {
+  rewrite ^ http://shop.annarbortees.com/products/future-mrs-tatum-t-shirt-black permanent;
+}
+location /products/mr-fancypants-sir-narwhal-reddit-digg-4chan-smug-whale {
+  rewrite ^ http://shop.annarbortees.com/products/mr-fancypants-sir-narwhal-t-shirt-black permanent;
+}
+location /products/noah-forgot-bigfoot-unicorn-and-loch-ness-monster-tee-for-fans-of-nessie-sasquatch-fantasy-and-magical-beasts-who-get-left-behind {
+  rewrite ^ http://shop.annarbortees.com/products/noah-forgot-bigfoot-unicorn-and-loch-ness-monster-t-shirt-royal permanent;
+}
+location /products/meh-shirt-funny-slacker-stoner-gamer-apathy-tee {
+  rewrite ^ http://shop.annarbortees.com/products/meh-shirt-t-shirt-red permanent;
+}
+location /products/clan-scott-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-scott-t-shirt-black permanent;
+}
+location /products/ho-ho-ho-i-can-see-you-masturbating-funny-santa-christmas-inappropriate-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/ho-ho-ho-i-can-see-you-masturbating-t-shirt-red permanent;
+}
+location /products/bacon-is-meat-candy-ron-swanson-pork-bbq-pork-lover-tee {
+  rewrite ^ http://shop.annarbortees.com/products/bacon-is-meat-candy-t-shirt-grey permanent;
+}
+location /products/clan-sutherland-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-sutherland-t-shirt-black permanent;
+}
+location /products/jolly-roger-pirate-flag-tee-skull-and-crossbones-sparrow-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/jolly-roger-pirate-flag-tee-t-shirt-black permanent;
+}
+location /products/unicorn-pooping-a-rainbow-turd-tee-for-fans-of-unicorn-poo {
+  rewrite ^ http://shop.annarbortees.com/products/unicorn-pooping-a-rainbow-turd-t-shirt-light-blue permanent;
+}
+location /products/zombie-outbreak-response-team-apocalpyse-walking-dead-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/zombie-outbreak-response-team-t-shirt-black permanent;
+}
+location /products/p-diddy-bitchassness-funny-combs-diddy-house-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/p-diddy-bitchassness-t-shirt-grey permanent;
+}
+location /products/keep-calm-and-keep-the-change-ya-filthy-animal-home-alone-tribute-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/keep-calm-and-keep-the-change-ya-filthy-animal-t-shirt-red permanent;
+}
+location /products/clan-robertson-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-robertson-t-shirt-black permanent;
+}
+location /products/clan-ramsay-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-ramsay-t-shirt-black permanent;
+}
+location /products/los-pollos-hermanos-lph-breaking-bad-fan-kfc-spoof-tee {
+  rewrite ^ http://shop.annarbortees.com/products/los-pollos-hermanos-lph-t-shirt-red permanent;
+}
+location /products/you-like-this-thumbs-up-funny-bar-party-facebook-humor-tee {
+  rewrite ^ http://shop.annarbortees.com/products/you-like-this-thumbs-up-t-shirt-black permanent;
+}
+location /products/scottish-clan-mar-scotland-family-crest-scot-coat-of-arms {
+  rewrite ^ http://shop.annarbortees.com/products/scottish-clan-mar-t-shirt-black permanent;
+}
+location /products/reading-melville-is-a-whale-of-a-time-moby-dick-literary-book-worm-humor-tee {
+  rewrite ^ http://shop.annarbortees.com/products/reading-melville-is-a-whale-of-a-time-t-shirt-light-blue permanent;
+}
+location /products/proud-firefighter-s-son-fire-fighter-rescue-family-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/proud-firefighter-s-son-t-shirt-black permanent;
+}
+location /products/proud-firefighter-s-husband-fire-fighter-and-rescue-family-pride-tee {
+  rewrite ^ http://shop.annarbortees.com/products/proud-firefighter-s-husband-t-shirt-black permanent;
+}
+location /products/proud-emt-wife-medical-ambulance-paramedic-family-pride {
+  rewrite ^ http://shop.annarbortees.com/products/proud-emt-wife-t-shirt-black permanent;
+}
+location /products/proud-emt-husband-medical-ambulance-paramedic-family-pridetee {
+  rewrite ^ http://shop.annarbortees.com/products/proud-emt-husband-t-shirt-black permanent;
+}
+location /products/my-mom-saves-lives-medical-ambulance-paramedic-emt-family-pridetee {
+  rewrite ^ http://shop.annarbortees.com/products/my-mom-saves-lives-t-shirt-black permanent;
+}
+location /products/my-dad-saves-lives-medical-ambulance-paramedic-emt-family-pridetee {
+  rewrite ^ http://shop.annarbortees.com/products/my-dad-saves-lives-t-shirt-black permanent;
+}
+location /products/konami-code-90s-gamer-gaming-nintendo-contra-nerd-geek-code {
+  rewrite ^ http://shop.annarbortees.com/products/konami-code-t-shirt-black permanent;
+}
+location /products/don-t-bro-me-if-you-don-t-know-me-frat-cool-story-party-tee {
+  rewrite ^ http://shop.annarbortees.com/products/don-t-bro-me-if-you-don-t-know-me-t-shirt-white permanent;
+}
+location /products/colorado-love-i-heart-co-denver-rockies-nuggets-avs-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/colorado-love-t-shirt-royal permanent;
+}
+location /products/ann-coulter-smells-like-farts-liberal-democrat-progressive-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/ann-coulter-smells-like-farts-t-shirt-light-blue permanent;
+}
+location /products/you-can-t-scare-me-i-have-grandkids-grandma-grandpa-funny-grandparent-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/you-can-t-scare-me-i-have-grandkids-t-shirt-navy permanent;
+}
+location /products/vintage-orange-tuxedo-tee-bachelor-party-prom-fancy-fun-tee {
+  rewrite ^ http://shop.annarbortees.com/products/vintage-orange-tuxedo-tee-t-shirt-orange permanent;
+}
+location /products/vintage-green-tuxedo-tee-st-patty-s-patrick-s-pat-s-fancy-irish-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/vintage-green-tuxedo-tee-t-shirt-green permanent;
+}
+location /products/pugs-not-drugs-funny-pug-dog-owner-moepse-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/pugs-not-drugs-t-shirt-light-blue permanent;
+}
+location /products/pablo-escobar-colombian-drug-cocaine-scarface-gang-kingpin {
+  rewrite ^ http://shop.annarbortees.com/products/pablo-escobar-t-shirt-black permanent;
+}
+location /products/official-keg-stand-shirt-kegstand-drinking-college-party-beer-tee {
+  rewrite ^ http://shop.annarbortees.com/products/official-keg-stand-shirt-drinking-humor-t-shirt-grey permanent;
+}
+location /products/mess-with-me-mess-with-the-whole-trailer-park-redneck-tee-hilbilly-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/mess-with-me-mess-with-the-whole-trailer-park-t-shirt-black permanent;
+}
+location /products/medical-marijuana-pot-weed-legalization-support-tee {
+  rewrite ^ http://shop.annarbortees.com/products/medical-marijuana-t-shirt-green permanent;
+}
+location /products/l-h-o-o-q-honey-boo-boo-child-marcel-duchamp-dadaist-surrealist-spoof {
+  rewrite ^ http://shop.annarbortees.com/products/l-h-o-o-q-honey-boo-boo-child-t-shirt-white permanent;
+}
+location /products/honey-boo-boo-child-decline-of-civilization-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/honey-boo-boo-child-t-shirt-white permanent;
+}
+location /products/guns-don-t-kill-people-i-kill-people-funny-inappropriate-humor-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/guns-don-t-kill-people-i-kill-people-t-shirt-black permanent;
+}
+location /products/ernest-shackleton-men-wanted-tribute-adventurer-explorer-traveller-tee {
+  rewrite ^ http://shop.annarbortees.com/products/ernest-shackleton-men-wanted-tribute-t-shirt-natural permanent;
+}
+location /products/drug-dealer-pharmacy-pharmacist-funny-prescription-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/drug-dealer-t-shirt-black permanent;
+}
+location /products/clan-wemyss-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-wemyss-t-shirt-black permanent;
+}
+location /products/clan-wedderburn-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-wedderburn-t-shirt-black permanent;
+}
+location /products/clan-wallace-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-wallace-t-shirt-black permanent;
+}
+location /products/clan-urquhart-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-urquhart-t-shirt-black permanent;
+}
+location /products/clan-swinton-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-swinton-t-shirt-black permanent;
+}
+location /products/clan-stuart-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-stuart-t-shirt-black permanent;
+}
+location /products/clan-stirling-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-stirling-t-shirt-black permanent;
+}
+location /products/clan-spens-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-spens-t-shirt-black permanent;
+}
+location /products/clan-skene-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-skene-t-shirt-black permanent;
+}
+location /products/clan-sinclair-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-sinclair-t-shirt-black permanent;
+}
+location /products/clan-shaw-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-shaw-t-shirt-black permanent;
+}
+location /products/clan-sempill-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-sempill-t-shirt-black permanent;
+}
+location /products/clan-scrymgeour-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-scrymgeour-t-shirt-black permanent;
+}
+location /products/clan-sandilands-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-sandilands-t-shirt-black permanent;
+}
+location /products/clan-ruthven-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-ruthven-t-shirt-black permanent;
+}
+location /products/clan-ross-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-ross-t-shirt-black permanent;
+}
+location /products/clan-rose-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-rose-t-shirt-black permanent;
+}
+location /products/clan-rollo-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-rollo-t-shirt-black permanent;
+}
+location /products/clan-rattray-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-rattray-t-shirt-black permanent;
+}
+location /products/clan-primrose-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-primrose-t-shirt-black permanent;
+}
+location /products/clan-ogilvy-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-ogilvy-t-shirt-black permanent;
+}
+location /products/clan-nicolson-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-nicolson-t-shirt-black permanent;
+}
+location /products/clan-nesbitt-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-nesbitt-t-shirt-black permanent;
+}
+location /products/clan-napier-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-napier-t-shirt-black permanent;
+}
+location /products/clan-murray-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-murray-t-shirt-black permanent;
+}
+location /products/clan-munro-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-munro-t-shirt-black permanent;
+}
+location /products/clan-morrison-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-morrison-t-shirt-black permanent;
+}
+location /products/clan-montgomery-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-montgomery-t-shirt-black permanent;
+}
+location /products/clan-moncreiffe-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-moncreiffe-t-shirt-black permanent;
+}
+location /products/clan-moffat-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-moffat-t-shirt-black permanent;
+}
+location /products/clan-menzies-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-menzies-t-shirt-black permanent;
+}
+location /products/clan-matheson-scottish-family-crest-scotland-coat-of-arms-tee {
+  rewrite ^ http://shop.annarbortees.com/products/clan-matheson-t-shirt-black permanent;
+}
+location /products/champagne-for-my-real-friends-real-pain-for-my-sham-friends-funny-quote-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/champagne-for-my-real-friends-t-shirt-royal permanent;
+}
+location /products/the-grandfather-cute-funny-godfather-spoof-for-grandpa {
+  rewrite ^ http://shop.annarbortees.com/products/the-grandfather-t-shirt-black permanent;
+}
+location /products/weyland-corportaion-80s-sci-fi-horror-film-fan-tribute-tee {
+  rewrite ^ http://shop.annarbortees.com/products/weyland-corportaion-t-shirt-royal permanent;
+}
+location /products/weedies-breakfast-of-champions-funny-pot-marijuana-joke-smoking-humor-tee {
+  rewrite ^ http://shop.annarbortees.com/products/weedies-breakfast-of-champions-t-shirt-black permanent;
+}
+location /products/shut-up-and-lift-weight-lifting-body-building-crossfit-work-out-tee {
+  rewrite ^ http://shop.annarbortees.com/products/shut-up-and-lift-t-shirt-royal permanent;
+}
+location /products/protein-slayer-weight-lifting-body-building-crossfit-work-out-tee {
+  rewrite ^ http://shop.annarbortees.com/products/protein-slayer-t-shirt-black permanent;
+}
+location /products/property-of-santa-s-workshop-cute-christmas-santa-tee-for-north-pole-helpers {
+  rewrite ^ http://shop.annarbortees.com/products/property-of-santa-s-workshop-t-shirt-green permanent;
+}
+location /products/my-kid-is-faster-than-your-kid-greyhound-owner-grey-rescue-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/my-kid-is-faster-than-your-kid-t-shirt-red permanent;
+}
+location /products/lsd-molecule-psychedelic-lysergic-acid-drug-trip-tee {
+  rewrite ^ http://shop.annarbortees.com/products/lsd-molecule-t-shirt-black permanent;
+}
+location /products/ho-to-the-3rd-power-ho-ho-ho-cute-christmas-santa-tee {
+  rewrite ^ http://shop.annarbortees.com/products/ho-to-the-3rd-power-ho-ho-ho-t-shirt-red permanent;
+}
+location /products/greyhounds-zero-to-batsh-t-in-1-5-seconds-greyhound-owner-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/greyhounds-zero-to-batsh-t-in-1-5-seconds-t-shirt-royal permanent;
+}
+location /products/get-mor-swole-weight-lifting-body-building-crossfit-work-out-tee {
+  rewrite ^ http://shop.annarbortees.com/products/get-mor-swole-t-shirt-black permanent;
+}
+location /products/get-low-weight-lifting-body-building-crossfit-back-squat-tee {
+  rewrite ^ http://shop.annarbortees.com/products/get-low-t-shirt-black permanent;
+}
+location /products/freemason-square-compass-freemasonry-masonic-symbol-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/freemason-square-compass-t-shirt-black permanent;
+}
+location /products/eat-me-gingerbread-man-cute-christmas-santa-north-pole {
+  rewrite ^ http://shop.annarbortees.com/products/eat-me-gingerbread-man-t-shirt-green permanent;
+}
+location /products/do-work-weight-lifting-body-building-crossfit-working-out-tee {
+  rewrite ^ http://shop.annarbortees.com/products/do-work-t-shirt-black permanent;
+}
+location /products/dead-lift-day-weight-lifting-body-building-crossfit-tee {
+  rewrite ^ http://shop.annarbortees.com/products/dead-lift-day-t-shirt-black permanent;
+}
+location /products/d-a-d-d-dads-against-daughter-dating-funny-father-daddy-dad-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/d-a-d-d-dads-against-daughter-dating-t-shirt-black permanent;
+}
+location /products/brogramming-funny-programming-software-dev-coding-humor-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/brogramming-t-shirt-black permanent;
+}
+location /products/better-call-saul-saul-goodman-attorney-at-law-fan-tee-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/better-call-saul-t-shirt-yellow permanent;
+}
+location /products/usa-and-canada-best-buds {
+  rewrite ^ http://shop.annarbortees.com/products/usa-canada-best-buds-t-shirt-t-shirt-red permanent;
+}
+location /products/2nd-amendment-gun-permit-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/2nd-amendment-gun-permit-t-shirt-t-shirt-black permanent;
+}
+location /products/babe-raham-lincoln-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/babe-raham-lincoln-t-shirt-t-shirt-natural permanent;
+}
+location /products/star-spangled-hammered-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/star-spangled-hammered-t-shirt-black permanent;
+}
+location /products/ufo-investigator-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/ufo-investigator-t-shirt-black permanent;
+}
+location /products/statue-of-liberty-bong {
+  rewrite ^ http://shop.annarbortees.com/products/statue-of-liberty-bong-t-shirt-t-shirt-red permanent;
+}
+location /products/american-national-drinking-team-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/american-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/i-hunt-dead-people-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-hunt-dead-people-t-shirt-black permanent;
+}
+location /products/got-chalk {
+  rewrite ^ http://shop.annarbortees.com/products/got-chalk-t-shirt-black permanent;
+}
+location /products/im-alaska-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-alaska-drunk-t-shirt-royal permanent;
+}
+location /products/im-alabama-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-alabama-drunk-t-shirt-royal permanent;
+}
+location /products/im-arkansas-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-arkansas-drunk-t-shirt-royal permanent;
+}
+location /products/im-arizona-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-arizona-drunk-t-shirt-royal permanent;
+}
+location /products/im-california-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-california-drunk-t-shirt-royal permanent;
+}
+location /products/im-colorado-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-colorado-drunk-t-shirt-royal permanent;
+}
+location /products/im-connecticut-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-connecticut-drunk-t-shirt-royal permanent;
+}
+location /products/im-delaware-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-delaware-drunk-t-shirt-royal permanent;
+}
+location /products/im-florida-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-florida-drunk-t-shirt-royal permanent;
+}
+location /products/im-georgia-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-georgia-drunk-t-shirt-royal permanent;
+}
+location /products/im-hawaii-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-hawaii-drunk-t-shirt-royal permanent;
+}
+location /products/im-iowa-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-iowa-drunk-t-shirt-royal permanent;
+}
+location /products/im-idaho-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-idaho-drunk-t-shirt-royal permanent;
+}
+location /products/im-illinois-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-illinois-drunk-t-shirt-royal permanent;
+}
+location /products/im-indiana-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-indiana-drunk-t-shirt-royal permanent;
+}
+location /products/im-kansas-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-kansas-drunk-t-shirt-royal permanent;
+}
+location /products/im-kentucky-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-kentucky-drunk-t-shirt-royal permanent;
+}
+location /products/im-lousiana-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-lousiana-drunk-t-shirt-royal permanent;
+}
+location /products/im-maryland-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-maryland-drunk-t-shirt-royal permanent;
+}
+location /products/im-maine-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-maine-drunk-t-shirt-royal permanent;
+}
+location /products/im-michigan-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-michigan-drunk-t-shirt-royal permanent;
+}
+location /products/im-minnesota-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-minnesota-drunk-t-shirt-royal permanent;
+}
+location /products/im-missouri-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-missouri-drunk-t-shirt-royal permanent;
+}
+location /products/im-mississippi-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-mississippi-drunk-t-shirt-royal permanent;
+}
+location /products/im-montana-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-montana-drunk-t-shirt-royal permanent;
+}
+location /products/im-north-carolina-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-north-carolina-drunk-t-shirt-royal permanent;
+}
+location /products/im-north-dakota-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-north-dakota-drunk-t-shirt-royal permanent;
+}
+location /products/im-nebraska-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-nebraska-drunk-t-shirt-royal permanent;
+}
+location /products/im-new-hampshire-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-new-hampshire-drunk-t-shirt-royal permanent;
+}
+location /products/im-new-jersey-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-new-jersey-drunk-t-shirt-royal permanent;
+}
+location /products/im-new-mexico-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-new-mexico-drunk-t-shirt-royal permanent;
+}
+location /products/im-nevada-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-nevada-drunk-t-shirt-royal permanent;
+}
+location /products/im-new-york-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-new-york-drunk-t-shirt-royal permanent;
+}
+location /products/im-ohio-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-ohio-drunk-t-shirt-royal permanent;
+}
+location /products/im-oklahoma-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-oklahoma-drunk-t-shirt-royal permanent;
+}
+location /products/im-oregon-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-oregon-drunk-t-shirt-royal permanent;
+}
+location /products/im-pennsylvania-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-pennsylvania-drunk-t-shirt-royal permanent;
+}
+location /products/im-rhode-island-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-rhode-island-drunk-t-shirt-royal permanent;
+}
+location /products/im-south-carolina-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-south-carolina-drunk-t-shirt-royal permanent;
+}
+location /products/im-south-dakota-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-south-dakota-drunk-t-shirt-royal permanent;
+}
+location /products/im-tennessee-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-tennessee-drunk-t-shirt-royal permanent;
+}
+location /products/im-texas-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-texas-drunk-t-shirt-royal permanent;
+}
+location /products/im-utah-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-utah-drunk-t-shirt-royal permanent;
+}
+location /products/im-virginia-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-virginia-drunk-t-shirt-royal permanent;
+}
+location /products/im-vermont-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-vermont-drunk-t-shirt-royal permanent;
+}
+location /products/im-washington-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-washington-drunk-t-shirt-royal permanent;
+}
+location /products/im-wisconsin-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-wisconsin-drunk-t-shirt-royal permanent;
+}
+location /products/im-west-virginia-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-west-virginia-drunk-t-shirt-royal permanent;
+}
+location /products/im-whyoming-drunk {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-wyoming-drunk-t-shirt-royal permanent;
+}
+location /products/funny-mallrats-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/funny-mallrats-fan-tee-t-shirt-white permanent;
+}
+location /products/edgar-allen-poo {
+  rewrite ^ http://shop.annarbortees.com/products/edgar-allen-poo-t-shirt-natural permanent;
+}
+location /products/grendel-is-a-grundle {
+  rewrite ^ http://shop.annarbortees.com/products/grendel-is-a-grundle-t-shirt-white permanent;
+}
+location /products/stephen-is-the-king {
+  rewrite ^ http://shop.annarbortees.com/products/stephen-is-the-king-t-shirt-red permanent;
+}
+location /products/purrrfect-10-skateboarding-cat {
+  rewrite ^ http://shop.annarbortees.com/products/purrrfect-10-skateboarding-cat-t-shirt-yellow permanent;
+}
+location /products/space-cats-from-outer-space {
+  rewrite ^ http://shop.annarbortees.com/products/space-cats-from-outer-space-t-shirt-black permanent;
+}
+location /products/fratasaurus-rex {
+  rewrite ^ http://shop.annarbortees.com/products/fratasaurus-rex-t-shirt-red permanent;
+}
+location /products/italian-soccer-fan {
+  rewrite ^ http://shop.annarbortees.com/products/italian-soccer-fan-t-shirt-royal permanent;
+}
+location /products/bones-are-for-dogs-bbw-pride {
+  rewrite ^ http://shop.annarbortees.com/products/bones-are-for-dogs-bbw-pride-t-shirt-white permanent;
+}
+location /products/french-kissing-and-holding-hands {
+  rewrite ^ http://shop.annarbortees.com/products/french-kissing-and-holding-hands-t-shirt-purple permanent;
+}
+location /products/smart-ass {
+  rewrite ^ http://shop.annarbortees.com/products/smart-ass-t-shirt-white permanent;
+}
+location /products/teenage-mutant-turtles-tee {
+  rewrite ^ http://shop.annarbortees.com/products/teenage-mutant-turtles-tee-t-shirt-light-blue permanent;
+}
+location /products/uncle-sam-come-at-me-bro {
+  rewrite ^ http://shop.annarbortees.com/products/uncle-sam-come-at-me-bro-t-shirt-white permanent;
+}
+location /products/better-dead-than-red {
+  rewrite ^ http://shop.annarbortees.com/products/better-dead-than-red-t-shirt-light-blue permanent;
+}
+location /products/merica-mullet-eagle {
+  rewrite ^ http://shop.annarbortees.com/products/merica-mullet-eagle-t-shirt-light-blue permanent;
+}
+location /products/epic-skateboarding-eagle {
+  rewrite ^ http://shop.annarbortees.com/products/epic-skateboarding-eagle-t-shirt-white permanent;
+}
+location /products/england-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/england-national-drinking-team-t-shirt-white permanent;
+}
+location /products/freedom-and-liberty-guns {
+  rewrite ^ http://shop.annarbortees.com/products/freedom-liberty-guns-t-shirt-white permanent;
+}
+location /products/mmmerica-bacon-flag {
+  rewrite ^ http://shop.annarbortees.com/products/mmmerica-bacon-flag-t-shirt-white permanent;
+}
+location /products/canada-americas-hat {
+  rewrite ^ http://shop.annarbortees.com/products/canada-america-s-hat-t-shirt-white permanent;
+}
+location /products/these-colors-dont-run {
+  rewrite ^ http://shop.annarbortees.com/products/these-colors-don-t-run-t-shirt-natural permanent;
+}
+location /products/osame-bin-laden-international-hide-and-seek-champ {
+  rewrite ^ http://shop.annarbortees.com/products/osame-bin-laden-international-hide-seek-champ-t-shirt-white permanent;
+}
+location /products/fueled-by-100-percent-raw-usa-sunshine {
+  rewrite ^ http://shop.annarbortees.com/products/fueled-by-100-raw-usa-sunshine-t-shirt-natural permanent;
+}
+location /products/sexy-william-howard-taft {
+  rewrite ^ http://shop.annarbortees.com/products/sexy-william-howard-taft-t-shirt-natural permanent;
+}
+location /products/jesus-plus-uncle-sam-riding-eagle {
+  rewrite ^ http://shop.annarbortees.com/products/jesus-uncle-sam-riding-eagle-t-shirt-royal permanent;
+}
+location /products/massachusetts-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/massachusetts-state-flag-tee-t-shirt-white permanent;
+}
+location /products/mississippi-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/mississippi-state-flag-tee-t-shirt-white permanent;
+}
+location /products/north-carolina-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/north-carolina-state-flag-tee-t-shirt-white permanent;
+}
+location /products/north-dakota-state-flag-tee-3 {
+  rewrite ^ http://shop.annarbortees.com/products/north-dakota-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/pennsylvania-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/pennsylvania-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/rhode-island-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/rhode-island-state-flag-tee-t-shirt-white permanent;
+}
+location /products/south-carolina-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/south-carolina-state-flag-tee-t-shirt-navy permanent;
+}
+location /products/south-dakota-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/south-dakota-state-flag-tee-t-shirt-royal permanent;
+}
+location /products/washington-state-flag-tee-1 {
+  rewrite ^ http://shop.annarbortees.com/products/washington-state-flag-tee-t-shirt-green permanent;
+}
+location /products/argentina-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/argentina-national-drinking-team-t-shirt-light-blue permanent;
+}
+location /products/australia-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/australia-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/austria-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/austria-national-drinking-team-t-shirt-red permanent;
+}
+location /products/belgium-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/belgium-national-drinking-team-t-shirt-red permanent;
+}
+location /products/britain-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/britain-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/bulgaria-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/bulgaria-national-drinking-team-t-shirt-red permanent;
+}
+location /products/canada-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/canada-national-drinking-team-t-shirt-red permanent;
+}
+location /products/colombia-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/colombia-national-drinking-team-t-shirt-yellow permanent;
+}
+location /products/cuba-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/cuba-national-drinking-team-t-shirt-red permanent;
+}
+location /products/czech-republic-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/czech-republic-national-drinking-team-t-shirt-red permanent;
+}
+location /products/finland-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/finland-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/france-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/france-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/germany-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/germany-national-drinking-team-t-shirt-black permanent;
+}
+location /products/ireland-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/ireland-national-drinking-team-t-shirt-green permanent;
+}
+location /products/italy-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/italy-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/mexico-national-drinking-team-1 {
+  rewrite ^ http://shop.annarbortees.com/products/mexico-national-drinking-team-t-shirt-green permanent;
+}
+location /products/netherlands-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/netherlands-national-drinking-team-t-shirt-orange permanent;
+}
+location /products/norway-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/norway-national-drinking-team-t-shirt-red permanent;
+}
+location /products/peru-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/peru-national-drinking-team-t-shirt-red permanent;
+}
+location /products/poland-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/poland-national-drinking-team-t-shirt-red permanent;
+}
+location /products/russia-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/russia-national-drinking-team-t-shirt-red permanent;
+}
+location /products/scotland-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/scotland-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/serbia-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/serbia-national-drinking-team-t-shirt-red permanent;
+}
+location /products/slovakia-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/slovakia-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/spain-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/spain-national-drinking-team-t-shirt-red permanent;
+}
+location /products/sweden-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/sweden-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/switzerland-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/switzerland-national-drinking-team-t-shirt-red permanent;
+}
+location /products/ukraine-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/ukraine-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/usa-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/usa-national-drinking-team-t-shirt-royal permanent;
+}
+location /products/venezuela-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/venezuela-national-drinking-team-t-shirt-red permanent;
+}
+location /products/wales-national-drinking-team {
+  rewrite ^ http://shop.annarbortees.com/products/wales-national-drinking-team-t-shirt-black permanent;
+}
+location /products/merica-epic-usa {
+  rewrite ^ http://shop.annarbortees.com/products/epic-merica-pride-t-shirt-royal permanent;
+}
+location /products/addict-unicorn {
+  rewrite ^ http://shop.annarbortees.com/products/addict-unicorn-t-shirt-black permanent;
+}
+location /products/remember-the-alamo {
+  rewrite ^ http://shop.annarbortees.com/products/remember-the-alamo-t-shirt-royal permanent;
+}
+location /products/scissors-beats-paper {
+  rewrite ^ http://shop.annarbortees.com/products/scissors-beats-paper-t-shirt-black permanent;
+}
+location /products/mullet-map-usa {
+  rewrite ^ http://shop.annarbortees.com/products/mullet-map-usa-t-shirt-natural permanent;
+}
+location /products/hosta-la-vista-baby {
+  rewrite ^ http://shop.annarbortees.com/products/hosta-la-vista-baby-t-shirt-green permanent;
+}
+location /products/crazy-plant-lady {
+  rewrite ^ http://shop.annarbortees.com/products/crazy-plant-lady-t-shirt-natural permanent;
+}
+location /products/dont-argue-with-the-captain {
+  rewrite ^ http://shop.annarbortees.com/products/don-t-argue-with-the-captain-t-shirt-white permanent;
+}
+location /products/eat-sleep-sail {
+  rewrite ^ http://shop.annarbortees.com/products/eat-sleep-sail-t-shirt-light-blue permanent;
+}
+location /products/eat-sleep-boat {
+  rewrite ^ http://shop.annarbortees.com/products/eat-sleep-boat-t-shirt-royal permanent;
+}
+location /products/sailing-evolution {
+  rewrite ^ http://shop.annarbortees.com/products/sailing-evolution-t-shirt-black permanent;
+}
+location /products/got-wind {
+  rewrite ^ http://shop.annarbortees.com/products/got-wind-t-shirt-black permanent;
+}
+location /products/nauti-girl {
+  rewrite ^ http://shop.annarbortees.com/products/nauti-girl-t-shirt-light-blue permanent;
+}
+location /products/pessimist-optimist-realist-sailing {
+  rewrite ^ http://shop.annarbortees.com/products/pessimist-optimist-realist-sailing-t-shirt-black permanent;
+}
+location /products/if-im-sailing-im-happy {
+  rewrite ^ http://shop.annarbortees.com/products/if-i-m-sailing-i-m-happy-t-shirt-natural permanent;
+}
+location /products/my-heart-belongs-to-a-sailor {
+  rewrite ^ http://shop.annarbortees.com/products/my-heart-belongs-to-a-sailor-t-shirt-light-blue permanent;
+}
+location /products/everyone-can-use-a-little-tug-now-and-again {
+  rewrite ^ http://shop.annarbortees.com/products/everyone-can-use-a-little-tug-now-and-again-t-shirt-natural permanent;
+}
+location /products/i-do-all-my-own-stunts {
+  rewrite ^ http://shop.annarbortees.com/products/i-do-all-my-own-stunts-t-shirt-natural permanent;
+}
+location /products/composting-is-the-shit {
+  rewrite ^ http://shop.annarbortees.com/products/composting-is-the-shit-t-shirt-natural permanent;
+}
+location /products/compost-happens {
+  rewrite ^ http://shop.annarbortees.com/products/compost-happens-t-shirt-green permanent;
+}
+location /products/plant-manager {
+  rewrite ^ http://shop.annarbortees.com/products/plant-manager-t-shirt-white permanent;
+}
+location /products/plant-whisperer {
+  rewrite ^ http://shop.annarbortees.com/products/plant-whisperer-t-shirt-green permanent;
+}
+location /products/live-love-landscape {
+  rewrite ^ http://shop.annarbortees.com/products/live-love-landscape-t-shirt-white permanent;
+}
+location /products/gardeners-love-dirty-hoes {
+  rewrite ^ http://shop.annarbortees.com/products/gardeners-love-dirty-hoes-t-shirt-natural permanent;
+}
+location /products/at-least-my-plants-listen-to-me {
+  rewrite ^ http://shop.annarbortees.com/products/at-least-my-plants-listen-to-me-t-shirt-white permanent;
+}
+location /products/a-bad-day-on-the-boat-beats-a-good-day-at-work {
+  rewrite ^ http://shop.annarbortees.com/products/a-bad-day-on-the-boat-beats-a-good-day-at-work-t-shirt-white permanent;
+}
+location /products/how-much-can-i-get-away-w-slash-and-still-go-to-heaven {
+  rewrite ^ http://shop.annarbortees.com/products/how-much-can-i-get-away-w-still-go-to-heaven-t-shirt-light-blue permanent;
+}
+location /products/can-i-get-an-amen {
+  rewrite ^ http://shop.annarbortees.com/products/can-i-get-an-amen-t-shirt-black permanent;
+}
+location /products/godsquad {
+  rewrite ^ http://shop.annarbortees.com/products/godsquad-t-shirt-white permanent;
+}
+location /products/eve-was-framed {
+  rewrite ^ http://shop.annarbortees.com/products/eve-was-framed-t-shirt-natural permanent;
+}
+location /products/my-mast-goes-up-when-the-wind-blows {
+  rewrite ^ http://shop.annarbortees.com/products/my-mast-goes-up-when-the-wind-blows-t-shirt-light-blue permanent;
+}
+location /products/stars-are-dead-like-your-dreams {
+  rewrite ^ http://shop.annarbortees.com/products/stars-are-dead-like-your-dreams-t-shirt-navy permanent;
+}
+location /products/7-days-without-prayer-makes-one-weak {
+  rewrite ^ http://shop.annarbortees.com/products/7-days-without-prayer-makes-one-weak-t-shirt-light-blue permanent;
+}
+location /products/dyslexic-friend-helped-me-find-dog {
+  rewrite ^ http://shop.annarbortees.com/products/dyslexic-friend-helped-me-find-dog-t-shirt-light-blue permanent;
+}
+location /products/christ-inside-intel-spoof {
+  rewrite ^ http://shop.annarbortees.com/products/christ-inside-intel-spoof-t-shirt-white permanent;
+}
+location /products/keep-calm-and-trust-in-god {
+  rewrite ^ http://shop.annarbortees.com/products/keep-calm-and-trust-in-god-t-shirt-red permanent;
+}
+location /products/jesus-loves-you-but-im-his-favorite {
+  rewrite ^ http://shop.annarbortees.com/products/jesus-loves-you-but-i-m-his-favorite-t-shirt-royal permanent;
+}
+location /products/follow-at-jesus {
+  rewrite ^ http://shop.annarbortees.com/products/follow-jesus-t-shirt-grey permanent;
+}
+location /products/prayer-original-wireless-communication {
+  rewrite ^ http://shop.annarbortees.com/products/prayer-original-wireless-communication-t-shirt-aqua-blue permanent;
+}
+location /products/freys-wedding-planning-a-bloody-good-time {
+  rewrite ^ http://shop.annarbortees.com/products/frey-s-wedding-planning-a-bloody-good-time-t-shirt-black permanent;
+}
+location /products/you-dont-know-a-man-til-youve-wrestled-him {
+  rewrite ^ http://shop.annarbortees.com/products/you-don-t-know-a-man-til-you-ve-wrestled-him-t-shirt-brown permanent;
+}
+location /products/hanging-with-my-gnomies {
+  rewrite ^ http://shop.annarbortees.com/products/hanging-with-my-gnomies-t-shirt-green permanent;
+}
+location /products/gardenerd-garden-nerd {
+  rewrite ^ http://shop.annarbortees.com/products/gardenerd-garden-nerd-t-shirt-white permanent;
+}
+location /products/nice-day-for-a-red-wedding {
+  rewrite ^ http://shop.annarbortees.com/products/nice-day-for-a-red-wedding-t-shirt-black permanent;
+}
+location /products/i-beat-anorexia {
+  rewrite ^ http://shop.annarbortees.com/products/i-beat-anorexia-t-shirt-grey permanent;
+}
+location /products/sorry-ladies-no-stilettos-in-the-water-bed {
+  rewrite ^ http://shop.annarbortees.com/products/sorry-ladies-no-stilettos-in-the-water-bed-t-shirt-natural permanent;
+}
+location /products/my-couch-pulls-out-but-i-dont {
+  rewrite ^ http://shop.annarbortees.com/products/my-couch-pulls-out-but-i-don-t-t-shirt-natural permanent;
+}
+location /products/hello-youll-do {
+  rewrite ^ http://shop.annarbortees.com/products/hello-you-ll-do-t-shirt-red permanent;
+}
+location /products/im-single-if-youre-hot {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-single-if-you-re-hot-t-shirt-green permanent;
+}
+location /products/i-put-out {
+  rewrite ^ http://shop.annarbortees.com/products/i-put-out-t-shirt-navy permanent;
+}
+location /products/ive-misplaced-my-virginity-can-i-have-yours {
+  rewrite ^ http://shop.annarbortees.com/products/i-ve-misplaced-my-virginity-can-i-have-yours-t-shirt-black permanent;
+}
+location /products/if-i-were-you-id-totally-have-sex-with-me {
+  rewrite ^ http://shop.annarbortees.com/products/if-i-were-you-i-d-totally-have-sex-with-me-t-shirt-natural permanent;
+}
+location /products/my-dad-grills-better-than-your-dad {
+  rewrite ^ http://shop.annarbortees.com/products/my-dad-grills-better-than-your-dad-t-shirt-black permanent;
+}
+location /products/never-trust-a-skinny-chef {
+  rewrite ^ http://shop.annarbortees.com/products/never-trust-a-skinny-chef-t-shirt-black permanent;
+}
+location /products/nice-rack {
+  rewrite ^ http://shop.annarbortees.com/products/nice-rack-t-shirt-black permanent;
+}
+location /products/grill-sergeant {
+  rewrite ^ http://shop.annarbortees.com/products/grill-sergeant-t-shirt-black permanent;
+}
+location /products/i-hand-rub-my-meat {
+  rewrite ^ http://shop.annarbortees.com/products/i-hand-rub-my-meat-t-shirt-red permanent;
+}
+location /products/beer-snob {
+  rewrite ^ http://shop.annarbortees.com/products/beer-snob-t-shirt-black permanent;
+}
+location /products/silence-is-golden {
+  rewrite ^ http://shop.annarbortees.com/products/silence-is-golden-t-shirt-grey permanent;
+}
+location /products/i-used-to-care-but-i-take-a-pill-for-that-now {
+  rewrite ^ http://shop.annarbortees.com/products/i-used-to-care-but-i-take-a-pill-for-that-now-t-shirt-red permanent;
+}
+location /products/dirt-dont-hurt {
+  rewrite ^ http://shop.annarbortees.com/products/dirt-don-t-hurt-t-shirt-brown permanent;
+}
+location /products/mo-muddy-no-problems {
+  rewrite ^ http://shop.annarbortees.com/products/mo-muddy-no-problems-t-shirt-grey permanent;
+}
+location /products/if-mud-aint-flyin-you-aint-tryin {
+  rewrite ^ http://shop.annarbortees.com/products/if-mud-ain-t-flyin-you-ain-t-tryin-t-shirt-natural permanent;
+}
+location /products/the-homebrewer {
+  rewrite ^ http://shop.annarbortees.com/products/the-homebrewer-t-shirt-black permanent;
+}
+location /products/what-would-jesus-brew {
+  rewrite ^ http://shop.annarbortees.com/products/what-would-jesus-brew-t-shirt-natural permanent;
+}
+location /products/the-grillfather {
+  rewrite ^ http://shop.annarbortees.com/products/the-grillfather-t-shirt-black permanent;
+}
+location /products/i-<3-barbeque {
+  rewrite ^ http://shop.annarbortees.com/products/i-3-barbeque-t-shirt-black permanent;
+}
+location /products/lord-of-the-wings {
+  rewrite ^ http://shop.annarbortees.com/products/lord-of-the-wings-t-shirt-royal permanent;
+}
+location /products/skydivers-get-high {
+  rewrite ^ http://shop.annarbortees.com/products/skydivers-get-high-t-shirt-green permanent;
+}
+location /products/keep-calm-and-dive-on {
+  rewrite ^ http://shop.annarbortees.com/products/keep-calm-and-dive-on-t-shirt-red permanent;
+}
+location /products/i-do-all-my-own-stunts-1 {
+  rewrite ^ http://shop.annarbortees.com/products/i-do-all-my-own-stunts-t-shirt-royal permanent;
+}
+location /products/pull-or-die {
+  rewrite ^ http://shop.annarbortees.com/products/pull-or-die-t-shirt-light-blue permanent;
+}
+location /products/born-to-skydive-forced-to-work {
+  rewrite ^ http://shop.annarbortees.com/products/born-to-skydive-forced-to-work-t-shirt-grey permanent;
+}
+location /products/skydiving-is-like-sex-to-a-virgin {
+  rewrite ^ http://shop.annarbortees.com/products/skydiving-is-like-sex-to-a-virgin-t-shirt-light-blue permanent;
+}
+location /products/4-wheel-still-plays-in-dirt {
+  rewrite ^ http://shop.annarbortees.com/products/4-wheel-still-plays-in-dirt-t-shirt-natural permanent;
+}
+location /products/4-wheeling-my-anti-drug {
+  rewrite ^ http://shop.annarbortees.com/products/4-wheeling-my-anti-drug-t-shirt-brown permanent;
+}
+location /products/save-a-virgin-ride-me-instead {
+  rewrite ^ http://shop.annarbortees.com/products/save-a-virgin-ride-me-instead-t-shirt-gold permanent;
+}
+location /products/worlds-greatest-g-spot-hunter {
+  rewrite ^ http://shop.annarbortees.com/products/world-s-greatest-g-spot-hunter-t-shirt-brown permanent;
+}
+location /products/single-and-ready-to-mingle {
+  rewrite ^ http://shop.annarbortees.com/products/single-ready-to-mingle-t-shirt-natural permanent;
+}
+location /products/you-look-like-you-could-use-some-vitamin-me {
+  rewrite ^ http://shop.annarbortees.com/products/you-look-like-you-could-use-some-vitamin-me-t-shirt-orange permanent;
+}
+location /products/vagitarian {
+  rewrite ^ http://shop.annarbortees.com/products/vagitarian-t-shirt-aqua-blue permanent;
+}
+location /products/drink-until-you-think-im-sexy {
+  rewrite ^ http://shop.annarbortees.com/products/drink-until-you-think-i-m-sexy-t-shirt-black permanent;
+}
+location /products/spoon-less-fork-more {
+  rewrite ^ http://shop.annarbortees.com/products/spoon-less-fork-more-t-shirt-natural permanent;
+}
+location /products/random-make-out-guy {
+  rewrite ^ http://shop.annarbortees.com/products/random-make-out-guy-t-shirt-red permanent;
+}
+location /products/the-man-you-the-legend-your-junk {
+  rewrite ^ http://shop.annarbortees.com/products/the-man-you-the-legend-your-junk-t-shirt-navy permanent;
+}
+location /products/team-jesus {
+  rewrite ^ http://shop.annarbortees.com/products/team-jesus-t-shirt-black permanent;
+}
+location /products/eat-mor-veggies {
+  rewrite ^ http://shop.annarbortees.com/products/eat-mor-veggies-t-shirt-white permanent;
+}
+location /products/fruits-n-veggies {
+  rewrite ^ http://shop.annarbortees.com/products/fruits-n-veggies-t-shirt-yellow permanent;
+}
+location /products/another-tough-day-at-the-office {
+  rewrite ^ http://shop.annarbortees.com/products/another-tough-day-at-the-office-t-shirt-green permanent;
+}
+location /products/gardening-is-an-exercise-in-optimism {
+  rewrite ^ http://shop.annarbortees.com/products/gardening-is-an-exercise-in-optimism-t-shirt-white permanent;
+}
+location /products/trust-the-government-1 {
+  rewrite ^ http://shop.annarbortees.com/products/trust-the-government-t-shirt-red permanent;
+}
+location /products/bee-whisperer {
+  rewrite ^ http://shop.annarbortees.com/products/bee-whisperer-t-shirt-purple permanent;
+}
+location /products/gardening-dot-dot-dot-handy-when-you-need-to-hide-bodies {
+  rewrite ^ http://shop.annarbortees.com/products/gardening-handy-when-you-need-to-hide-bodies-t-shirt-green permanent;
+}
+location /products/lifes-a-garden-dig-it {
+  rewrite ^ http://shop.annarbortees.com/products/life-s-a-garden-dig-it-t-shirt-natural permanent;
+}
+location /products/i-play-in-the-dirt {
+  rewrite ^ http://shop.annarbortees.com/products/i-play-in-the-dirt-t-shirt-light-blue permanent;
+}
+location /products/you-dont-gnome-me {
+  rewrite ^ http://shop.annarbortees.com/products/you-don-t-gnome-me-t-shirt-natural permanent;
+}
+location /products/icompost {
+  rewrite ^ http://shop.annarbortees.com/products/icompost-t-shirt-black permanent;
+}
+location /products/i-dig-gardening {
+  rewrite ^ http://shop.annarbortees.com/products/i-dig-gardening-t-shirt-black permanent;
+}
+location /products/keep-calm-and-garden-on {
+  rewrite ^ http://shop.annarbortees.com/products/keep-calm-and-garden-on-t-shirt-red permanent;
+}
+location /products/lawn-enforcement-officer {
+  rewrite ^ http://shop.annarbortees.com/products/lawn-enforcement-officer-t-shirt-green permanent;
+}
+location /products/gardening-cheaper-than-therapy-and-you-get-tomatoes {
+  rewrite ^ http://shop.annarbortees.com/products/gardening-cheaper-than-therapy-and-you-get-tomatoes-t-shirt-natural permanent;
+}
+location /products/green-thumb {
+  rewrite ^ http://shop.annarbortees.com/products/green-thumb-t-shirt-natural permanent;
+}
+location /products/gardening-is-just-trowel {
+  rewrite ^ http://shop.annarbortees.com/products/gardening-is-just-trowel-t-shirt-brown permanent;
+}
+location /products/garden-warrior {
+  rewrite ^ http://shop.annarbortees.com/products/garden-warrior-t-shirt-natural permanent;
+}
+location /products/if-it-were-easy-itd-be-called-your-mom {
+  rewrite ^ http://shop.annarbortees.com/products/if-it-were-easy-it-d-be-called-your-mom-t-shirt-black permanent;
+}
+location /products/blue-eye-alien {
+  rewrite ^ http://shop.annarbortees.com/products/blue-eye-alien-t-shirt-black permanent;
+}
+location /products/my-pen-is-huge {
+  rewrite ^ http://shop.annarbortees.com/products/my-pen-is-huge-t-shirt-black permanent;
+}
+location /products/player-2-two {
+  rewrite ^ http://shop.annarbortees.com/products/player-2-two-t-shirt-black permanent;
+}
+location /products/boom-headshot {
+  rewrite ^ http://shop.annarbortees.com/products/boom-headshot-t-shirt-black permanent;
+}
+location /products/zombies-eat-flesh {
+  rewrite ^ http://shop.annarbortees.com/products/zombies-eat-flesh-t-shirt-black permanent;
+}
+location /products/west-lafayette-football-fan-tee {
+  rewrite ^ http://shop.annarbortees.com/products/west-lafayette-football-fan-tee-t-shirt-grey permanent;
+}
+location /products/waffle-casa {
+  rewrite ^ http://shop.annarbortees.com/products/waffle-casa-t-shirt-yellow permanent;
+}
+location /products/casa-de-waffles {
+  rewrite ^ http://shop.annarbortees.com/products/casa-de-waffles-t-shirt-yellow permanent;
+}
+location /products/press-start-to-play {
+  rewrite ^ http://shop.annarbortees.com/products/press-start-to-play-t-shirt-black permanent;
+}
+location /products/yes-im-a-gamer-girl {
+  rewrite ^ http://shop.annarbortees.com/products/yes-i-m-a-gamer-girl-t-shirt-pink permanent;
+}
+location /products/daumenlutscher {
+  rewrite ^ http://shop.annarbortees.com/products/die-geschichte-vom-daumenlutscher-t-shirt-natural permanent;
+}
+location /products/dear-burpees-f-star-ck-you {
+  rewrite ^ http://shop.annarbortees.com/products/dear-burpees-f-ck-you-everyone-t-shirt-black permanent;
+}
+location /products/beer-so-much-more-than-a-breakfast-drink {
+  rewrite ^ http://shop.annarbortees.com/products/beer-more-than-breakfast-t-shirt-royal permanent;
+}
+location /products/i-support-the-local-and-slash-or-regional-sports-team {
+  rewrite ^ http://shop.annarbortees.com/products/i-support-the-local-sports-team-t-shirt-black permanent;
+}
+location /products/i-like-sports {
+  rewrite ^ http://shop.annarbortees.com/products/i-like-sports-t-shirt-black permanent;
+}
+location /products/south-vietnamese-flag {
+  rewrite ^ http://shop.annarbortees.com/products/south-vietnam-flag-t-shirt-yellow permanent;
+}
+location /products/i-heart-trad-music {
+  rewrite ^ http://shop.annarbortees.com/products/i-heart-trad-music-t-shirt-natural permanent;
+}
+location /products/pangea-never-getting-back-together {
+  rewrite ^ http://shop.annarbortees.com/products/pangaea-never-getting-back-together-t-shirt-light-blue permanent;
+}
+location /products/captain-canada {
+  rewrite ^ http://shop.annarbortees.com/products/captain-canada-t-shirt-red permanent;
+}
+location /products/vietnamese-food-is-delicious-pho-real {
+  rewrite ^ http://shop.annarbortees.com/products/vietnamese-food-is-tasty-pho-real-t-shirt-natural permanent;
+}
+location /products/shitters-busted {
+  rewrite ^ http://shop.annarbortees.com/products/shitter-s-busted-t-shirt-natural permanent;
+}
+location /products/disco-ball-skull {
+  rewrite ^ http://shop.annarbortees.com/products/disco-skull-t-shirt-black permanent;
+}
+location /products/i-heart-ireland {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-ireland-t-shirt-natural permanent;
+}
+location /products/icons-of-ireland {
+  rewrite ^ http://shop.annarbortees.com/products/irish-iconography-map-t-shirt-natural permanent;
+}
+location /products/china-love {
+  rewrite ^ http://shop.annarbortees.com/products/china-love-t-shirt-natural permanent;
+}
+location /products/china-love-characters {
+  rewrite ^ http://shop.annarbortees.com/products/china-love-characters-t-shirt-natural permanent;
+}
+location /products/greece-love {
+  rewrite ^ http://shop.annarbortees.com/products/greece-love-t-shirt-white permanent;
+}
+location /products/i-love-australia {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-australia-t-shirt-natural permanent;
+}
+location /products/france-love {
+  rewrite ^ http://shop.annarbortees.com/products/france-love-t-shirt-natural permanent;
+}
+location /products/germany-love {
+  rewrite ^ http://shop.annarbortees.com/products/germany-love-t-shirt-natural permanent;
+}
+location /products/deutschland-love {
+  rewrite ^ http://shop.annarbortees.com/products/deutschland-love-t-shirt-natural permanent;
+}
+location /products/ireland-love {
+  rewrite ^ http://shop.annarbortees.com/products/ireland-love-t-shirt-natural permanent;
+}
+location /products/eire-love {
+  rewrite ^ http://shop.annarbortees.com/products/eire-love-t-shirt-natural permanent;
+}
+location /products/italia-love-1 {
+  rewrite ^ http://shop.annarbortees.com/products/italia-love-t-shirt-natural permanent;
+}
+location /products/italy-love-1 {
+  rewrite ^ http://shop.annarbortees.com/products/italy-love-t-shirt-natural permanent;
+}
+location /products/japan-love {
+  rewrite ^ http://shop.annarbortees.com/products/japan-love-t-shirt-white permanent;
+}
+location /products/japan-love-characters {
+  rewrite ^ http://shop.annarbortees.com/products/japan-love-characters-t-shirt-white permanent;
+}
+location /products/mexico-love {
+  rewrite ^ http://shop.annarbortees.com/products/mexico-love-t-shirt-natural permanent;
+}
+location /products/netherlands-love {
+  rewrite ^ http://shop.annarbortees.com/products/netherlands-love-t-shirt-white permanent;
+}
+location /products/nederland-love {
+  rewrite ^ http://shop.annarbortees.com/products/nederland-love-t-shirt-white permanent;
+}
+location /products/russia-love {
+  rewrite ^ http://shop.annarbortees.com/products/russia-love-t-shirt-natural permanent;
+}
+location /products/rossiya-love {
+  rewrite ^ http://shop.annarbortees.com/products/rossiya-love-t-shirt-natural permanent;
+}
+location /products/scotland-love {
+  rewrite ^ http://shop.annarbortees.com/products/scotland-love-t-shirt-light-blue permanent;
+}
+location /products/alba-love {
+  rewrite ^ http://shop.annarbortees.com/products/alba-love-t-shirt-natural permanent;
+}
+location /products/south-america-love {
+  rewrite ^ http://shop.annarbortees.com/products/south-america-love-t-shirt-light-blue permanent;
+}
+location /products/spain-love {
+  rewrite ^ http://shop.annarbortees.com/products/spain-love-t-shirt-natural permanent;
+}
+location /products/espana-love {
+  rewrite ^ http://shop.annarbortees.com/products/espana-love-t-shirt-natural permanent;
+}
+location /products/thailand-love-1 {
+  rewrite ^ http://shop.annarbortees.com/products/thailand-love-t-shirt-natural permanent;
+}
+location /products/i-love-sweden {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-sweden-t-shirt-light-blue permanent;
+}
+location /products/i-love-poland {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-poland-t-shirt-natural permanent;
+}
+location /products/i-love-switzerland {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-switzerland-t-shirt-natural permanent;
+}
+location /products/sweden-map {
+  rewrite ^ http://shop.annarbortees.com/products/sweden-map-t-shirt-light-blue permanent;
+}
+location /products/norway-map {
+  rewrite ^ http://shop.annarbortees.com/products/norway-map-t-shirt-white permanent;
+}
+location /products/poland-map {
+  rewrite ^ http://shop.annarbortees.com/products/poland-map-t-shirt-natural permanent;
+}
+location /products/czech-republic-map {
+  rewrite ^ http://shop.annarbortees.com/products/czech-republic-map-t-shirt-white permanent;
+}
+location /products/switzerland-map {
+  rewrite ^ http://shop.annarbortees.com/products/switzerland-map-t-shirt-natural permanent;
+}
+location /products/sverige-love {
+  rewrite ^ http://shop.annarbortees.com/products/sverige-love-t-shirt-natural permanent;
+}
+location /products/norway-love {
+  rewrite ^ http://shop.annarbortees.com/products/norway-love-t-shirt-white permanent;
+}
+location /products/norge-love {
+  rewrite ^ http://shop.annarbortees.com/products/norge-love-t-shirt-white permanent;
+}
+location /products/poland-love {
+  rewrite ^ http://shop.annarbortees.com/products/poland-love-t-shirt-natural permanent;
+}
+location /products/polska-love {
+  rewrite ^ http://shop.annarbortees.com/products/polska-love-t-shirt-natural permanent;
+}
+location /products/czech-republic-love {
+  rewrite ^ http://shop.annarbortees.com/products/czech-republic-love-t-shirt-white permanent;
+}
+location /products/ceska-republika-love {
+  rewrite ^ http://shop.annarbortees.com/products/ceska-republika-love-t-shirt-white permanent;
+}
+location /products/switzerland-love {
+  rewrite ^ http://shop.annarbortees.com/products/switzerland-love-t-shirt-natural permanent;
+}
+location /products/schweiz-love {
+  rewrite ^ http://shop.annarbortees.com/products/schweiz-love-t-shirt-natural permanent;
+}
+location /products/suisse-love {
+  rewrite ^ http://shop.annarbortees.com/products/suisse-love-t-shirt-natural permanent;
+}
+location /products/svizzera-love {
+  rewrite ^ http://shop.annarbortees.com/products/svizzera-love-t-shirt-natural permanent;
+}
+location /products/svizra-love {
+  rewrite ^ http://shop.annarbortees.com/products/svizra-love-t-shirt-natural permanent;
+}
+location /products/everybody-loves-a-nice-american-boy {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-american-boy-t-shirt-navy permanent;
+}
+location /products/everybody-loves-a-nice-american-girl {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-american-girl-t-shirt-navy permanent;
+}
+location /products/everybody-loves-a-nice-australian-boy {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-australian-boy-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-australian-girl {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-australian-girl-t-shirt-royal permanent;
+}
+location /products/everybody-loves-a-nice-belgian-boy {
+  rewrite ^ http://shop.annarbortees.com/products/everybody-loves-a-nice-belgian-boy-t-shirt-red permanent;
+}
+location /products/if-you-like-my-rack-you-should-see-my-snatch {
+  rewrite ^ http://shop.annarbortees.com/products/if-you-like-my-rack-you-should-see-my-snatch-t-shirt-black permanent;
+}
+location /products/scottish-iconography-map {
+  rewrite ^ http://shop.annarbortees.com/products/scottish-iconography-map-t-shirt-natural permanent;
+}
+location /products/i-love-scotland {
+  rewrite ^ http://shop.annarbortees.com/products/i-love-scotland-t-shirt-natural permanent;
+}
+location /products/periodic-table-of-the-elements {
+  rewrite ^ http://shop.annarbortees.com/products/periodic-table-of-the-elements-t-shirt-black permanent;
+}
+location /products/suck-it-trebek {
+  rewrite ^ http://shop.annarbortees.com/products/suck-it-trebek-t-shirt-royal-blue permanent;
+}
+location /products/run-dos-run {
+  rewrite ^ http://shop.annarbortees.com/products/run-dos-run-t-shirt-black permanent;
+}
+location /products/127-dot-0-0-dot-1-no-place-like-home {
+  rewrite ^ http://shop.annarbortees.com/products/127-0-0-1-no-place-like-home-t-shirt-black permanent;
+}
+location /products/st-petersburg-russia-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/st-petersburg-russia-city-skyline-t-shirt-grey permanent;
+}
+location /products/st-petersburg-russia-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/st-petersburg-russia-city-skyline-t-shirt-natural permanent;
+}
+location /products/ottawa-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/ottawa-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/quebec-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/quebec-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/saskatoon-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/saskatoon-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/iron-born {
+  rewrite ^ http://shop.annarbortees.com/products/iron-born-baby-tee-black permanent;
+}
+location /products/calgary-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/calgary-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/edmonton-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/edmonton-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/montreal-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/montreal-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/ottawa-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/ottawa-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/quebec-city-canada-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/quebec-city-canada-skyline-t-shirt-grey permanent;
+}
+location /products/saskatoon-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/saskatoon-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/toronto-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/toronto-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/vancouver-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/vancouver-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/victoria-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/victoria-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/winnipeg-canada-city-skyline {
+  rewrite ^ http://shop.annarbortees.com/products/winnipeg-canada-city-skyline-t-shirt-grey permanent;
+}
+location /products/victoria-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/victoria-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/winnipeg-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/winnipeg-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/calgary-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/calgary-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/edmonton-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/edmonton-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/montreal-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/montreal-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/hecho-en-mexico-1 {
+  rewrite ^ http://shop.annarbortees.com/products/hecho-en-mexico-baby-tee-white permanent;
+}
+location /products/new-zealand-1 {
+  rewrite ^ http://shop.annarbortees.com/products/new-zealand-baby-tee-royal permanent;
+}
+location /products/peru-1 {
+  rewrite ^ http://shop.annarbortees.com/products/peru-baby-tee-white permanent;
+}
+location /products/pilipinas {
+  rewrite ^ http://shop.annarbortees.com/products/pilipinas-baby-tee-white permanent;
+}
+location /products/polska-1 {
+  rewrite ^ http://shop.annarbortees.com/products/polska-baby-tee-white permanent;
+}
+location /products/venezuela-1 {
+  rewrite ^ http://shop.annarbortees.com/products/venezuela-baby-tee-royal permanent;
+}
+location /products/cymru-wales {
+  rewrite ^ http://shop.annarbortees.com/products/cymru-wales-baby-tee-white permanent;
+}
+location /products/geekiest-baby-d-and-d-ever {
+  rewrite ^ http://shop.annarbortees.com/products/geekiest-baby-d-d-ever-baby-tee-white permanent;
+}
+location /products/stormageddon {
+  rewrite ^ http://shop.annarbortees.com/products/stormageddon-baby-tee-white permanent;
+}
+location /products/stallion-who-mounts-the-world {
+  rewrite ^ http://shop.annarbortees.com/products/stallion-who-mounts-the-world-baby-tee-white permanent;
+}
+location /products/heisenburp {
+  rewrite ^ http://shop.annarbortees.com/products/heisenburp-baby-tee-white permanent;
+}
+location /products/danmark {
+  rewrite ^ http://shop.annarbortees.com/products/danmark-baby-tee-red permanent;
+}
+location /products/rossiya-1 {
+  rewrite ^ http://shop.annarbortees.com/products/rossiya-baby-tee-white permanent;
+}
+location /products/south-africa {
+  rewrite ^ http://shop.annarbortees.com/products/south-africa-t-shirt-green permanent;
+}
+location /products/espana-1 {
+  rewrite ^ http://shop.annarbortees.com/products/espana-baby-tee-red permanent;
+}
+location /products/sverige-1 {
+  rewrite ^ http://shop.annarbortees.com/products/sverige-baby-tee-royal permanent;
+}
+location /products/suisse-1 {
+  rewrite ^ http://shop.annarbortees.com/products/suisse-baby-tee-red permanent;
+}
+location /products/toronto-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/toronto-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/vancouver-canada-city-skyline-1 {
+  rewrite ^ http://shop.annarbortees.com/products/vancouver-canada-city-skyline-t-shirt-natural permanent;
+}
+location /products/norge-1 {
+  rewrite ^ http://shop.annarbortees.com/products/norge-baby-tee-red permanent;
+}
+location /products/portugal-1 {
+  rewrite ^ http://shop.annarbortees.com/products/portugal-baby-tee-red permanent;
+}
+location /products/prathet-thai {
+  rewrite ^ http://shop.annarbortees.com/products/prathet-thai-baby-tee-red permanent;
+}
+location /products/uk-baby {
+  rewrite ^ http://shop.annarbortees.com/products/uk-baby-baby-tee-royal permanent;
+}
+location /products/ukrayina {
+  rewrite ^ http://shop.annarbortees.com/products/ukrayina-baby-tee-royal permanent;
+}
+location /products/usa-baby {
+  rewrite ^ http://shop.annarbortees.com/products/usa-baby-baby-tee-red permanent;
+}
+location /products/big-shitter {
+  rewrite ^ http://shop.annarbortees.com/products/big-shitter-baby-tee-royal permanent;
+}
+location /products/expert-motor-boater {
+  rewrite ^ http://shop.annarbortees.com/products/expert-motor-boater-baby-tee-royal permanent;
+}
+location /products/dads-little-poop-factory {
+  rewrite ^ http://shop.annarbortees.com/products/dad-s-little-poop-factory-baby-tee-green permanent;
+}
+location /products/moms-little-poop-factory {
+  rewrite ^ http://shop.annarbortees.com/products/mom-s-little-poop-factory-baby-tee-green permanent;
+}
+location /products/im-a-tit-man-1 {
+  rewrite ^ http://shop.annarbortees.com/products/i-m-a-tit-man-baby-tee-royal permanent;
+}
+location /products/veni-vidi-poopie {
+  rewrite ^ http://shop.annarbortees.com/products/veni-vidi-poopie-baby-tee-red permanent;
+}
+location /products/whoops-baby {
+  rewrite ^ http://shop.annarbortees.com/products/whoops-baby-baby-tee-red permanent;
+}
+location /products/dts-down-to-shuck-t-shirt {
+  rewrite ^ http://shop.annarbortees.com/products/dts-down-to-shuck-farming-humor-t-shirt-green permanent;
+}
+location /products/i-need-my-space {
+  rewrite ^ http://shop.annarbortees.com/products/i-need-my-space-t-shirt-black permanent;
+}
+location /products/you-are-here {
+  rewrite ^ http://shop.annarbortees.com/products/you-are-here-t-shirt-black permanent;
+}
+location /products/les-geaux-|-college-sports-rivalry {
+  rewrite ^ http://shop.annarbortees.com/products/les-geaux-college-sports-rivalry-t-shirt-purple permanent;
+}
+location /products/united-kingdom-love {
+  rewrite ^ http://shop.annarbortees.com/products/united-kingdom-love-t-shirt-light-blue permanent;
+}
+
+location /t/retail-partners/guns-n-hoses {
+	rewrite ^ http://shop.annarbortees.com/s/guns-n-hoses
+}
+
+location /products/new-chrome-starkid-logo {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-chrome-starkid-logo-t-shirt-black;
+}
+location /products/michigan-starkid {
+	rewrite ^ http://fan.annarbortees.com/products/michigan-starkid-t-shirt-navy;
+}
+location /products/3-rumbleroar-mars {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-3-rumbleroar-mars-t-shirt-black;
+}
+location /products/keep-calm-its-gonna-be-totally-awesome-white {
+	rewrite ^ http://fan.annarbortees.com/products/keep-calm-white-print-t-shirt-purple;
+}
+location /products/the-spacetour-behind-the-scenes-dvd {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-s-space-tour-on-dvd;
+}
+location /products/starkids-spacetour-album {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-s-space-tour-live-concert-album;
+}
+location /products/starkids-starship-full-length-dvd {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-s-starship-on-dvd;
+}
+location /products/starkids-starship-album {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-s-starship-original-cast-album;
+}
+location /products/hmb-slap-bracelet {
+	rewrite ^ http://fan.annarbortees.com/products/hmb-slap-bracelet;
+}
+location /products/starkid-sunglasses {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-sunglasses;
+}
+location /products/super-mega-foxy-awesome-hot {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-a-very-potter-musical-supermegafoxyawesomehot-t-shirt-pink;
+}
+location /products/rumbleroars-army {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-rumbleroar-s-army-t-shirt-light-blue;
+}
+location /products/starkid-idea-book {
+	rewrite ^ http://fan.annarbortees.com/products/team-starkid-idea-book;
+}
+location /products/green-apocalyptour-slap-bracelet {
+	rewrite ^ http://fan.annarbortees.com/products/apocalyptour-green-slap-bracelet;
+}
+location /products/apocalyptour-button-sticker-package {
+	rewrite ^ http://fan.annarbortees.com/products/apocalyptour-button-sticker-package;
+}
+location /products/apocalyptour-vip-lanyard {
+	rewrite ^ http://fan.annarbortees.com/products/apocalyptour-vip-lanyard;
+}
+location /products/keep-calm-and-listen-to-your-heart {
+	rewrite ^ http://fan.annarbortees.com/products/keep-calm-and-listen-to-your-heart-t-shirt-pink;
+}
+location /products/starkid-leakycon-usb-bracelet {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-leakycon-usb-bracelet;
+}
+location /products/darren-criss-fading-name-tee {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-name-fade-t-shirt-white;
+}
+location /products/darren-criss-guitar-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-guitar-playing-t-shirt-light-grey;
+}
+location /products/darren-criss-microphone-tee {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-microphone-t-shirt-navy;
+}
+location /products/darren-criss-bowties-tee {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-bowties-t-shirt-light-yellow;
+}
+location /products/darren-criss-roxy-outfit {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-roxy-tee-t-shirt-black;
+}
+location /products/darren-criss-tuxedo-pose-tee {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-tuxedo-t-shirt-light-blue;
+}
+location /products/darren-criss-song-name-headshot {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-song-names-t-shirt-light-grey;
+}
+location /products/darren-criss-sketch {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-head-sketch-t-shirt-white;
+}
+location /products/darren-criss-sunglasses-tee {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-sunglasses-t-shirt-t-shirt-light-grey;
+}
+location /products/charlene-kayes-animal-love-lp {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-s-animal-love-lp;
+}
+location /products/charlene-kaye-album-things-i-will-need-in-the-past {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-album-things-i-will-need-in-the-past;
+}
+location /products/charlene-kaye-and-the-brilliant-eyes-ep {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-and-the-brilliant-eyes-ep;
+}
+location /products/charlene-kaye-sticker-pack {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-sticker-pack;
+}
+location /products/jim-and-the-povolos-ep-wristband {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-ep-wristband;
+}
+location /products/starkids-apocalyptour-live-concert-album {
+	rewrite ^ http://fan.annarbortees.com/products/starkids-apocalyptour-live-concert-album;
+}
+location /products/starkids-apocalyptour-on-dvd {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-s-apocalyptour-on-dvd;
+}
+location /products/darren-criss-microphone-tee-green {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-microphone-green-t-shirt-green;
+}
+location /products/buddies-bros-homies-amigos-dot-dot-dot {
+	rewrite ^ http://fan.annarbortees.com/products/buddies-bros-homies-amigos;
+}
+location /products/megagirl-anime {
+	rewrite ^ http://fan.annarbortees.com/products/megagirl-anime;
+}
+location /products/rumbleroar-crest {
+	rewrite ^ http://fan.annarbortees.com/products/rumbleroar-crest;
+}
+location /products/darren-criss-our-love-is-all-we-need-tee {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-our-love-t-shirt-red;
+}
+location /products/darren-criss-keep-calm-cause-you-are-not-alone {
+	rewrite ^ http://fan.annarbortees.com/products/dc-keep-calm-t-shirt-light-blue;
+}
+location /products/darren-criss-being-yourself-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-bad-ass-t-shirt-green;
+}
+location /products/darren-criss-bowtie-and-name {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-side-bowtie-t-shirt-light-grey;
+}
+location /products/charlene-kaye-arrow-tee {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-arrow-t-shirt-t-shirt-navy;
+}
+location /products/charlene-kaye-profile-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-profile-t-shirt-natural;
+}
+location /products/a-very-potter-senior-year-soundtrack-digital-download {
+	rewrite ^ http://fan.annarbortees.com/products/a-very-potter-senior-year-soundtrack-digital-download;
+}
+location /products/darren-criss-jelly-bracelet {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-jelly-bracelet;
+}
+location /products/idea-book {
+	rewrite ^ http://fan.annarbortees.com/products/team-starkid-idea-book;
+}
+location /products/pterodactyl-man-1 {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-holy-musical-b-man-pterodactyl-man-t-shirt-green;
+}
+location /products/a-very-potter-senior-year-class-ring-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-a-very-potter-senior-year-class-ring-t-shirt-pink;
+}
+location /products/avp3-d-sticker-pack {
+	rewrite ^ http://fan.annarbortees.com/products/avp3-d-sticker-pack;
+}
+location /products/jim-and-the-povolos-loved-and-alive {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-loved-and-alive-t-shirt-light-blue;
+}
+location /products/jim-and-the-povolos-squiggly-name-tee {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-word-art-t-shirt-purple;
+}
+location /products/jim-and-the-povolos-seems-right-album {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-seems-right-downloadable-album;
+}
+location /products/jim-and-the-povolos-seems-right-album-art-poster {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-seems-right-album-art-poster;
+}
+location /products/charlene-kaye-animal-love-slash-slash-remixes {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-animal-love-remixes;
+}
+location /products/charlene-kaye-profile-grey-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/charlene-kaye-profile-grey-t-shirt;
+}
+location /products/jim-and-the-povolos-snap-usb-bracelet {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-snap-usb-bracelet-seems-right-bonus-features;
+}
+location /products/jim-and-the-povolos-button-package {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-button-package;
+}
+location /products/darren-criss-listen-up-official-tour-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-official-tour-shirt;
+}
+location /products/darren-criss-kapow-tour-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-kapow-tour-shirt;
+}
+location /products/darren-criss-listen-up-tour-poster-2-heads {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-poster;
+}
+location /products/darren-criss-listen-up-tour-limited-edition-screen-printed-poster {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-limited-edition-screen-printed-poster;
+}
+location /products/darren-criss-listen-up-tour-bracelet {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-bracelet;
+}
+location /products/darren-criss-listen-up-tour-lanyard {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-lanyard;
+}
+location /products/darren-criss-iphone-case {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-iphone-case;
+}
+location /products/darren-criss-listen-up-tour-pins {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-pins;
+}
+location /products/darren-criss-listen-up-tour-bumper-stickers {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-bumper-stickers;
+}
+location /products/darren-criss-listen-up-2-dollars-sticker-or-pin {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-2-sticker-or-pin;
+}
+location /products/darren-criss-listen-up-official-vip-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-official-vip-shirt;
+}
+location /products/darren-criss-listen-up-vip-poster {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-vip-poster;
+}
+location /products/darren-criss-listen-up-tour-promo-poster {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-listen-up-tour-promo-poster;
+}
+location /products/starkid-leakycon-portland-nyan-rumbleroar-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-leakycon-portland-nyan-rumbleroar-scarfy-t-shirt;
+}
+location /products/airport-for-birds-flight-jacket {
+	rewrite ^ http://fan.annarbortees.com/products/airport-for-birds-flight-jacket;
+}
+location /products/airport-for-birds-flight-manual-show-program {
+	rewrite ^ http://fan.annarbortees.com/products/airport-for-birds-flight-manual-show-program;
+}
+location /products/jaime-lyn-beatty-dolphin-safe-tunes {
+	rewrite ^ http://fan.annarbortees.com/products/jaime-lyn-beatty-dolphin-safe-tunes;
+}
+location /products/jaime-lyn-beatty-gold-print-dolphin-safe-tunes-tee {
+	rewrite ^ http://fan.annarbortees.com/products/jaime-lyn-beatty-gold-print-dolphin-safe-tunes-tee-t-shirt-navy;
+}
+location /products/jaime-lyn-beatty-light-blue-print-dolphin-safe-tunes-tee {
+	rewrite ^ http://fan.annarbortees.com/products/jaime-lyn-beatty-light-blue-print-dolphin-safe-tunes-tee-t-shirt-navy;
+}
+location /products/jaime-lyn-beatty-dolphin-safe-tunes-poster {
+	rewrite ^ http://fan.annarbortees.com/products/jaime-lyn-beatty-dolphin-safe-tunes-poster;
+}
+location /products/darren-criss-pink-sunglasses {
+	rewrite ^ http://fan.annarbortees.com/products/darren-criss-pink-sunglasses;
+}
+location /products/starkid-french-starkid {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-french-starkid-t-shirt-royal;
+}
+location /products/starkid-canadian-starkid {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-canadian-starkid-t-shirt-red;
+}
+location /products/starkid-british-starkid {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-british-starkid-t-shirt-royal;
+}
+location /products/starkid-twisted-lamp-lyrics-tee {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-twisted-lamp-logo-t-shirt-brown;
+}
+location /products/starkid-twisted-tiger-lover {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-tiger-lover-t-shirt-black;
+}
+location /products/starkid-avpm-profile-tee {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-face-outline-darren-harry-t-shirt-purple;
+}
+location /products/starkid-australian-starkid {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-australian-starkid-t-shirt-royal;
+}
+location /products/starkid-twisted-mockingjay-logo-tee {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-twisted-hunger-games-mashup-t-shirt-black;
+}
+location /products/starkid-thats-in-canada-lyric-tee {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-winnipeg-that-s-in-canada-t-shirt-purple;
+}
+location /products/starkid-twisted-logo-pullover-hoodie {
+	rewrite ^ http://fan.annarbortees.com/products/twisted-logo-hoodie-fleece-sweatshirt-red;
+}
+location /products/starkid-presents-1night-2last-3ever-comedy-show-dvd {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-presents-1night-2last-3ever-comedy-show-dvd;
+}
+location /products/starkid-presents-twisted-the-untold-story-of-a-royal-vizier-dvd {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-presents-twisted-the-untold-story-of-a-royal-vizier-dvd;
+}
+location /products/starkid-holy-musical-b-at-man-pullover-hoodie {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-holy-musical-b-man-pullover-hoodie-fleece-sweatshirt-black;
+}
+location /products/starkid-2d-logo {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-2d-logo-t-shirt-royal-blue;
+}
+location /products/starkid-2d-logo-sweatshirt {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-2d-logo-sweatshirt-fleece-sweatshirt-royal-blue;
+}
+location /products/jim-and-the-povolos-tote-bag {
+	rewrite ^ http://fan.annarbortees.com/products/jim-and-the-povolos-tote-bag;
+}
+location /products/starkid-5-year-anniversary-cupcake-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-5-year-anniversary-cupcake-t-shirt-t-shirt-brown;
+}
+location /products/starkid-rumbleroar-5th-anniversary-t-shirt {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-rumbleroar-5th-anniversary-t-shirt-t-shirt-light-blue;
+}
+location /products/starkid-new-york-style-logo-snapback-hat {
+	rewrite ^ http://fan.annarbortees.com/products/starkid-new-york-style-logo-snapback-hat;
+}
