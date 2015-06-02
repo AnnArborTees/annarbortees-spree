@@ -34,3 +34,5 @@
 log/sunspot-solr-development.log.lck
 # Ignore local solr stuff
 /solr
+/.DS_Store
+/**/.DS_Store
