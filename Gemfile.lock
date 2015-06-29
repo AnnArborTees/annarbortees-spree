@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/AnnArborTees/bundler.git
-  revision: d111f48b3ba7ef24e16ecd3b3df28bf40376d2a8
+  revision: 201ec1d169fb24ebd4174be386c4ed526f8c3d0a
   specs:
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)

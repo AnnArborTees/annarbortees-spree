@@ -34,7 +34,6 @@ group :development do
   gem 'capistrano-rvm',     github: 'AnnArborTees/rvm'
   gem 'capistrano-bundler', github: 'AnnArborTees/bundler'
   gem 'cap-ec2'
-  gem 'sunspot_solr'
   gem 'rubinius-debugger', platforms: :rbx
   gem 'byebug', platforms: :mri
 end
@@ -56,8 +55,9 @@ group :test do
   gem 'with_model'
   gem 'selenium-webdriver'
   gem 'sunspot_matchers'
-  gem 'sunspot_solr'
 end
+
+gem 'sunspot_solr', groups: [:development, :test]
 
 gem 'asset_sync'
 gem 'sprockets', '=2.11.0'
