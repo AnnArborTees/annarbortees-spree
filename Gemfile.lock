@@ -1,4 +1,28 @@
 GIT
+  remote: git://github.com/AnnArborTees/bundler.git
+  revision: d111f48b3ba7ef24e16ecd3b3df28bf40376d2a8
+  specs:
+    capistrano-bundler (1.1.4)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2)
+
+GIT
+  remote: git://github.com/AnnArborTees/rails.git
+  revision: dea5e5db3138224be88aa3d080190d601a34f2fc
+  specs:
+    capistrano-rails (1.1.3)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
+
+GIT
+  remote: git://github.com/AnnArborTees/rvm.git
+  revision: b270a49d36eae5ef65a2c5c02527ac36273549c8
+  specs:
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+
+GIT
   remote: git://github.com/Resonious/dumpsync.git
   revision: d973380c4c20a16396fe1434f5cea4d57151ec7e
   branch: master
@@ -316,15 +340,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
-    capistrano-bundler (1.1.3)
-      capistrano (~> 3.1)
-      sshkit (~> 1.2)
-    capistrano-rails (1.1.2)
-      capistrano (~> 3.1)
-      capistrano-bundler (~> 1.1)
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -736,9 +751,9 @@ DEPENDENCIES
   byebug
   cap-ec2
   capistrano (~> 3.1.0)
-  capistrano-bundler
-  capistrano-rails
-  capistrano-rvm
+  capistrano-bundler!
+  capistrano-rails!
+  capistrano-rvm!
   capybara (~> 2.4)
   coffee-rails (~> 4.0.0)
   database_cleaner (~> 1.3)
