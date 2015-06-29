@@ -18,11 +18,11 @@ set :default_env, { 'GITHUB_OAUTH_KEY' => ENV['GITHUB_OAUTH_KEY'] }
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-Rake::Task["deploy::compile_assets"].clear
+Rake::Task["deploy:compile_assets"].clear
 
 namespace :deploy do
 
-  after :updated, "assets:precompile"
+  # after :updated, "assets:precompile"
 
   desc 'Restart application'
   task :restart do
@@ -57,7 +57,7 @@ namespace :deploy do
     task :precompile_local do
       # compile assets locally
       run_locally do
-        execute "RAILS_ENV=#{fetch(:stage)} bundle exec rake assets:precompile"
+        execute "RAILS_ENV=production bundle exec rake assets:precompile"
       end
 
       # rsync to each server
@@ -67,6 +67,8 @@ namespace :deploy do
         remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/public/assets/"
 
         run_locally { execute "rsync -av --delete #{local_dir} #{remote_dir}" }
+
+        execute :rake, 'assets:sync'
       end
 
       # clean up
