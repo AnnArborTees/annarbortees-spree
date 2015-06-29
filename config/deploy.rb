@@ -61,14 +61,18 @@ namespace :deploy do
       end
 
       # rsync to each server
-      local_dir = "./public/assets/"
+      assets_dir = "public/#{fetch(:assets_prefix) || 'assets'}"
+      local_dir = "./#{assets_dir}/"
       on roles( fetch(:assets_roles, [:web]) ) do
         # this needs to be done outside run_locally in order for host to exist
-        remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/public/assets/"
+        remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/#{assets_dir}"
 
+        execute "mkdir -p #{release_path}/#{assets_dir}"
         run_locally { execute "rsync -av --delete #{local_dir} #{remote_dir}" }
 
-        execute :rake, 'assets:sync'
+        with rails_env: fetch(:rails_env) || fetch(:stage) do
+          within(release_path) { execute :rake, 'assets:sync' }
+        end
       end
 
       # clean up
