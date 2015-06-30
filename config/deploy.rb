@@ -8,7 +8,6 @@ set :rvm_task_ruby_version, 'ruby-2.1.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
 
-
 set :linked_files, %w{config/remote_database.yml config/database.yml config/application.yml config/sunspot.yml config/asset_sync.yml config/business_time.yml}
 set :linked_dirs, %w{solr}
 
@@ -57,6 +56,14 @@ namespace :deploy do
       #within release_path do
       #   execute :rake, 'cache:clear'
       #end
+    end
+  end
+
+  after :publishing, :restart_sidekiq_manager do
+    on roles(:app) do
+      unless test('[[ $(sudo status sidekiq-manager) == *Unknown* ]]')
+        execute 'sudo restart sidekiq-manager'
+      end
     end
   end
 
