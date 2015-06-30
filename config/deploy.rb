@@ -3,8 +3,8 @@ lock '3.1.0'
 
 set :application, 'annarbortees-spree'
 set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
-set :rvm_ruby_version, 'rbx-2.5.2'
-set :task_ruby_version, 'ruby-2.1.2'
+set :rvm_ruby_version, 'rbx-2.5.2,ruby-2.1.2'
+set :rvm_task_ruby_version, 'ruby-2.1.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
 
@@ -88,7 +88,9 @@ namespace :deploy do
         run_locally { execute "rsync -av --delete #{local_dir} #{remote_dir}" }
 
         with rails_env: fetch(:rails_env) || fetch(:stage) do
-          within(release_path) { execute :rake, 'assets:sync' }
+          within(release_path) do
+            with_rvm(fetch(:task_ruby_version)) { execute :rake, 'assets:sync' }
+          end
         end
       end
 

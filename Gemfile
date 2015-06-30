@@ -30,7 +30,7 @@ gem 'sunspot_rails'
 
 group :development do
   gem 'capistrano', '~> 3.1.0'
-  gem 'capistrano-rails',   github: 'AnnArborTees/rails'
+  gem 'capistrano-rails'
   gem 'capistrano-rvm',     github: 'AnnArborTees/rvm'
   gem 'capistrano-bundler', github: 'AnnArborTees/bundler'
   gem 'cap-ec2'
