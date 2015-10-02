@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 0e8c8442263dd0f239cbd774c2e1d64a9864b784
+  revision: 9fa9b5104ea4e8ec11983404632b8f5b0b62013f
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -795,6 +795,3 @@ DEPENDENCIES
   whenever
   with_model
   yaml_db!
-
-BUNDLED WITH
-   1.10.6
