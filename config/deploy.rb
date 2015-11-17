@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
 set :rvm_ruby_version, 'rbx-2.5.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
-set :bundle_flags, '--quiet --frozen'
+# set :bundle_flags, '--quiet --frozen'
 
 set :linked_files, %w{config/remote_database.yml config/database.yml config/application.yml config/sunspot.yml config/asset_sync.yml config/business_time.yml}
 set :linked_dirs, %w{solr}
@@ -42,6 +42,29 @@ namespace :deploy do
     end
   end
 
+end
+
+namespace :bundler do
+  task :pre_install do
+    on fetch(:bundle_servers) do
+      within release_path do
+        # Run once to generate gemfile.lock
+        with fetch(:bundle_env_variables, {}) do
+          options = ["install"]
+          options << "--binstubs #{fetch(:bundle_binstubs)}" if fetch(:bundle_binstubs)
+          options << "--gemfile #{fetch(:bundle_gemfile)}" if fetch(:bundle_gemfile)
+          options << "--path #{fetch(:bundle_path)}" if fetch(:bundle_path)
+          options << "--without #{fetch(:bundle_without)}" if fetch(:bundle_without)
+          options << "--jobs #{fetch(:bundle_jobs)}" if fetch(:bundle_jobs)
+          options << '--quiet'
+
+          execute :bundle, options
+        end
+      end
+    end
+  end
+
+  before :install, :pre_install
 end
 
 namespace :data do
