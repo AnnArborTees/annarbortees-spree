@@ -6,14 +6,17 @@ set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
 set :rvm_ruby_version, 'rbx-2.5.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
-
+set :bundle_flags, '--quiet'
 
 set :linked_files, %w{config/remote_database.yml config/database.yml config/application.yml config/sunspot.yml config/asset_sync.yml config/business_time.yml}
 set :linked_dirs, %w{solr}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :default_env, { 'GITHUB_OAUTH_KEY' => ENV['GITHUB_OAUTH_KEY'] }
+set :default_env, {
+  'GITHUB_OAUTH_KEY' => ENV['GITHUB_OAUTH_KEY'],
+  'GITHUB_USERNAME' => ENV['GITHUB_USERNAME']
+}
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
