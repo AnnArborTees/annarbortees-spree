@@ -79,11 +79,13 @@ gem 'spree_digital', github: 'annarbortees/spree_digital', branch: spree_branch
 
 github_username  = ENV['GITHUB_USERNAME']
 github_oauth_key = ENV['GITHUB_OAUTH_KEY']
-if github_username.nil?
-  raise "Please set the GITHUB_USERNAME environment variable"
-end
-if github_oauth_key.nil?
-  raise "Please set the GITHUB_OAUTH_KEY environment variable"
+if ARGV.first == 'install'
+  if github_username.nil?
+    raise "Please set the GITHUB_USERNAME environment variable"
+  end
+  if github_oauth_key.nil?
+    raise "Please set the GITHUB_OAUTH_KEY environment variable"
+  end
 end
 gem 'spree_mockbot_integration', git: "https://#{github_username}:#{github_oauth_key}@github.com/annarbortees/spree_mockbot_integration.git", branch: spree_branch
 
