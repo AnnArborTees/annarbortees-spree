@@ -6,7 +6,6 @@ set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
 set :rvm_ruby_version, 'rbx-2.5.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
-# set :bundle_flags, '--quiet --frozen'
 
 set :linked_files, %w{config/remote_database.yml config/database.yml config/application.yml config/sunspot.yml config/asset_sync.yml config/business_time.yml}
 set :linked_dirs, %w{solr}
@@ -44,6 +43,7 @@ namespace :deploy do
 
 end
 
+=begin
 namespace :bundler do
   task :pre_install do
     on fetch(:bundle_servers) do
@@ -66,6 +66,7 @@ namespace :bundler do
 
   before :install, :pre_install
 end
+=end
 
 namespace :data do
 

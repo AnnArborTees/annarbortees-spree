@@ -37,6 +37,3 @@ log/sunspot-solr-development.log.lck
 /.DS_Store
 /**/.DS_Store
 .byebug_history
-
-# Gemfile uses sensitive information, so don't check in the lockfile
-Gemfile.lock
