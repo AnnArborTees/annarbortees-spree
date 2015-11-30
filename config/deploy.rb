@@ -3,7 +3,8 @@ lock '3.1.0'
 
 set :application, 'annarbortees-spree'
 set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
-set :rvm_ruby_version, 'rbx-2.5.2'
+set :rvm_ruby_version, 'rbx-2.5.2,ruby-2.1.2'
+set :rvm_task_ruby_version, 'ruby-2.1.2'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
 
@@ -20,7 +21,27 @@ set :default_env, {
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+Rake::Task["deploy:compile_assets"].clear
+
+namespace :test do
+  task :say_hello do
+    on roles(:app) do
+      with_rvm 'rbx-2.5.2,ruby-2.2.1' do
+        execute :ruby, '-e', %~"puts 'running.........';puts RUBY_ENGINE"~
+      end
+    end
+  end
+end
+
 namespace :deploy do
+
+  before :starting, :install_ruby do
+    on roles(:app) do
+      execute :rvm, 'install', 'ruby-2.1.2'
+    end
+  end
+
+  # after :updated, "assets:precompile"
 
   desc 'Restart application'
   task :restart do
@@ -41,6 +62,53 @@ namespace :deploy do
     end
   end
 
+  after :publishing, :restart_sidekiq_manager do
+    on roles(:app) do
+      unless test('[[ $(sudo status sidekiq-manager) == *Unknown* ]]')
+        execute 'sudo restart sidekiq-manager'
+      end
+    end
+  end
+
+  desc 'Compile assets'
+  task :compile_assets => [:set_rails_env] do
+    # invoke 'deploy:assets:precompile'
+    invoke 'deploy:assets:precompile_local'
+    invoke 'deploy:assets:backup_manifest'
+  end
+
+
+  namespace :assets do
+
+    desc "Precompile assets locally and then rsync to web servers"
+    task :precompile_local do
+      # compile assets locally
+      run_locally do
+        execute "RAILS_ENV=#{fetch(:stage)} bundle exec rake assets:precompile"
+      end
+
+      # rsync to each server
+      assets_dir = "public/#{fetch(:assets_prefix) || 'assets'}"
+      local_dir = "./#{assets_dir}/"
+      on roles( fetch(:assets_roles, [:web]) ) do
+        # this needs to be done outside run_locally in order for host to exist
+        remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/#{assets_dir}"
+
+        execute "mkdir -p #{release_path}/#{assets_dir}"
+        run_locally { execute "rsync -av --delete #{local_dir} #{remote_dir}" }
+
+        with rails_env: fetch(:rails_env) || fetch(:stage) do
+          within(release_path) do
+            with_rvm(fetch(:task_ruby_version)) { execute :rake, 'assets:sync' }
+          end
+        end
+      end
+
+      # clean up
+      run_locally { execute "rm -rf #{local_dir}" }
+    end
+
+  end
 end
 
 =begin

@@ -21,6 +21,10 @@ if defined?(AssetSync)
     # Automatically replace files with their equivalent gzip compressed version
     config.gzip_compression = true
 
+    # Don't run on precompile - we run it on the server after rsyncing our
+    # precompile results.
+    config.run_on_precompile = false
+
     #
     # Use the Rails generated 'manifest.yml' file to produce the list of files to
     # upload instead of searching the assets directory.
