@@ -76,6 +76,7 @@ gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: spre
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: spree_branch
 gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: spree_branch
 gem 'spree_digital', github: 'annarbortees/spree_digital', branch: spree_branch
+gem 'spree_static_content', github: 'annarbortees/spree_static_content', branch: spree_branch
 
 gem 'httparty'
 gem 'spree_mockbot_integration', github: 'annarbortees/spree_mockbot_integration', branch: spree_branch
