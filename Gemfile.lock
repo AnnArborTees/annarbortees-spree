@@ -90,6 +90,19 @@ GIT
       spree_core (~> 2.2.1)
 
 GIT
+  remote: git://github.com/annarbortees/spree_mockbot_integration.git
+  revision: 90edad88d28c601b49b6cb7b19e65a1488f549fb
+  branch: 2-2-stable
+  specs:
+    spree_mockbot_integration (2.2.0)
+      activeresource
+      activeresource-response
+      figaro
+      spree_annarbortees_theme (~> 2.2.0)
+      spree_core (~> 2.2.0)
+      spree_multi_domain
+
+GIT
   remote: git://github.com/annarbortees/spree_sizing_guides.git
   revision: 93b6c9841c3209bb5ae7040a1e3999278fcec7ae
   branch: 2-2-stable
@@ -205,19 +218,6 @@ GIT
   specs:
     spree_gateway (2.2.1)
       spree_core (~> 2.2.0)
-
-GIT
-  remote: https://Resonious:20297c05e03baf3818e17c09b70f274149eafb47@github.com/annarbortees/spree_mockbot_integration.git
-  revision: 90edad88d28c601b49b6cb7b19e65a1488f549fb
-  branch: 2-2-stable
-  specs:
-    spree_mockbot_integration (2.2.0)
-      activeresource
-      activeresource-response
-      figaro
-      spree_annarbortees_theme (~> 2.2.0)
-      spree_core (~> 2.2.0)
-      spree_multi_domain
 
 GEM
   remote: https://rubygems.org/
@@ -861,6 +861,3 @@ DEPENDENCIES
   whenever (= 0.9.4)
   with_model
   yaml_db!
-
-BUNDLED WITH
-   1.10.6

@@ -78,20 +78,7 @@ gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: s
 gem 'spree_digital', github: 'annarbortees/spree_digital', branch: spree_branch
 
 gem 'httparty'
-
-=begin
-github_username  = ENV['GITHUB_USERNAME']
-github_oauth_key = ENV['GITHUB_OAUTH_KEY']
-if ARGV.first == 'install'
-  if github_username.nil?
-    raise "Please set the GITHUB_USERNAME environment variable"
-  end
-  if github_oauth_key.nil?
-    raise "Please set the GITHUB_OAUTH_KEY environment variable"
-  end
-end
-=end
-gem 'spree_mockbot_integration', git: "https://Resonious:20297c05e03baf3818e17c09b70f274149eafb47@github.com/annarbortees/spree_mockbot_integration.git", branch: spree_branch
+gem 'spree_mockbot_integration', github: 'annarbortees/spree_mockbot_integration', branch: spree_branch
 
 gem 'spree_commission_agents', github: 'annarbortees/spree_commission_agents', branch: spree_branch
 gem 'spree_annarbortees_twitter', github: 'annarbortees/spree_annarbortees_twitter', branch: spree_branch
