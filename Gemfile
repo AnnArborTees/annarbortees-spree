@@ -30,9 +30,9 @@ gem 'sunspot_rails', '2.2.0'
 
 group :development do
   gem 'capistrano',         '3.1.0'
-  gem 'capistrano-rails',   '1.1.2'
-  gem 'capistrano-rvm',     '0.1.2'
-  gem 'capistrano-bundler', '1.1.3'
+  gem 'capistrano-rails',   github: 'annarbortees/rails'
+  gem 'capistrano-rvm',     github: 'annarbortees/rvm'
+  gem 'capistrano-bundler', github: 'annarbortees/bundler'
   gem 'cap-ec2',            '1.0.0'
   gem 'sunspot_solr',       '2.2.0'
   gem 'rubinius-debugger', platforms: :rbx

@@ -6,6 +6,30 @@ GIT
     dumpsync (0.0.1)
 
 GIT
+  remote: git://github.com/annarbortees/bundler.git
+  revision: 6adc48bb8c1a164c62eb6bc31211040b15191b32
+  specs:
+    capistrano-bundler (1.1.4)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2)
+
+GIT
+  remote: git://github.com/annarbortees/rails.git
+  revision: dea5e5db3138224be88aa3d080190d601a34f2fc
+  specs:
+    capistrano-rails (1.1.3)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
+
+GIT
+  remote: git://github.com/annarbortees/rvm.git
+  revision: 52782be683bbeeed18c394922d448c6d91d0e022
+  specs:
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+
+GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
   revision: f610f306a5c4f83e31a8c665b6d0025cd22bfb6a
   branch: 2-2-stable
@@ -320,15 +344,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
-    capistrano-bundler (1.1.3)
-      capistrano (~> 3.1)
-      sshkit (~> 1.2)
-    capistrano-rails (1.1.2)
-      capistrano (~> 3.1)
-      capistrano-bundler (~> 1.1)
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
     capybara (2.5.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -809,9 +824,9 @@ DEPENDENCIES
   byebug
   cap-ec2 (= 1.0.0)
   capistrano (= 3.1.0)
-  capistrano-bundler (= 1.1.3)
-  capistrano-rails (= 1.1.2)
-  capistrano-rvm (= 0.1.2)
+  capistrano-bundler!
+  capistrano-rails!
+  capistrano-rvm!
   capybara (~> 2.4)
   coffee-rails (~> 4.0.0)
   database_cleaner (~> 1.3)
@@ -870,3 +885,6 @@ DEPENDENCIES
   whenever (= 0.9.4)
   with_model
   yaml_db!
+
+BUNDLED WITH
+   1.10.6
