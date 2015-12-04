@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: f610f306a5c4f83e31a8c665b6d0025cd22bfb6a
+  revision: 037736d45c413879b5be3256dc4c678f04fd6bf9
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -40,6 +40,7 @@ GIT
       spree_backend (~> 2.2.0)
       spree_core (~> 2.2.0)
       spree_frontend (~> 2.2.0)
+      spree_static_content (~> 2.2.0)
       sunspot_rails
       sunspot_solr
 
@@ -56,7 +57,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 9fa9b5104ea4e8ec11983404632b8f5b0b62013f
+  revision: 4ce5ce5c581db698c8a957961480dc0264291c8f
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -373,7 +374,7 @@ GEM
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cliver (0.3.2)
-    cocaine (0.5.7)
+    cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -530,7 +531,7 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-rails (4.4.0.0)
+    font-awesome-rails (4.5.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
     friendly_id (5.0.5)
@@ -589,8 +590,8 @@ GEM
     memoist (0.12.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
-    mime-types (2.6.2)
-    mini_portile (0.6.2)
+    mime-types (2.99)
+    mini_portile2 (2.0.0)
     minitest (4.7.5)
     monetize (1.3.1)
       money (~> 6.6)
@@ -604,8 +605,8 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.0.1)
-    nokogiri (1.6.6.3)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.7)
+      mini_portile2 (~> 2.0.0.rc2)
     options (2.3.2)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
@@ -785,7 +786,7 @@ GEM
       memoizable (~> 0.4.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (0.3.45)
+    tzinfo (0.3.46)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -885,6 +886,3 @@ DEPENDENCIES
   whenever (= 0.9.4)
   with_model
   yaml_db!
-
-BUNDLED WITH
-   1.10.6
