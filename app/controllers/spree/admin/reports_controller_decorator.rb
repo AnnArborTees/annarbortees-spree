@@ -31,7 +31,7 @@ module Spree
         orders.each do |order|
           @totals[order.ship_address.state.name] = 0.0 if @totals[order.ship_address.state.name].nil?
           if order.additional_tax_total == 0.0
-            rate = Spree::Order.first.tax_zone.tax_rates.first.amount.to_f
+            rate = order.tax_zone.tax_rates.first.amount.to_f
             total = order.item_total.to_f
             tax = (total - (total / (1 + rate) )).to_f
             @totals[order.ship_address.state.name] +=  tax
