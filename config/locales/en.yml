@@ -30,3 +30,13 @@ en:
     shipment_mailer:
       shipped_email:
         dear_customer: Dear %{name},
+    export_state: Export State
+    export_states:
+      pending: pending
+      error: error
+      digital_only: digital only
+      exported: exported
+  activerecord:
+    attributes:
+      spree/order:
+        export_state: Export State

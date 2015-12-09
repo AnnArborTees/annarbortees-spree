@@ -1,5 +1,23 @@
 Spree::Order.class_eval do
 
+  state_machine :export_state, :initial => :pending do
+
+    event :export_failed do
+      transition :pending => :error
+    end
+
+    event :digital_only do
+      transition :pending => :digital_only
+    end
+
+    event :exported do
+      transition :pending => :exported
+      transition :error => :exported
+    end
+  end
+
+  self.whitelisted_ransackable_attributes =  %w[completed_at created_at email number state payment_state shipment_state total export_state]
+
   def generate_order_number(options = {})
     self.number ||= loop do
       # Make a random number.
