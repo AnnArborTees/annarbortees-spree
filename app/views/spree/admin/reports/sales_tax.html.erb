@@ -1,0 +1,57 @@
+<% content_for :page_title do %>
+    <%= Spree.t(:sales_tax_reports) %>
+<% end %>
+
+<% content_for :page_actions do %>
+    <li><%= link_to_with_icon 'arrow-left', Spree.t(:back_to_reports_list), spree.admin_reports_url, :class => 'button' %></li>
+<% end %>
+
+
+<% content_for :table_filter_title do %>
+    <%= Spree.t(:date_range) %>
+<% end %>
+
+<% content_for :table_filter do %>
+    <%= form_tag spree.sales_tax_admin_reports_path, method: :get do  %>
+
+        <div class="date-range-filter field align-center">
+          <%= label_tag nil, Spree.t(:start), :class => 'inline' %>
+          <%= text_field_tag :completed_at_gt, datepicker_field_value(params[:completed_at_gt]), class: 'datepicker datepicker-from' %>
+
+          <span class="range-divider">
+          <i class="fa fa-arrow-right"></i>
+        </span>
+
+          <%= text_field_tag :completed_at_lt, datepicker_field_value(params[:completed_at_lt]), class: 'datepicker datepicker-to' %>
+          <%= label_tag nil, Spree.t(:end), :class => 'inline' %>
+        </div>
+
+        <div class="actions filter-actions">
+          <%= button 'Run Report', 'search'  %>
+        </div>
+
+    <% end %>
+<% end %>
+
+<table class="admin-report" data-hook="sales_total">
+  <thead>
+  <tr>
+    <th><%= Spree.t(:zone) %></th>
+    <th><%= Spree.t(:tax_total) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @totals.each do |zone, tax| %>
+      <tr class="align-center">
+        <td><%= zone %></td>
+        <td><%= number_to_currency tax %></td>
+      </tr>
+  <% end %>
+
+  <tr class="align-center">
+    <td>TOTAL:</td>
+    <td><%= number_to_currency @totals.sum{|key, val| val} %></td>
+  </tr>
+
+  </tbody>
+</table>

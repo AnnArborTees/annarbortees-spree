@@ -13,7 +13,7 @@ unless defined?(Rails::Console) || Rails.env.development?
         e.backtrace.each(&Rails.logger.method(:error))
         ActiveRecord::Base.clear_active_connections!
         sleep SHIP_EVERY
-        Rails.logger.error "1 minute has passed, trying again..."
+        Rails.logger.error "Spree Digital Shipment Failure::: 1 minute has passed, trying again..."
       end
     end
   end

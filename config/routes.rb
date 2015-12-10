@@ -9,9 +9,25 @@ ShopAnnarborteesCom::Application.routes.draw do
   mount Spree::Core::Engine, :at => '/'
   authenticate :spree_user, lambda{ |u| u.admin? } do
     mount Sidekiq::Web => '/sidekiq'
+
   end
 
   get '/checkedout' => 'spree/checkout#complete', as: :checkedout
 
   get '/support/show', to: redirect('/help')
+
+
+
+
+end
+
+Spree::Core::Engine.routes.append do
+  namespace :admin do
+    resources :reports, :only => [:index] do
+      collection do
+        get :sales_tax
+        post :sales_tax
+      end
+    end
+  end
 end

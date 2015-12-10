@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141216204320) do
+ActiveRecord::Schema.define(version: 20151203171466) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -115,6 +115,18 @@ ActiveRecord::Schema.define(version: 20141216204320) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "spree_commission_payments", force: true do |t|
+    t.decimal  "amount",           precision: 10, scale: 2
+    t.date     "bring_current_at"
+    t.integer  "user_id"
+    t.string   "payment_method"
+    t.string   "transaction_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_commission_payments", ["user_id"], name: "index_spree_commission_payments_on_user_id", using: :btree
 
   create_table "spree_commissions", force: true do |t|
     t.decimal  "amount",              precision: 10, scale: 2
@@ -236,20 +248,19 @@ ActiveRecord::Schema.define(version: 20141216204320) do
     t.string   "account_id"
     t.string   "default_locale"
     t.datetime "last_shipment_upload"
-    t.datetime "last_cancelation_upload"
+    t.datetime "last_cancellation_upload"
   end
 
   create_table "spree_homepage_products", force: true do |t|
     t.integer  "product_id"
-    t.integer  "store_id"
-    t.integer  "position_id"
-    t.integer  "integer_id"
+    t.integer  "homepage_id"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "spree_homepage_products", ["homepage_id"], name: "index_spree_homepage_products_on_homepage_id", using: :btree
   add_index "spree_homepage_products", ["product_id"], name: "index_spree_homepage_products_on_product_id", using: :btree
-  add_index "spree_homepage_products", ["store_id"], name: "index_spree_homepage_products_on_store_id", using: :btree
 
   create_table "spree_homepage_slides", force: true do |t|
     t.string   "name"
@@ -306,6 +317,7 @@ ActiveRecord::Schema.define(version: 20141216204320) do
     t.decimal  "promo_total",          precision: 10, scale: 2, default: 0.0
     t.decimal  "included_tax_total",   precision: 10, scale: 2, default: 0.0, null: false
     t.decimal  "pre_tax_amount",       precision: 8,  scale: 2
+    t.integer  "store_id"
   end
 
   add_index "spree_line_items", ["order_id"], name: "index_spree_line_items_on_order_id", using: :btree
@@ -406,6 +418,27 @@ ActiveRecord::Schema.define(version: 20141216204320) do
     t.integer "order_id"
     t.integer "promotion_id"
   end
+
+  create_table "spree_pages", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "show_in_header",           default: false, null: false
+    t.boolean  "show_in_footer",           default: false, null: false
+    t.string   "foreign_link"
+    t.integer  "position",                 default: 1,     null: false
+    t.boolean  "visible",                  default: true
+    t.string   "meta_keywords"
+    t.string   "meta_description"
+    t.string   "layout"
+    t.boolean  "show_in_sidebar",          default: false, null: false
+    t.string   "meta_title"
+    t.boolean  "render_layout_as_partial", default: false
+  end
+
+  add_index "spree_pages", ["slug"], name: "index_spree_pages_on_slug", using: :btree
 
   create_table "spree_payment_capture_events", force: true do |t|
     t.decimal  "amount",     precision: 10, scale: 2, default: 0.0
@@ -847,13 +880,18 @@ ActiveRecord::Schema.define(version: 20141216204320) do
     t.text     "domains"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "default",          default: false
+    t.boolean  "default",              default: false
     t.string   "email"
     t.string   "logo_file_name"
     t.string   "default_currency"
-    t.integer  "url_index"
     t.string   "homepage_layout"
+    t.string   "seo_title"
+    t.string   "slug"
+    t.integer  "parent_id"
+    t.string   "create_your_own_link"
   end
+
+  add_index "spree_stores", ["slug"], name: "index_spree_stores_on_slug", using: :btree
 
   create_table "spree_stores_homepage_slides", id: false, force: true do |t|
     t.integer "store_id"
@@ -862,6 +900,48 @@ ActiveRecord::Schema.define(version: 20141216204320) do
 
   add_index "spree_stores_homepage_slides", ["homepage_slide_id"], name: "index_spree_stores_homepage_slides_on_homepage_slide_id", using: :btree
   add_index "spree_stores_homepage_slides", ["store_id"], name: "index_spree_stores_homepage_slides_on_store_id", using: :btree
+
+  create_table "spree_stores_stylesheets", id: false, force: true do |t|
+    t.integer "stylesheet_id"
+    t.integer "store_id"
+  end
+
+  create_table "spree_stylesheets", force: true do |t|
+    t.string   "name"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
+    t.string   "banner_file_name"
+    t.string   "banner_content_type"
+    t.integer  "banner_file_size"
+    t.datetime "banner_updated_at"
+    t.string   "banner_bg"
+    t.string   "header_1_background_color"
+    t.string   "header_1_color"
+    t.string   "header_2_background_color"
+    t.string   "header_2_color"
+    t.string   "header_2_link_color"
+    t.string   "product_background_color"
+    t.string   "product_price_label_background_color"
+    t.string   "product_price_label_color"
+    t.string   "product_options_background_color"
+    t.string   "product_options_option_background_color"
+    t.string   "product_options_option_color"
+    t.string   "product_options_option_inactive_background_color"
+    t.string   "product_options_option_inactive_color"
+    t.string   "leftnav_background_color"
+    t.string   "leftnav_color_1"
+    t.string   "leftnav_color_2"
+    t.string   "leftnav_color_3"
+    t.string   "layout_color_1"
+    t.string   "layout_color_2"
+    t.string   "layout_color_3"
+    t.string   "layout_links_color"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "hide_banner_text",                                 default: false
+  end
 
   create_table "spree_tax_categories", force: true do |t|
     t.string   "name"

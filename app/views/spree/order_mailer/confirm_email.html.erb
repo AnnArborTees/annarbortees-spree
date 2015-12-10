@@ -17,6 +17,11 @@
   Thanks again from the Ann Arbor Tees Family! Seriously, You’re the best.
 </p>
 
+
+<%  if @order.backordered?  %>
+    <p style="color: #CC0000">Your order includes backordered item(s). See the items below for details.</p>
+<% end %>
+
 <%= render :partial => 'spree/shared/email/digitals', :locals => { :order => @order } %>
 
 <%= render :partial => 'spree/shared/email/order_details', :locals => {:order => @order} %>

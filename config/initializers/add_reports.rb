@@ -1,0 +1,1 @@
+Spree::Admin::ReportsController.add_available_report!(:sales_tax)
