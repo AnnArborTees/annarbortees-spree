@@ -26,7 +26,7 @@ Rake::Task["deploy:compile_assets"].clear
 namespace :test do
   task :say_hello do
     on roles(:app) do
-      with_rvm 'rbx-2.5.2,ruby-2.2.1' do
+      with_rvm 'rbx-2.5.2,ruby-2.1.1' do
         execute :ruby, '-e', %~"puts 'running.........';puts RUBY_ENGINE"~
       end
     end
