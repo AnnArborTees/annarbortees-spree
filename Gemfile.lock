@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: dc9c5834107a7cb3d4d26ca41378c04483f3c122
+  revision: ae2c539946f8465c00d58f8f76a8e07bea965163
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -116,7 +116,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_mockbot_integration.git
-  revision: 90edad88d28c601b49b6cb7b19e65a1488f549fb
+  revision: da16933af8c438a27084a7dabb484cdea461c467
   branch: 2-2-stable
   specs:
     spree_mockbot_integration (2.2.0)
@@ -307,7 +307,7 @@ GEM
       tzinfo (~> 0.3.37)
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
-    addressable (2.3.8)
+    addressable (2.4.0)
     arel (4.0.2)
     asset_sync (1.1.0)
       activemodel
@@ -332,7 +332,7 @@ GEM
     business_time (0.7.4)
       activesupport (>= 3.1.0)
       tzinfo
-    byebug (8.2.0)
+    byebug (8.2.1)
     cancan (1.6.10)
     canonical-rails (0.0.11)
       rails (>= 3.1, < 5.0)
@@ -385,7 +385,7 @@ GEM
     coffee-script-source (1.10.0)
     colorize (0.7.7)
     connection_pool (2.2.0)
-    crack (0.4.2)
+    crack (0.4.3)
       safe_yaml (~> 1.0.0)
     database_cleaner (1.5.1)
     deface (1.0.2)
@@ -463,15 +463,14 @@ GEM
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-brightbox (0.9.0)
+    fog-brightbox (0.10.1)
       fog-core (~> 1.22)
       fog-json
       inflecto (~> 0.0.2)
-    fog-core (1.34.0)
+    fog-core (1.35.0)
       builder
       excon (~> 0.45)
       formatador (~> 0.2)
-      mime-types
     fog-dynect (0.0.2)
       fog-core
       fog-json
@@ -504,7 +503,7 @@ GEM
       fog-core
       fog-json
       fog-xml
-    fog-sakuracloud (1.3.3)
+    fog-sakuracloud (1.5.0)
       fog-core
       fog-json
     fog-serverlove (0.1.2)
@@ -547,20 +546,20 @@ GEM
       multi_json (~> 1.10)
       retriable (~> 1.4)
       signet (~> 0.6)
-    googleauth (0.4.2)
+    googleauth (0.5.0)
       faraday (~> 0.9)
       jwt (~> 1.4)
       logging (~> 2.0)
       memoist (~> 0.12)
       multi_json (~> 1.11)
-      signet (~> 0.6)
+      signet (~> 0.7)
     highline (1.6.21)
     hike (1.2.3)
     hitimes (1.2.3)
     http (0.6.4)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
-    httparty (0.13.5)
+    httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.9)
@@ -587,7 +586,7 @@ GEM
       multi_json (~> 1.10)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    memoist (0.12.0)
+    memoist (0.14.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     mime-types (2.99)
@@ -725,14 +724,13 @@ GEM
       sidekiq (>= 2.16.0)
     sidekiq-status (0.5.4)
       sidekiq (>= 2.7)
-    signet (0.6.1)
+    signet (0.7.0)
       addressable (~> 2.3)
-      extlib (~> 0.9)
       faraday (~> 0.9)
       jwt (~> 1.5)
       multi_json (~> 1.10)
     simple_oauth (0.3.1)
-    simplecov (0.10.0)
+    simplecov (0.11.1)
       docile (~> 1.1.0)
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
@@ -750,8 +748,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sshkit (1.7.1)
-      colorize (>= 0.7.0)
+    sshkit (1.8.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     state_machine (1.2.0)
@@ -799,7 +796,7 @@ GEM
       activesupport (>= 3.2)
       railties (>= 3.2)
       tzinfo
-    warden (1.2.3)
+    warden (1.2.4)
       rack (>= 1.0)
     webmock (1.8.11)
       addressable (>= 2.2.7)
