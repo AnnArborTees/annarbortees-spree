@@ -94,7 +94,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
-  revision: df9018b83ac5be9ace3549843a67821e57bdb893
+  revision: a75c533cf6033c01611603b1054c65e046a48508
   branch: 2-2-stable
   specs:
     spree_digital (1.1.1)
