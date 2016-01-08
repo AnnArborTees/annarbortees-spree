@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: ae2c539946f8465c00d58f8f76a8e07bea965163
+  revision: 665e36ff346b858649b194298e3cc72803e69872
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -604,7 +604,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.0.1)
-    nokogiri (1.6.7)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     options (2.3.2)
     orm_adapter (0.5.0)
@@ -614,7 +614,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
       mime-types
-    paranoia (2.1.4)
+    paranoia (2.1.5)
       activerecord (~> 4.0)
     paypal-sdk-core (0.2.10)
       multi_json (~> 1.0)
@@ -883,3 +883,6 @@ DEPENDENCIES
   whenever (= 0.9.4)
   with_model
   yaml_db!
+
+BUNDLED WITH
+   1.10.6
