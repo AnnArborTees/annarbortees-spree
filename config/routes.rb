@@ -30,4 +30,8 @@ Spree::Core::Engine.routes.append do
       end
     end
   end
+  namespace :api, :defaults => { :format => 'json' } do
+    resources :tax_categories, only: [:index, :show]
+    resources :shipping_categories, only: [:index, :show]
+  end
 end
