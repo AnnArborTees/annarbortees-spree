@@ -12,6 +12,9 @@ Spree::Shipment.class_eval do
         rescue StateMachine::InvalidTransition => e
          shipment.update_attribute(:state, :shipped)
          shipment.order.update_attribute(:shipment_state, :shipped)
+        rescue ActionView::Template::Error =>  e
+         shipment.update_attribute(:state, :shipped)
+         shipment.order.update_attribute(:shipment_state, :shipped)
         end
       end
     end
