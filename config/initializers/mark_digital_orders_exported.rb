@@ -8,7 +8,11 @@ unless defined?(Rails::Console) || Rails.env.development?
         orders = Spree::Order.where.not(completed_at: nil).where(export_state: 'pending')
         orders.each do |order|
           shipments = order.shipments.map{|x| x.shipping_method.name }.uniq
+          begin
           order.digital_only if shipments == ['Digital Download']
+          rescue
+            order.update_column :export_state, 'digital_only' if shipments == ['Digital Download']
+          end
         end
         sleep MARK_EXPORTED_EVERY
       rescue Exception => e
