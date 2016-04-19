@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',        '4.0.12'
 gem 'mysql2',       '0.3.17'
+gem 'sqlite3', group: 'development'
 gem 'sass-rails',   '4.0.5'
 gem 'uglifier',     '2.5.3'
 gem 'coffee-rails', '~> 4.0.0'
@@ -57,6 +58,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'sunspot_matchers'
   gem 'sunspot_solr', '2.2.0'
+  gem 'byebug', platforms: :mri
 end
 
 gem 'asset_sync', '1.1.0'
@@ -71,7 +73,8 @@ gem 'progress_bar'
 gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: spree_branch
 gem 'spree_google_trusted_store', github: 'annarbortees/spree_google_trusted_store', branch: spree_branch
 gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: spree_branch
-gem 'spree_annarbortees_theme', github: 'annarbortees/spree_annarbortees_theme', branch: spree_branch
+# gem 'spree_annarbortees_theme', github: 'annarbortees/spree_annarbortees_theme', branch: spree_branch
+gem 'spree_annarbortees_theme', path: '~/r/shop/spree_annarbortees_theme'
 gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: spree_branch
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: spree_branch
 gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: spree_branch
