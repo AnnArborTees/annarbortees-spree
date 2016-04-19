@@ -1,4 +1,5 @@
 Spree::Order.class_eval do
+  validate :shipping_and_billing_addresses_must_be_same_country
 
   state_machine :export_state, :initial => :pending do
 
@@ -30,4 +31,13 @@ Spree::Order.class_eval do
     end
   end
 
+  protected
+
+  def shipping_and_billing_addresses_must_be_same_country
+    return if shipping_address.blank? || billing_address.blank?
+
+    if shipping_address.country_id != billing_address.country_id
+      errors.add(:shipping_address, "Shipping and billing addresses must be in the same country")
+    end
+  end
 end
