@@ -32,6 +32,7 @@ require 'spree/testing_support/url_helpers'
 require 'spree/testing_support/order_walkthrough'
 require 'spree/testing_support/caching'
 require 'spree_multi_domain/factories'
+require 'spree_annarbortees_theme/factories'
 require 'paperclip/matchers'
 require 'sunspot_matchers'
 
@@ -90,6 +91,11 @@ RSpec.configure do |config|
   config.after(:each) do
     Rails.application.config.spree.preferences.searcher_class = @original_searcher_class
     DatabaseCleaner.clean
+  end
+
+  config.before(:type => :feature) do
+    @default_store = create(:default_store_for_theme_testing)
+    allow_any_instance_of(Spree::StoreController).to receive(:domain_store).and_return @default_store
   end
 
   config.after(:each, :type => :feature) do |example|

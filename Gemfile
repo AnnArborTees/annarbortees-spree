@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',        '4.0.12'
 gem 'mysql2',       '0.3.17'
+gem 'sqlite3', group: 'development'
 gem 'sass-rails',   '4.0.5'
 gem 'uglifier',     '2.5.3'
 gem 'coffee-rails', '~> 4.0.0'
@@ -57,6 +58,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'sunspot_matchers'
   gem 'sunspot_solr', '2.2.0'
+  gem 'byebug', platforms: :mri
 end
 
 gem 'asset_sync', '1.1.0'

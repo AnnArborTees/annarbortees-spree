@@ -57,7 +57,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_annarbortees_theme.git
-  revision: 44b6bb4f3c1deaa667c4505076c19848db6ec07e
+  revision: 3225224eeb4207f3d867f39c41e51b90bb18d5fe
   branch: 2-2-stable
   specs:
     spree_annarbortees_theme (2.2.0)
@@ -748,6 +748,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    sqlite3 (1.3.11)
     sshkit (1.8.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -872,6 +873,7 @@ DEPENDENCIES
   spree_static_content!
   spree_wishlist!
   sprockets (= 2.11.0)
+  sqlite3
   sunspot_matchers
   sunspot_rails (= 2.2.0)
   sunspot_solr (= 2.2.0)
