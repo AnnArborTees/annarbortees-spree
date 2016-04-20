@@ -73,8 +73,7 @@ gem 'progress_bar'
 gem 'spree_amazon_fps', github: 'annarbortees/spree_amazon_fps', branch: spree_branch
 gem 'spree_google_trusted_store', github: 'annarbortees/spree_google_trusted_store', branch: spree_branch
 gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: spree_branch
-# gem 'spree_annarbortees_theme', github: 'annarbortees/spree_annarbortees_theme', branch: spree_branch
-gem 'spree_annarbortees_theme', path: '~/r/shop/spree_annarbortees_theme'
+gem 'spree_annarbortees_theme', github: 'annarbortees/spree_annarbortees_theme', branch: spree_branch
 gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: spree_branch
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: spree_branch
 gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: spree_branch
