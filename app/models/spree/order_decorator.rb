@@ -31,6 +31,10 @@ Spree::Order.class_eval do
     end
   end
 
+  def confirmation_required?
+    false
+  end
+
   protected
 
   def shipping_and_billing_addresses_must_be_same_country
