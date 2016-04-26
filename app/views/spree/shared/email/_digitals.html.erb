@@ -1,17 +1,22 @@
 <% if gem_available?('spree_digital') && order.some_digital? %>
     <div class="spacer_15"> </div>
     <h2><span><%= t(:digital_download_links) %></span></h2>
-    <p>Below are the download links for your digital download purhcases. Please note that these links are uniquely yours. </p>
-    <%
-       order.line_items.select { |i| i.digital? }.each do |digital_item|
-         digital_item.digital_links.each do |digital_link|
-           digital_url = digital_url(:host => Spree::Config.get(:site_url), :secret => digital_link.secret)
-           file_name = digital_link.digital.attachment.original_filename
-           format = File.extname(file_name).downcase
-    %>
-            <p class="digital_link">
-              <%= digital_item.variant.name %> (<%= format %>) <%= link_to digital_url, digital_url%>
-            </p>
-        <% end %>
+    <p>Below are the download<%= '/stream' if order.variants.any? { |v| v.vhx_product_id.present? } %> links for your digital download purhcases. Please note that these links are uniquely yours. </p>
+    <% order.line_items.select(&:digital?).each do |digital_item| %>
+      <% digital_item.digital_links.each do |digital_link| %>
+        <% digital_url = digital_url(:host => Spree::Config.get(:site_url), :secret => digital_link.secret) %>
+        <% file_name = digital_link.digital.attachment.original_filename %>
+        <% format = File.extname(file_name).downcase %>
+
+        <p class="digital_link">
+          <%= digital_item.variant.name %> (<%= format %>) <%= link_to digital_url, digital_url%>
+        </p>
+      <% end %>
+
+      <% if stream_link = digital_item.stream_link %>
+        <p class="digital_link">
+          <%= digital_item.variant.name %> (stream) <%= link_to stream_link, stream_link %>
+        </p>
+      <% end %>
     <% end %>
 <% end %>
