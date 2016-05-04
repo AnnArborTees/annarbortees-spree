@@ -1,8 +1,8 @@
 Spree::Order.class_eval do
-  validate :shipping_and_billing_addresses_must_be_same_country
+  # -- This kind of thing should now be handled by Payflow fraud protection
+  # validate :shipping_and_billing_addresses_must_be_same_country
 
   state_machine :export_state, :initial => :pending do
-
     event :export_failed do
       transition :pending => :error
     end
@@ -14,6 +14,14 @@ Spree::Order.class_eval do
     event :exported do
       transition :pending => :exported
       transition :error => :exported
+    end
+
+    event :fraudulent do
+      transition any => :fraudulent
+    end
+
+    event :fraud_resolved do
+      transition :fraudulent => :pending
     end
   end
 
@@ -33,6 +41,45 @@ Spree::Order.class_eval do
 
   def confirmation_required?
     false
+  end
+
+  def fraudulent_pp_refs
+    fraudulent_pp_ref.try(:split, '|') || []
+  end
+
+  def add_fraudulent_pp_ref(pp_ref)
+    return if pp_ref.blank?
+    pp_refs = fraudulent_pp_refs
+
+    unless pp_refs.include?(pp_ref)
+      pp_refs << pp_ref
+      self.fraudulent_pp_ref = pp_refs.join('|')
+    end
+  end
+
+  # NOTE slightly modified copy/paste from spree/spree
+  def process_payments!
+    if pending_payments.empty?
+      raise Spree::Core::GatewayError.new Spree.t(:no_pending_payments)
+    else
+      pending_payments.each do |payment|
+        break if payment_total >= total
+
+        begin
+          payment.process!
+        rescue Spree::Payment::FraudProtectionError => e
+          add_fraudulent_pp_ref e.pp_ref
+          fraudulent! unless fraudulent?
+        end
+
+        if payment.completed?
+          self.payment_total += payment.amount
+        end
+      end
+    end
+  rescue Spree::Core::GatewayError => e
+    result = !!Spree::Config[:allow_checkout_on_gateway_error]
+    errors.add(:base, e.message) and return result
   end
 
   protected

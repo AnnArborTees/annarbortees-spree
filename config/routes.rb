@@ -18,6 +18,7 @@ ShopAnnarborteesCom::Application.routes.draw do
 
 
 
+  post "/admin/orders/:id/resolve_fraud", to: 'spree/admin/orders#resolve_fraud', as: :admin_resolve_fraud
 
 end
 
@@ -29,6 +30,7 @@ Spree::Core::Engine.routes.append do
         post :sales_tax
       end
     end
+
   end
   namespace :api, :defaults => { :format => 'json' } do
     resources :tax_categories, only: [:index, :show]

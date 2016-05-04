@@ -23,4 +23,20 @@ Spree::Admin::OrdersController.class_eval do
     redirect_to :back, just_cancelled_order: cancelled
   end
 
+  def resolve_fraud
+    @order.fraud_resolved
+    @order.payment_total = @order.payments.map(&:amount)
+    @order.payments.each { |p| p.state = 'completed' }
+    @order.finalize!
+
+    if @order.save
+      @order.payments.each(&:save)
+      flash[:success] = "Payments marked as complete and export pending."
+    else
+      flash[:error] = @order.errors.full_messages.join(", ")
+    end
+
+    redirect_to :back
+  end
+
 end

@@ -54,7 +54,7 @@ CREATE TABLE `spree_addresses` (
   PRIMARY KEY (`id`),
   KEY `index_addresses_on_firstname` (`firstname`),
   KEY `index_addresses_on_lastname` (`lastname`)
-) ENGINE=InnoDB AUTO_INCREMENT=36494 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36517 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -82,7 +82,7 @@ CREATE TABLE `spree_adjustments` (
   PRIMARY KEY (`id`),
   KEY `index_adjustments_on_order_id` (`adjustable_id`),
   KEY `index_spree_adjustments_on_source_type_and_source_id` (`source_type`,`source_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23539 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23546 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -299,7 +299,7 @@ CREATE TABLE `spree_credit_cards` (
   PRIMARY KEY (`id`),
   KEY `index_spree_credit_cards_on_user_id` (`user_id`),
   KEY `index_spree_credit_cards_on_payment_method_id` (`payment_method_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10571 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10584 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -519,7 +519,7 @@ CREATE TABLE `spree_inventory_units` (
   KEY `index_inventory_units_on_shipment_id` (`shipment_id`),
   KEY `index_inventory_units_on_variant_id` (`variant_id`),
   KEY `index_spree_inventory_units_on_line_item_id` (`line_item_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27293 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27307 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -549,7 +549,7 @@ CREATE TABLE `spree_line_items` (
   PRIMARY KEY (`id`),
   KEY `index_spree_line_items_on_order_id` (`order_id`),
   KEY `index_spree_line_items_on_variant_id` (`variant_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40984 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40996 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -567,7 +567,7 @@ CREATE TABLE `spree_log_entries` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14551 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14564 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -710,12 +710,13 @@ CREATE TABLE `spree_orders` (
   `store_id` int(11) DEFAULT NULL,
   `export_state` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `dont_split_packages_on_backorder` tinyint(1) DEFAULT '0',
+  `fraudulent_pp_ref` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_spree_orders_on_number` (`number`),
   KEY `index_spree_orders_on_user_id` (`user_id`),
   KEY `index_spree_orders_on_completed_at` (`completed_at`),
   KEY `index_spree_orders_on_user_id_and_created_by_id` (`user_id`,`created_by_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28960 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28971 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -776,7 +777,7 @@ CREATE TABLE `spree_payment_capture_events` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_spree_payment_capture_events_on_payment_id` (`payment_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11533 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11542 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -828,7 +829,7 @@ CREATE TABLE `spree_payments` (
   PRIMARY KEY (`id`),
   KEY `index_spree_payments_on_order_id` (`order_id`),
   KEY `index_spree_payments_on_payment_method_id` (`payment_method_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16949 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16963 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1267,7 +1268,7 @@ CREATE TABLE `spree_shipments` (
   KEY `index_shipments_on_number` (`number`),
   KEY `index_spree_shipments_on_order_id` (`order_id`),
   KEY `index_spree_shipments_on_stock_location_id` (`stock_location_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19336 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19350 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1357,7 +1358,7 @@ CREATE TABLE `spree_shipping_rates` (
   `tax_rate_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `spree_shipping_rates_join_index` (`shipment_id`,`shipping_method_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=97869 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=97917 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1419,7 +1420,7 @@ CREATE TABLE `spree_state_changes` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=143077 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=143172 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1507,7 +1508,7 @@ CREATE TABLE `spree_stock_movements` (
   `originator_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_spree_stock_movements_on_stock_item_id` (`stock_item_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16687 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16696 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1796,7 +1797,7 @@ CREATE TABLE `spree_tokenized_permissions` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_tokenized_name_and_type` (`permissable_id`,`permissable_type`)
-) ENGINE=InnoDB AUTO_INCREMENT=28960 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28972 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2050,7 +2051,7 @@ CREATE TABLE `spree_zones` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-25 15:03:34
+-- Dump completed on 2016-05-04 11:56:28
 INSERT INTO schema_migrations (version) VALUES ('20140312210641');
 
 INSERT INTO schema_migrations (version) VALUES ('20140312210642');
@@ -2520,3 +2521,5 @@ INSERT INTO schema_migrations (version) VALUES ('20151209163150');
 INSERT INTO schema_migrations (version) VALUES ('20151216220022');
 
 INSERT INTO schema_migrations (version) VALUES ('20160425175912');
+
+INSERT INTO schema_migrations (version) VALUES ('20160504154454');

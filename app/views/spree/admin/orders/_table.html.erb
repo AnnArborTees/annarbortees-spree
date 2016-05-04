@@ -46,7 +46,7 @@
         <% if Spree::Order.checkout_step_names.include?(:delivery) %>
             <td class="align-center"><span class="state <%= order.shipment_state %>"><%= Spree.t("shipment_states.#{order.shipment_state}") if order.shipment_state %></span></td>
         <% end %>
-        <td class="align-center"><span class="state <%= order.export_state %>"><%= Spree.t("export_states.#{order.export_state}") %></span>
+        <td class="align-center"><span class="state <%= order.export_state %> <%= export_state_class(order.export_state) %>"><%= Spree.t("export_states.#{order.export_state}") %></span>
         </td>
         <td class="align-center"><%= order.display_total.to_html %></td>
         <td class='actions align-center' data-hook="admin_orders_index_row_actions">

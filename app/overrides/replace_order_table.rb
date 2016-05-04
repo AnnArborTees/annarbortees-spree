@@ -20,7 +20,7 @@ Deface::Override.new(:virtual_path => 'spree/admin/shared/_order_summary',
                      :insert_before => "[data-hook='admin_order_tab_subtotal_title']",
                      :text => %q(
 <dt id="order_export-state" data-hook><%= Spree.t(:export_state) %>:</dt>
-<dd><span class="state <%= @order.export_state %>"><%= Spree.t(@order.export_state, :scope => :export_state) %></span></dd>
+<dd><span class="state <%= export_state_class(@order.export_state) %> <%= @order.export_state %>"><%= Spree.t(@order.export_state, :scope => :export_state) %></span></dd>
 ),
                      :disabled => false )
 
@@ -35,5 +35,32 @@ Deface::Override.new(:virtual_path => 'spree/admin/shared/_order_summary',
 ),
                      :disabled => false )
 
+Deface::Override.new(
+  virtual_path: 'spree/admin/orders/_add_product',
+  name: 'add_resolve_fraud_button_to_order_edit',
+  insert_before: "#add-line-item",
+  text: %q(
+  <% if @order.fraudulent? %>
+    <fieldset class='no-border-bottom'>
+      <legend align='center'>Fraud Protection</legend>
 
+      <% if @order.fraudulent_pp_ref.present? %>
+        <ul>
+        <% @order.fraudulent_pp_refs.each do |pp_ref| %>
+          <li><%= pp_ref %></li>
+        <% end %>
+        </ul>
+      <% end %>
+
+      <%= button_to "/admin/orders/#{@order.number}/resolve_fraud", method: :post, class: 'button', data: { confirm: "Allow this order to be exported and processed?" } do %>
+        <i class='fa fa-shield'></i> Payment Went Through
+      <% end %>
+      <%= button_to "/admin/orders/#{@order.number}/cancel", method: :post, class: 'button', data: { confirm: "Cancel this order?" } do %>
+        <i class='fa fa-cancel'></i> Cancel Order
+      <% end %>
+    </fieldset>
+  <% end %>
+),
+  disabled: false
+)
 
