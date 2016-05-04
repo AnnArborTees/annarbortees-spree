@@ -11,27 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151203171466) do
-
-  create_table "spree_addresses", force: true do |t|
-    t.string   "firstname"
-    t.string   "lastname"
-    t.string   "address1"
-    t.string   "address2"
-    t.string   "city"
-    t.string   "zipcode"
-    t.string   "phone"
-    t.string   "state_name"
-    t.string   "alternative_phone"
-    t.string   "company"
-    t.integer  "state_id"
-    t.integer  "country_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "spree_addresses", ["firstname"], name: "index_addresses_on_firstname", using: :btree
-  add_index "spree_addresses", ["lastname"], name: "index_addresses_on_lastname", using: :btree
+ActiveRecord::Schema.define(version: 20160504154454) do
 
   create_table "spree_adjustments", force: true do |t|
     t.integer  "source_id"
@@ -109,9 +89,9 @@ ActiveRecord::Schema.define(version: 20151203171466) do
     t.integer  "product_id"
     t.integer  "user_id"
     t.string   "calculator_type"
-    t.decimal  "rate",            precision: 4, scale: 2
-    t.decimal  "max",             precision: 4, scale: 2
-    t.decimal  "min",             precision: 4, scale: 2
+    t.decimal  "rate",            precision: 4,  scale: 2
+    t.decimal  "max",             precision: 10, scale: 2
+    t.decimal  "min",             precision: 4,  scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -376,16 +356,16 @@ ActiveRecord::Schema.define(version: 20151203171466) do
   add_index "spree_option_values_variants", ["variant_id"], name: "index_spree_option_values_variants_on_variant_id", using: :btree
 
   create_table "spree_orders", force: true do |t|
-    t.string   "number",                 limit: 32
-    t.decimal  "item_total",                        precision: 10, scale: 2, default: 0.0,     null: false
-    t.decimal  "total",                             precision: 10, scale: 2, default: 0.0,     null: false
+    t.string   "number",                           limit: 32
+    t.decimal  "item_total",                                  precision: 10, scale: 2, default: 0.0,     null: false
+    t.decimal  "total",                                       precision: 10, scale: 2, default: 0.0,     null: false
     t.string   "state"
-    t.decimal  "adjustment_total",                  precision: 10, scale: 2, default: 0.0,     null: false
+    t.decimal  "adjustment_total",                            precision: 10, scale: 2, default: 0.0,     null: false
     t.integer  "user_id"
     t.datetime "completed_at"
     t.integer  "bill_address_id"
     t.integer  "ship_address_id"
-    t.decimal  "payment_total",                     precision: 10, scale: 2, default: 0.0
+    t.decimal  "payment_total",                               precision: 10, scale: 2, default: 0.0
     t.integer  "shipping_method_id"
     t.string   "shipment_state"
     t.string   "payment_state"
@@ -396,17 +376,20 @@ ActiveRecord::Schema.define(version: 20151203171466) do
     t.string   "currency"
     t.string   "last_ip_address"
     t.integer  "created_by_id"
-    t.decimal  "shipment_total",                    precision: 10, scale: 2, default: 0.0,     null: false
-    t.decimal  "additional_tax_total",              precision: 10, scale: 2, default: 0.0
-    t.decimal  "promo_total",                       precision: 10, scale: 2, default: 0.0
-    t.string   "channel",                                                    default: "spree"
-    t.decimal  "included_tax_total",                precision: 10, scale: 2, default: 0.0,     null: false
-    t.integer  "item_count",                                                 default: 0
+    t.decimal  "shipment_total",                              precision: 10, scale: 2, default: 0.0,     null: false
+    t.decimal  "additional_tax_total",                        precision: 10, scale: 2, default: 0.0
+    t.decimal  "promo_total",                                 precision: 10, scale: 2, default: 0.0
+    t.string   "channel",                                                              default: "spree"
+    t.decimal  "included_tax_total",                          precision: 10, scale: 2, default: 0.0,     null: false
+    t.integer  "item_count",                                                           default: 0
     t.integer  "approver_id"
     t.datetime "approved_at"
-    t.boolean  "confirmation_delivered",                                     default: false
-    t.boolean  "considered_risky",                                           default: false
+    t.boolean  "confirmation_delivered",                                               default: false
+    t.boolean  "considered_risky",                                                     default: false
     t.integer  "store_id"
+    t.string   "export_state"
+    t.boolean  "dont_split_packages_on_backorder",                                     default: false
+    t.string   "fraudulent_pp_ref"
   end
 
   add_index "spree_orders", ["completed_at"], name: "index_spree_orders_on_completed_at", using: :btree
@@ -559,6 +542,8 @@ ActiveRecord::Schema.define(version: 20151203171466) do
     t.string   "layout",               default: "default"
     t.text     "digital_preview"
     t.string   "hashtag"
+    t.text     "backorder_details"
+    t.string   "vhx_api_key"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
@@ -889,6 +874,7 @@ ActiveRecord::Schema.define(version: 20151203171466) do
     t.string   "slug"
     t.integer  "parent_id"
     t.string   "create_your_own_link"
+    t.integer  "page_id"
   end
 
   add_index "spree_stores", ["slug"], name: "index_spree_stores_on_slug", using: :btree
@@ -1087,6 +1073,7 @@ ActiveRecord::Schema.define(version: 20151203171466) do
     t.datetime "updated_at"
     t.string   "spree_api_key",          limit: 48
     t.datetime "remember_created_at"
+    t.string   "vhx_customer_id"
   end
 
   add_index "spree_users", ["email"], name: "email_idx_unique", unique: true, using: :btree
@@ -1107,6 +1094,7 @@ ActiveRecord::Schema.define(version: 20151203171466) do
     t.boolean  "track_inventory",                         default: true
     t.integer  "tax_category_id"
     t.datetime "updated_at"
+    t.string   "vhx_product_id"
   end
 
   add_index "spree_variants", ["product_id"], name: "index_spree_variants_on_product_id", using: :btree
