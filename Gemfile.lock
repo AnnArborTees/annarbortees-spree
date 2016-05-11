@@ -94,7 +94,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
-  revision: d2c90213363bcb1428709cde78f030508079a4bf
+  revision: 48ca8c9d56329049326b1744830125b6190ae109
   branch: 2-2-stable
   specs:
     spree_digital (1.1.1)
@@ -535,7 +535,7 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-rails (4.6.1.0)
+    font-awesome-rails (4.6.2.0)
       railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     friendly_id (5.0.5)
@@ -601,7 +601,7 @@ GEM
     minitest (4.7.5)
     monetize (1.4.0)
       money (~> 6.7)
-    money (6.7.0)
+    money (6.7.1)
       i18n (>= 0.6.4, <= 0.7.0)
       sixarm_ruby_unaccent (>= 1.1.1, < 2)
     multi_json (1.12.0)
