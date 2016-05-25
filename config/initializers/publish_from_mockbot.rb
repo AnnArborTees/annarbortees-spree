@@ -11,7 +11,7 @@ def log_time_and_memory(message)
   end
 end
 
-if Figaro.env.sidekiq_server? && !defined?(Rails::Console)
+if Figaro.env.use_legacy_mockbot_import? && Figaro.env.sidekiq_server? && !defined?(Rails::Console)
   Thread.new do
     log_time_and_memory("[publish_from_mockbot] Starting Loop")
     loop do
