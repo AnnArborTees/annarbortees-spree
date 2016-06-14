@@ -1,0 +1,15 @@
+Dear <%= @order.name.include?(' ') ? @order.name.split(' ').reject(&:blank?).first : @order.name %>,
+
+We're excited to let you know that your digital downloads are now available! Below are your links.
+
+<% for item in @order.line_items %>
+  <% if item.digital? %>
+    <%= raw item.variant.name %>:
+    <% for link in item.digital_links %>
+      <%= raw(link.digital.attachment_file_name) rescue '---' %> <%= digital_url :host => Spree::Config.get(:site_url), :secret => link.secret %>
+    <% end %>
+  <% end %>
+  <% if stream_link = item.stream_link %>
+    (stream) <%= stream_link %>
+  <% end %>
+<% end %>

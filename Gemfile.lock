@@ -94,7 +94,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
-  revision: f91eb6241da554ce849fdec191e9bb423e3d0fe0
+  revision: a4fafa544458ba26dcb450e1d50a2b58d7186d5c
   branch: 2-2-stable
   specs:
     spree_digital (1.1.1)
@@ -795,7 +795,7 @@ GEM
       memoizable (~> 0.4.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (0.3.49)
+    tzinfo (0.3.50)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)

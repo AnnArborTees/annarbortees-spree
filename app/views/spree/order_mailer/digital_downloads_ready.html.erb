@@ -1,0 +1,5 @@
+Dear <%= @order.name.include?(' ') ? @order.name.split(' ').reject(&:blank?).first : @order.name %>,
+
+<p>We're excited to let you know that your digital downloads are now available!</p>
+
+<%= render :partial => 'spree/shared/email/digitals', :locals => { :order => @order } %>
