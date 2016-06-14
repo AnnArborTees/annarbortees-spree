@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: 665e36ff346b858649b194298e3cc72803e69872
+  revision: ff952122028d13ddd53bbf780ae89cab58a1a165
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -535,7 +535,7 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-rails (4.6.2.0)
+    font-awesome-rails (4.6.3.0)
       railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     friendly_id (5.0.5)
@@ -594,17 +594,17 @@ GEM
     memoist (0.14.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
-    mime-types (3.0)
+    mime-types (3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0221)
-    mini_portile2 (2.0.0)
+    mime-types-data (3.2016.0521)
+    mini_portile2 (2.1.0)
     minitest (4.7.5)
     monetize (1.4.0)
       money (~> 6.7)
     money (6.7.1)
       i18n (>= 0.6.4, <= 0.7.0)
       sixarm_ruby_unaccent (>= 1.1.1, < 2)
-    multi_json (1.12.0)
+    multi_json (1.12.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.3.17)
@@ -612,8 +612,9 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.0.1)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     options (2.3.2)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
@@ -629,6 +630,7 @@ GEM
       xml-simple
     paypal-sdk-merchant (1.106.1)
       paypal-sdk-core (~> 0.2.3)
+    pkg-config (1.1.7)
     poltergeist (1.5.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -664,7 +666,7 @@ GEM
       activesupport (= 4.0.12)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.1.2)
+    rake (11.2.2)
     ransack (1.1.0)
       actionpack (>= 3.0)
       activerecord (>= 3.0)

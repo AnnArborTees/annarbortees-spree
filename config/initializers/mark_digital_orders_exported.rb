@@ -7,7 +7,7 @@ unless defined?(Rails::Console) || Rails.env.development?
       begin
         orders = Spree::Order.where.not(completed_at: nil).where(export_state: 'pending')
         orders.each do |order|
-          shipments = order.shipments.map{|x| x.shipping_method.name }.uniq
+          shipments = order.shipments.map{|x| x.shipping_method.try(:name) }.uniq
           begin
           order.digital_only if shipments == ['Digital Download']
           rescue

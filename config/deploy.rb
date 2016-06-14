@@ -3,7 +3,7 @@ lock '3.1.0'
 
 set :application, 'annarbortees-spree'
 set :repo_url, 'git@github.com:annarbortees/annarbortees-spree.git'
-set :rvm_ruby_version, 'rbx-2.5.2,ruby-2.1.1'
+set :rvm_ruby_version, 'ruby-2.1.1'
 set :rvm_task_ruby_version, 'ruby-2.1.1'
 set :deploy_to, '/home/ubuntu/RailsApps/wip.annarbortees.com'
 set :assets_prefix, 'spree/assets'
@@ -26,7 +26,7 @@ Rake::Task["deploy:compile_assets"].clear
 namespace :test do
   task :say_hello do
     on roles(:app) do
-      with_rvm 'rbx-2.5.2,ruby-2.1.1' do
+      with_rvm 'ruby-2.1.1' do
         execute :ruby, '-e', %~"puts 'running.........';puts RUBY_ENGINE"~
       end
     end
