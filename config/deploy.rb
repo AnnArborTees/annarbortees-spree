@@ -37,7 +37,7 @@ namespace :deploy do
 
   before :starting, :install_ruby do
     on roles(:app) do
-      execute :rvm, 'install', 'ruby-2.1.2'
+      execute :rvm, 'install', 'ruby-2.1.1'
     end
   end
 

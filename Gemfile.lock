@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: ff952122028d13ddd53bbf780ae89cab58a1a165
+  revision: f55e101a7968cc1fbb2416729195355dc42aa5a6
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
