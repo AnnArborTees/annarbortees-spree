@@ -1,4 +1,8 @@
-Dear <%= @order.name.include?(' ') ? @order.name.split(' ').reject(&:blank?).first : @order.name %>,
+<% if @order.name.present? %>
+  Dear <%= @order.name.include?(' ') ? @order.name.split(' ').reject(&:blank?).first : @order.name %>,
+<% else %>
+  Hi,
+<% end %>
 
 <p>We're excited to let you know that your digital downloads are now available!</p>
 
