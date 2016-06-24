@@ -86,7 +86,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_commission_agents.git
-  revision: f54ede459beee40afa80c592c59506560b42cf4b
+  revision: fac774bccde72fe9116da77734568df6c4c5125d
   branch: 2-2-stable
   specs:
     spree_commission_agents (2.2.0)
