@@ -94,7 +94,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree_digital.git
-  revision: f4e36a803f06e50890a00afdd53e5591294bc738
+  revision: 7b0c96c12622f08904ae6718f2514e5b5b4973af
   branch: 2-2-stable
   specs:
     spree_digital (1.1.1)
@@ -386,7 +386,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    colorize (0.7.7)
+    colorize (0.8.0)
     connection_pool (2.2.0)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -535,7 +535,7 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-rails (4.6.3.0)
+    font-awesome-rails (4.6.3.1)
       railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     friendly_id (5.0.5)
