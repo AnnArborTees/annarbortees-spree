@@ -9,7 +9,7 @@
         <% format = File.extname(file_name).downcase %>
 
         <p class="digital_link">
-          <%= digital_item.variant.name %> (<%= format %>) <%= link_to digital_url, file_name%>
+          <%= digital_item.variant.name %> (<%= format %>) <%= link_to file_name, digital_url %>
           <br />
           <%= digital_url %>
         </p>
