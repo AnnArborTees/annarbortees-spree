@@ -79,6 +79,7 @@ gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express',
 gem 'spree_sizing_guides', github: 'annarbortees/spree_sizing_guides', branch: spree_branch
 gem 'spree_digital', github: 'annarbortees/spree_digital', branch: spree_branch
 gem 'spree_static_content', github: 'annarbortees/spree_static_content', branch: spree_branch
+gem 'google-api-client'
 
 gem 'httparty'
 gem 'spree_mockbot_integration', github: 'annarbortees/spree_mockbot_integration', branch: spree_branch
