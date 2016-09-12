@@ -29,9 +29,9 @@ Deface::Override.new(:virtual_path => 'spree/admin/shared/_order_summary',
                      :insert_before => "[data-hook='admin_order_tab_subtotal_title']",
                      :text => %q(
 <dt id="order_bill_to_name" data-hook><%= Spree.t(:bill_to_name) %>:</dt>
-<dd><%= @order.bill_address.full_name %></dd>
+<dd><%= @order.bill_address ? @order.bill_address.full_name : "(no billing address)" %></dd>
 <dt id="order_ship_to_name" data-hook><%= Spree.t(:ship_to_name) %>:</dt>
-<dd><%= @order.ship_address.full_name %></dd>
+<dd><%= @order.ship_address ? @order.ship_address.full_name : "(no shipping address)" %></dd>
 ),
                      :disabled => false )
 
