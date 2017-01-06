@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/annarbortees/spree-multi-domain.git
-  revision: f55e101a7968cc1fbb2416729195355dc42aa5a6
+  revision: 1ee11820f93d4258b96fd405bda33e32a4205364
   branch: 2-2-stable
   specs:
     spree_multi_domain (1.0.0)
@@ -310,12 +310,17 @@ GEM
       tzinfo (~> 0.3.37)
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
-    addressable (2.4.0)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
     arel (4.0.2)
     asset_sync (1.1.0)
       activemodel
       fog (>= 1.8.0)
       unf
+    autoparse (0.3.3)
+      addressable (>= 2.3.1)
+      extlib (>= 0.9.15)
+      multi_json (>= 1.0.0)
     awesome_nested_set (3.0.3)
       activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
@@ -409,6 +414,7 @@ GEM
     erubis (2.7.0)
     excon (0.45.4)
     execjs (2.6.0)
+    extlib (0.9.16)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -535,15 +541,17 @@ GEM
     formatador (0.2.5)
     friendly_id (5.0.5)
       activerecord (>= 4.0.0)
-    google-api-client (0.9.13)
+    google-api-client (0.8.6)
+      activesupport (>= 3.2)
       addressable (~> 2.3)
-      googleauth (~> 0.5)
-      httpclient (~> 2.7)
-      hurley (~> 0.1)
-      memoist (~> 0.11)
-      mime-types (>= 1.6)
-      representable (~> 2.3.0)
-      retriable (~> 2.0)
+      autoparse (~> 0.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      googleauth (~> 0.3)
+      launchy (~> 2.4)
+      multi_json (~> 1.10)
+      retriable (~> 1.4)
+      signet (~> 0.6)
     googleauth (0.5.1)
       faraday (~> 0.9)
       jwt (~> 1.4)
@@ -561,8 +569,6 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.8.2.3)
-    hurley (0.2)
     i18n (0.6.9)
     inflecto (0.0.2)
     ipaddress (0.8.0)
@@ -575,7 +581,7 @@ GEM
     jquery-ui-rails (4.1.2)
       railties (>= 3.1.0)
     json (1.8.3)
-    jwt (1.5.4)
+    jwt (1.5.6)
     kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -641,6 +647,7 @@ GEM
     progress_bar (1.0.5)
       highline (~> 1.6)
       options (~> 2.3.0)
+    public_suffix (2.0.5)
     rabl (0.9.3)
       activesupport (>= 2.3.14)
     rack (1.5.5)
@@ -673,9 +680,7 @@ GEM
     redis (3.2.2)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
-    representable (2.3.0)
-      uber (~> 0.0.7)
-    retriable (2.1.0)
+    retriable (1.4.1)
     rsolr (1.0.13)
       builder (>= 2.1.2)
     rspec-activemodel-mocks (1.0.2)
@@ -795,7 +800,6 @@ GEM
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
     tzinfo (0.3.51)
-    uber (0.0.15)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -851,7 +855,7 @@ DEPENDENCIES
   email_spec
   factory_girl_rails (~> 4.5.0)
   figaro
-  google-api-client
+  google-api-client (= 0.8.6)
   httparty
   jbuilder (= 1.5.3)
   jquery-rails (= 3.1.3)
@@ -904,3 +908,6 @@ DEPENDENCIES
   whenever (= 0.9.4)
   with_model
   yaml_db!
+
+BUNDLED WITH
+   1.13.6
