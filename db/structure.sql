@@ -318,7 +318,7 @@ CREATE TABLE `spree_commission_agents` (
   `product_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   `calculator_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `rate` decimal(4,2) DEFAULT NULL,
+  `rate` decimal(8,2) DEFAULT NULL,
   `max` decimal(10,2) DEFAULT NULL,
   `min` decimal(4,2) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
@@ -2694,7 +2694,7 @@ CREATE TABLE `spree_zones` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-05-25 14:32:10
+-- Dump completed on 2017-05-26 10:11:32
 INSERT INTO schema_migrations (version) VALUES ('20140312210641');
 
 INSERT INTO schema_migrations (version) VALUES ('20140312210642');
@@ -3170,3 +3170,5 @@ INSERT INTO schema_migrations (version) VALUES ('20160504154454');
 INSERT INTO schema_migrations (version) VALUES ('20170106214556');
 
 INSERT INTO schema_migrations (version) VALUES ('20170525183128');
+
+INSERT INTO schema_migrations (version) VALUES ('20170526132444');
